@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>chat box</title>
+<link href="stylesheets/reset2.css" type="text/css" rel="stylesheet">
+<link href="stylesheets/fonts.css" type="text/css" rel="stylesheet">
+<link href="stylesheets/global.css" type="text/css" rel="stylesheet">
+<link href="stylesheets/chatBox.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div id="ChatContainer">
+  <div class="chatfriendList block">
+    <ul class="chatfriendList_List block">
+      <li class="active"><a href="#">Basel</a></li>
+      <li><a href="#">BaselAnfouqa</a></li>
+      <li><a href="#">Basel</a></li>
+      <li><a href="#">Basel</a></li>
+      <li class="last"><a href="#">Basel</a></li>
+    </ul>
+  </div>
+  <!--/chatfriendList-->
+  <div class="chatBlock block">
+    <div class="chatBlock_Head block">
+      	<img src="images/chatbox/chat_UserImage.jpg" alt="User Image" title="User Image">
+        <h1>basel anfouqa</h1>
+      <a href="#" class="chatCloseBtn"><img src="images/chatbox/close-button.png" width="21" height="21" alt="close" title="Close"></a> </div>
+    <!--/chatBlock_Head-->
+    <div class="chatBlock_Cont"> 
+      <!--Chat Dialogue-->
+      <div class="newsBlock white"> <img src="images/chatbox/chat_UserFriendImage.jpg" alt="user's friend image" title="Friend Image">
+        <h1><a href="#">basel anfouqa</a></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+      <!--/newsBlock-->
+      <div class="newsBlock"> <img src="images/chatbox/chat_UserFriendImage.jpg" alt="user's friend image" title="Friend Image">
+        <h1><a href="#">basel anfouqa</a></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+      <!--/newsBlock-->
+      <div class="newsBlock white"> <img src="images/chatbox/chat_UserFriendImage.jpg" alt="user's friend image" title="Friend Image">
+        <h1><a href="#">basel anfouqa</a></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+      <!--/newsBlock--> 
+    </div>
+    <!--/chatBlockCont--> 
+    <!--Chat Dialogue-->
+    <div class="chatBlock_typingbox">
+      <form action="#" method="get">
+        <input type="text" name="chat box" class="chatBox_text">
+      </form>
+    </div>
+    <!--/chatBlock_typingbox-->
+    <div class="chatBlock_opt block"> <a onClick="changeImage(this);" class="changeBtn"><img src="images/chatbox/onClick-on.png" width="62" height="26" alt="" title=""></a>
+      <p>Make public?</p>
+      <a href="#" class="chatPublicPolicy"><img src="images/chatbox/FYI-img.gif" width="27" height="28" alt="policy" title="Public Policy"></a> </div>
+    <!--chatBlock_opt--> 
+  </div>
+  <!--/chatBlock--> 
+</div>
+<!--/ChatContainer-->
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript">
+	function changeImage(obj){
+	var el = obj.childNodes[0];
+	el.src = el.src.indexOf("on.png") >-1?"images/chatbox/onClick-off.png":"images/chatbox/onClick-on.png";
+	}
+	</script>
+</body>
+</html>

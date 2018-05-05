@@ -1,0 +1,156 @@
+/*header{padding:5px 0 13px;height: 40px; position:relative}
+header .logo{float:left;width:12.3%;height:48px;margin-left:2.7%;}
+header nav{ float:right;width:85%}
+header nav ul{float:right;margin-top:15px}
+header nav ul li{float:left;margin-right:15px}
+header nav ul li.add{}
+header nav ul li.notifications{margin-right:0}
+header nav ul li.add a img{margin-top:0}
+header nav ul li.user{}
+header nav ul li a{margin-right:7px}
+header nav ul li a img{float:left; margin-top:-5px;margin-right:10px}
+.hRulerHead{
+height: 12px;border: 0;box-shadow: 
+inset 0 12px 12px -12px rgba(0,0,0,0.5);
+z-index:2;position:relative;margin:0;min-width:1280px;
+}
+
+.imagepreload {
+        background: transparent none left top no-repeat;
+        position: absolute;
+        visibility: hidden
+}
+
+.hovered{background:#0066cc !important}
+.hoveredA{color:#fff !important}
+*/
+
+/*header{padding:5px 0 13px;height: 18px; position:relative;background-color:#0B69A9;}
+header .logo{float:left;width:12.3%;height:48px;margin-left:2.7%;}
+header .title_text_logo{font-size:16pt;color:#EEEEEE;}
+header nav{ float:right;width:85%}
+header nav ul{float:right;margin-top:5px;color:#EEEEEE}
+header nav ul li{float:left;margin-right:15px}
+header nav ul li.add{}
+header nav ul li.notifications{margin-right:0}
+header nav ul li.add a img{margin-top:0}
+header nav ul li.user{}
+header nav ul li a{margin-right:7px}
+header nav ul li a img{float:left; margin-top:-5px;margin-right:10px}
+.hRulerHead{
+height: 12px;border: 0;box-shadow: 
+inset 0 12px 12px -12px rgba(0,0,0,0.5);
+z-index:2;position:relative;margin:0;min-width:1280px;
+}
+  */
+  /* Header
+--------------------------------------------------------------------------------------- */
+header {
+	height: 25px;
+	padding: 5px 0 13px;
+	position: relative;
+/*	background: #0b68a8
+*/}
+header h1 {
+	float: left;
+	text-transform: capitalize
+}
+header .logo {
+	float: left;
+	width: 15%;
+	height: 24px
+}
+header nav {
+	float: right;
+	width: 30%
+}
+header nav ul {
+	float: right;
+	margin-top: 9px;
+	color:#fff;
+}
+header nav ul li {
+	float: left;
+	margin-right: 15px
+}
+header nav ul li.add {
+	width: 45px
+}
+
+header .popup, header .popupNot{display:none}
+header nav ul li:hover .popup{display:block;position:absolute;top:30px;}
+header nav ul li:hover .popupNot{display:block;position:fixed;top:30px}
+header nav ul li a:hover span{border-top: 4px solid #50B5E5;}
+
+
+header nav ul li.notifications {
+	margin: 0
+}
+header nav ul li.add a img {
+	margin-top: 0
+}
+header nav ul li.user {
+	width: 70px
+}
+header nav ul li.signout {
+	width: 60px;
+        
+}
+header nav ul li.last {
+	margin: 0
+}
+header nav ul li a {
+	margin-right: 7px;
+	/*font-size: 13pt;*/
+	font-size: 13px;
+	color: #fff;
+}
+header nav ul li a img {
+	float: left;
+	margin-top: -5px;
+	margin-right: 10px
+}
+
+.last.signout > a {
+    font-size: 10pt;
+}
+
+/* Popup
+--------------------------------------------------------------- */
+.popup, .popupNot{z-index:9999}
+.popup span.top{background:url(../images/general/popups/popupMain-top.png) no-repeat;display:block;height:15px;width:143px}
+.popup span.mid{background:url(../images/general/popups/popupMain-mid.png) repeat-y;display:block;width:143px}
+.popup span.bot{background:url(../images/general/popups/popupMain-bot.png) no-repeat;display:block;height:9px;width:143px}
+.popup ul{width:103px;float:none}
+.popup ul li{width:100%;padding:4px 15px;margin-left:5px}
+.popup ul li a{font-family: 'OpenSansCondensedLight';font-size:20px;color:#13345c;margin:0}
+.popup ul li:hover{background:#0066cc}
+.popup ul li:hover a{color:#fff;}
+.effectWhite{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-top: 4px solid white;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	margin-left: 5px
+}
+
+.hRulerHead{
+height: 12px;border: 0;box-shadow: 
+inset 0 12px 12px -12px rgba(0,0,0,0.5);
+z-index:2;position:relative;margin:0;
+}
+
+
+.imagepreload {
+        background: transparent none left top no-repeat;
+        position: absolute;
+        visibility: hidden
+}
+
+.hovered{background:#0066cc !important}
+.hoveredA{color:#fff !important}
+

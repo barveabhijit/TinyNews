@@ -1,0 +1,30 @@
+/* Global
+--------------------------------------------------------------------------------------- */
+
+/* Content : Body
+--------------------------------------------------------------------------------------- */
+.inlineBox{position:relative;padding:15px 25px}
+.inlineBox a.inlineBox-btnClose{position:absolute}
+
+.inlineBox-imageBlock{float:left;width:50%}
+.inlineBox-imageBlock img{float:left;margin-bottom:10px}
+.inlineBox-imageWrapper{width:220px;height:183px; overflow:hidden;}
+
+
+.inlineBox-User{}
+.inlineBox-User img{float:left; max-width:37px;max-height:37px; width:auto;height:auto; margin-right: 4px;}
+.inlineBox-User h2{font-family: 'OpenSansCondensedLight';font-size:13px;color:#000;text-transform:none;margin:3px 0;}
+.inlineBox-User h2 a{font-family: 'OpenSansCondensedBold';font-size:12px;color:#13345c}
+.inlineBox-User p{font-family: 'OpenSansCondensedLight';font-size:11px;color:#666;}
+
+.inlineBox-textBlock{height:225px;overflow-x:hidden;overflow-y:hidden;}
+.inlineBox-textBlock h1{color:#13345C;font-family:'BebasNeueRegular';font-size:21px;margin-bottom:5px;margin-left:5px;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis}
+.inlineBox-textBlock p{font-family:'OpenSansCondensedLight';font-size:14px;color:#000;margin-bottom:2px;margin-left:5px}
+.inlineBox-textBlock.block > p {overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;}
+
+.inlineBox-viewMore{background:#f2f2f2;width:33px;margin:-4px 0 0 -12px;height:15px;-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;padding:10px 50%;color:#13345c;}
+.inlineBox-viewMore a{width:100px;margin:0 auto}
+
+.infoWindowDetailed>img{z-index: 2}

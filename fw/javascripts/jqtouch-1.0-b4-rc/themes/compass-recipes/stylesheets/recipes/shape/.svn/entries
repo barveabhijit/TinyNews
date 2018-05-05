@@ -1,0 +1,70 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/compass-recipes/stylesheets/recipes/shape
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+_ellipse.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+a1986f2606c35563ad48c0fc901bf619
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_polygon.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+52c7d7bc3610e194de7f8a1297f2f661
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_symbol.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+d59df04c1bc3c5bcc7eff472ca262f47
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+polygon
+dir
+
+symbol
+dir
+

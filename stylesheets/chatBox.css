@@ -1,0 +1,63 @@
+#ChatContainer{width:260px;background-color:rgba(242,242,242,0.5);-webkit-box-shadow:0px 0px 5px 0px #ccc;box-shadow:0px 0px 5px 0px #ccc;position: absolute;z-index: 1001;margin-top: 30px}
+.gradient{filter:none}
+.chatfriendList{}
+.chatfriendList_List{}
+.chatfriendList_List li{float:left;margin-right:5px;width:48px;text-align:center;padding-top:8px;height:28px;text-transform:capitalize;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+background:#ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dee3e6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dee3e6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dee3e6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#dee3e6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#dee3e6 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#dee3e6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dee3e6',GradientType=0 ); /* IE6-9 */}
+.chatfriendList_List li a{font-size:12px;color:#0b68a8}
+.chatfriendList_List li.active{background:#13345c;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13345c', endColorstr='#13345c',GradientType=0 ); /* IE6-9 */}
+.chatfriendList_List li.active a{color:#fff}
+.chatfriendList_List li.last{margin:0}
+
+.chatBlock{padding:0 2px}
+.chatBlock_Head{padding:12px;position:relative}
+.chatBlock_Head img{float:left;margin-right:10px}
+.chatBlock_Head h1{font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;color:#0b68a8;text-transform:capitalize}
+.chatCloseBtn{position:absolute;top:12px;right:10px;}
+.chatCloseBtn img{margin:0}
+
+
+.newsBlock{border-top:1px solid #e6e6e6;padding:13px;}
+.newsBlock h1{font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;text-transform:capitalize;line-height:10px;margin-bottom:8px}
+.newsBlock h1 a{font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;text-transform:capitalize;line-height:10px;margin-bottom:8px;color:#0b68a8;}
+.newsBlock p{font-family:Arial, Helvetica, sans-serif;font-size:14px; font-weight:normal;color:#000}
+.newsBlock img{float:left;margin:0 10px 10px 0;}
+
+
+.chatBlock_typingbox{padding:13px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;overflow:hidden}
+.chatBlock_typingbox .chatBox_text{border:1px solid #ccc;width:98%;padding:8px 3px;font-size:14px;}
+
+.chatBlock_opt{padding:20px 13px}
+.chatBlock_opt a.changeBtn{display:inline-block;float:left;margin-right:5px}
+.chatBlock_opt a.chatPublicPolicy{display:inline-block;float:left}
+.chatBlock_opt p{display:inline-block;float:left;margin-right:10px;margin-top:5px;font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#000;font-weight:normal}
+.white{background:#fff}
+.chatRequest_cont {position: absolute;z-index: 1000;right: 20px;top: 50px;width: 234px;height: 136px;background-color: #DBDBDB;border: 1px solid #DBDBDB;border-radius: 5px;padding: 0 10px;}
+.chatRequest_cont .darkBlue-button, .chatRequest_cont .lightGrey-button {float:left;}
+.chatRequest_cont p {text-align: center;margin-top: 10px}
+#scrollbar2 { width: 258px; clear: both; margin: 20px 0 10px; }
+#scrollbar2 .viewport { width: 240px; height: 500px; overflow: hidden; position: relative; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0;width:240px; }
+#scrollbar2 .thumb .end,
+#scrollbar2 .thumb { background-color: #EDEDED; }
+#scrollbar2 .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar2 .track { background-color: #FFF; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar2 .thumb { height: 20px; width: 7px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left:3px;border:1px solid #EDEDED;border-radius: 8px;-webkit-border-radius:8px;-moz-border-radius: 8px;border-radius:8px;}
+#scrollbar2 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar2 .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.roomActivity {
+	margin-top:5px;color:gray;display:none;height:auto;text-align:center;
+}
+.userCount {
+	margin-bottom: 12px;color:gray;display:block;text-align:center
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+  <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><! <![endif]--><html class="no-js" lang="en"><!-- <![endif] -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>T I N Y news: home</title>
+    <meta content="T I N Y news: Tell Your Story" name="description">
+    <link media="screen" type="text/css" href="../stylesheets/screen.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/qunit-1.5.0.css">
+    <script type="text/javascript" src="../js/libs/html5shiv.js"></script>
+  </head>
+  <body class="container" id="home">
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+    <div class="page">
+      <header role="banner">
+        <a id="logo" href="#"></a>
+        <div id="user-authentication">
+          <a href=""><span class="login">Log in</span><a>
+          <div class="divider"></div>
+          <a href=""><span class="signup">Sign up</span><a>
+          </a>
+        </div><!-- /user-authentication -->
+      </header>
+      <div id="content">
+        <aside class="sidebar">
+          <div class="list">
+            <h2>What your<br>friends read</h2>
+            <ul id="friendsReadList" class="story-list">
+            </ul>
+            <a class="more" href="#noscrolltotop" onclick="TN.loadMoreFriendsRead();">more&hellip;</a>
+          </div><!-- /list -->
+          <div class="list">
+            <h2>What your<br>friends posted</h2>
+            <ul id="friendsPostedList" class="story-list">
+            </ul>
+            <a class="more" href="#noscrolltotop" onclick="TN.loadMoreFriendsPosted();">more&hellip;</a>
+          </div><!-- /list -->
+        
+        </aside>
+        <section id="map">
+          
+        </section>
+       </div><!-- /content --> 
+      </div>
+    </div><!-- /page -->
+    
+    <script type="text/javascript" src="../js/libs/json2.js"></script>    
+    <script type="text/javascript" src="../js/libs/jquery-1.7.2.min.js"></script>    
+    <script type="text/javascript" src="../js/libs/jquery.mockjax.js"></script>    
+    
+    <script type="text/javascript" src="js/tinynews-tests.js"></script>
+  	<script type="text/javascript" src="js/qunit-1.5.0.js"></script>
+    <script type="text/javascript">
+    	$('document').ready(function(){
+    		TN.initialize();
+    	});
+    </script>
+    
+  </body>
+</html>

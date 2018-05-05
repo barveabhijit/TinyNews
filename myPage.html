@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>T I N Y NEWS: My Page</title>
+<meta content="T I N Y NEWS: Tell Your Story" name="description">
+
+<link media="screen" type="text/css" href="stylesheets/reset2.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/screen.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/fonts.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/lightbox2.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/createStory.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/global.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/main.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/header-new.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/clip.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/homePopups.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/stylesheet.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/maphandler.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/index-inmap.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/buttons.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/lightbox-popup.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/chatBox.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/addFriends.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/newsPaperLBox.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|Marcellus+SC|Dosis:400,500,600,700,800|Seymour+One|Domine:400,700|Droid+Sans:400,700|Permanent+Marker|Signika+Negative:400,600,700|Headland+One|Lato:400,900|Arvo:400,700|Playfair+Display:400,900|BenchNine:400,700|Neuton:400,700,800|Rufina:400,700|Belgrano|Rum+Raisin|Magra:400,700|Bitter:400,700|Allura|Coda+Caption:800|Anton|Crete+Round|Shadows+Into+Light|Russo+One|Convergence|Exo:400,500,600,700,800,900|Grand+Hotel|Days+One|Great+Vibes|Clicker+Script|Fjalla+One|Mouse+Memoirs|Englebert|Merienda:400,700|Cinzel:400,700,900|Playfair+Display+SC:400,700,900,900italic,700italic|Noticia+Text|Handlee|Berkshire+Swash|Orbitron:400,900,700,500|Six+Caps|Architects+Daughter|Bree+Serif|Kaushan+Script|Julius+Sans+One|Quando|Scada:400,700|Montserrat:400,700|Archivo+Narrow:400,700|Signika:400,700,600|Amaranth:400,700,700italic|Almendra:400,700,700italic,400italic|Nobile:400,700|Open+Sans:400,700|Ruda:400,900|Nunito:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Abel|News+Cycle:400,700|PT+Sans:400,700,400italic,700italic|Belgrano|PT+Sans+Narrow:400,700|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Magra:400,700|PT+Serif:400,700,400italic,700italic|Port+Lligat+Sans|Rokkitt|Port+Lligat+Slab|Ubuntu+Condensed|EB+Garamond|Advent+Pro:400,200,300,500,600,700|Almendra:400,700italic,400italic,700|Balthazar|Belleza|Salsa|Boogaloo|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800|Open+Sans+Condensed:300,700,300italic|Crimson+Text:400,600,700,400italic,600italic,700italic|Cuprum:400,700,400italic,700italic|Fanwood+Text:400,400italic|Galdeano|Geo:400,400italic|Marvel:400,700,400italic,700italic|Ruluko|Voltaire|Vollkorn:400italic,700italic,400,700|Volkhov:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/libs/html5shiv.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="images/general/favicon.ico">
+
+<style type="text/css">
+@-moz-document url-prefix() {
+ .mainContent {
+ padding-bottom:1px
+}
+</style>
+</head>
+
+<body>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-top.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-mid.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-bot.png')"></div>
+
+<!-- Header -->
+<header>
+  <div class="top-bar contain-to-grid">
+    <div class="row">
+      <div class="twelve">
+        <ul class="left">
+          <li class="name"><a href="fw/index.html" class="logo"></a></li>
+        </ul>
+        <section>
+          <ul class="right">
+            <li><a href="index.html">See What's Happening</a></li>
+            <li><a id="addstory" href="#">Post a Story</a></li>
+            <li><a href="newspaper.html">Make a Newspaper</a></li>
+            <li><a href="stories.html">Check Out Stories</a></li>
+
+		    <li class="has-dropdown">
+            	<a class="active" href="#">MyPage</a>
+                <ul class="dropdown">
+                  <li id="myNamePage"><a href="myPage.html"></a></li>
+                  <li><a id="addClipThis" href="#">Add Post It Button</a></li>
+                  <li><a href="settings.html">Settings</a></li>
+                  <li><a href="#" id="signOut">Sign out</a></li>
+                  <li class="has-dropdown">
+                    <a href="#">Notifications</a>
+                    <ul class="dropdown" id="notificationsList">
+                      <li id="noNotifications" style="display: none"><a href="#" class="notifications full-width"><span class="text-center">You have currently no notifications.</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+             </li>
+          </ul>
+        </section>
+      </div>
+      <!--/twelve--> 
+    </div>
+    <!--/row--> 
+  </div>
+  <!--/container--> 
+</header>
+
+<!-- Main Content -->
+<div class="myPage">
+  <div class="block">
+    <div class="wrapper">
+      <!-- User Profile -->
+      <div class="userProfile col">
+        <div class="block">
+          <div class="userInfo">
+            <div class="block">
+              <h1 class="colRight" id="userFullName"></h1>
+              <div style="width: 150px; height: 150px; overflow: hidden">
+                  <img style="display:none" src="" alt="user picture" title="Profile Picture" class="col" id="userImage" onload="TN.utils.normalizeImage(this, 150, 150)">
+              </div>
+              <form action="/php/store_image.php" method="post" enctype="multipart/form-data" id="photoForm">
+                  <a href="javascript:void(0);" class="user_editPhoto" id="fakeUploadButton" style="display:none">edit photo</a>
+                  <input type="file" id="file" name="file" style="display: none">
+              </form>
+            </div>
+            <!--/block-->
+            <div class="block" id="thirdPersonButtons" style="display:none">
+                <a href="javascript:void(0);" id="addUnFriendBtn" class="btn_addFriend col"></a>
+                <a href="javascript:void(0);" id="followUnfollowBtn" class="btn_follow col"></a>
+            </div>
+            <!--/block-->
+            
+          </div>
+          <!--/userInfo-->
+          <div class="contactUser">
+            <div class="block">
+              <form method="post" action="#">
+                <textarea id="messageTextarea"></textarea>
+                <label>Leave A Message</label>
+                <input type="submit" class="btn_sendText colRight" value="Send" id="sendMessageButton">
+              </form>
+            </div>
+            <!--/block--> 
+          </div>
+          <!--/contactUser-->
+          <div class="userMsg">
+              <h2 id="firstNameMsgs"></h2>
+            <div class="block" id="messageBlock">
+            </div>
+            <!--/block--> 
+            <br><a href="#" id="showAllMessages">Show All</a>
+          </div>
+          <!--/userMsg--> 
+        </div>
+        <!--/block--> 
+      </div>
+      <!--/userProfile-->
+      
+      <div class="mainContent col">
+        <h1 id="newsMapTitle">NEWS MAP</h1><!--img id="mapLoadingAnimation" src="/images/old/ajax-loader.gif" style="display:none"-->
+		<div id="mapCanvas">
+			<!--img src="images/general/wordartmap.jpg"/-->
+		</div>
+		<div id='mapFilterBar'>
+			<input type='checkbox' class="styled" id='mapShowHeadlines'/>
+			<label for='mapShowHeadlines'>Show Headlines</label>
+		</div>
+		<!--
+        <img src="images/myPage/backgrounds/googleMaps.jpg" width="698" height="330" alt="google map" title="Google Maps"> -->
+        <!--Main Content Block -->
+        <div class="mainContent_block">
+          <div class="block">
+            <section id="top-stories">
+             <h2>STORIES<a href="javascript:void(0);" class="btn_more colRight more-arrow-mypage"></a></h2>
+              <ul>
+              <!-- JS generated -->
+              </ul>
+            </section>
+          </div>
+          <!--/block--> 
+        </div>
+        <!--/mainContent_block--> 
+        <!-- Horizontal Ruler -->
+        <!--hr class="myPageHor_ruler"-->
+        <!--Main Content Block -->
+        <!--div class="mainContent_block">
+          <div class="block">
+            <section id="op-ed">
+             <h2>OP ED PIECES<a href="javascript:void(0);" class="btn_more colRight more-arrow-mypage"></a></h2>
+              <ul-->
+              <!-- JS generated -->
+              <!--/ul>
+            </section>
+          </div-->
+          <!--/block--> 
+        <!--/div-->
+        <!--/mainContent_block--> 
+        <!-- Horizontal Ruler -->
+        <hr class="myPageHor_ruler">
+        <!--Main Content Block -->
+        <div class="mainContent_block">
+          <div class="block">
+            <section id="top-newspapers">
+             <h2>NEWSPAPERS<a href="javascript:void(0);" class="btn_more colRight more-arrow-mypage"></a></h2>
+              <ul>
+              <!-- JS generated -->
+              </ul>
+            </section>
+          </div>
+          <!--/block--> 
+        </div>
+        <!--/mainContent_block--> 
+      </div>
+      <!--/mainContent-->
+      
+      <div class="userActivities col">  
+        <div class="block"> <a href="newspaper.html" class="btn_workSpace">Go To My Workspace</a>
+          <h2 class="firstNameConnections"></h2>
+          
+          <!-- userActivities_block -->
+          <div class="userActivities_block" id="friendsBlock">
+            <div class="block connections">
+              <h3 class="firstNameFriends"></h3>
+              <ul id="friendList">
+                  <!-- this is where Mustache places the li template -->
+              </ul>
+              <a href="javascript:void(0);" class="userActivities_relatedFriends" onclick="$('#userFriends, #fade1').show(); TN.services.getFriendsList(viewId, custId).done(placeFriendsList);"><span id="friendsCount"></span>+ friends</a> 
+              </div>
+            <!--/block-->
+              <input type="button" value="Find More Friends" class="btn_findfriends" style="display: none">
+          </div>
+          <!--/userActivities-block-->
+          
+          <div class="userActivities_block" id="followersBlock">
+            <div class="block connections">
+              <h3 class="firstNameFollowers"></h3>
+              <ul id="followersList">
+                  <!-- this is where Mustache places the li template -->
+              </ul>
+            </div>
+            <!--/block--> 
+            <a href="javascript:void(0);" class="userActivities_relatedFriends" onclick="$('#userFollowers, #fade2').show(); TN.services.getFollowersList(viewId).done(placeFollowersList);"><span id="followersCount"></span>+ followers</a> 
+          </div>
+          <!--/block--> 
+        <!--/userActivities-block-->
+        
+        <div class="userActivities_block" id="followingBlock">
+          <div class="block connections">
+            <h3 class="firstNameFollowing"></h3>
+            <ul id="followingList">
+                <!-- this is where Mustache places the li template -->
+            </ul>
+            <a href="javascript:void(0);" class="userActivities_relatedFriends" onclick="$('#userFollowing, #fade3').show(); TN.services.getFollowingList(viewId, custId).done(placeFollowingList);"><span id="followingCount"></span>+ following</a> 
+            </div>
+          <!--/block--> 
+        </div>
+        <!--/userActivities-block--> 
+      </div>
+      <!--/block-->  
+    </div>
+    <!--/userActivities--> 
+    
+  </div>
+  <!--/wrapper--> 
+</div>
+<!--/myPage--> 
+
+<!--Footer-->
+		
+	<footer class="block">
+    <div class="wrapper">
+        <p>Copyright 2013 Tiny News. All rights reserved.</p>
+        <nav>
+          <ul class="socialMedia">
+            <li><a href="mailto:happydays@tinynews.me"><img src="images/general/email.png" width="34" height="34" alt="mail" title="Mail"></a></li>
+            <li><a href="http://www.facebook.com/pages/Tiny-News/326376470776048"><img src="images/general/facebook.png" width="34" height="34" alt="facebook" title="Facebook"></a></li>
+            <li><a href="javascript:alert('We are getting there!');"><img src="images/general/google.png" width="34" height="34" alt="gmail" title="Gmail"></a></li>
+            <!--li><a href="#"><img src="images/general/linkedin.png" width="34" height="34" alt="linkedin" title="LinkedIn"></a></li-->
+            <li class="last"><a href="https://twitter.com/TinyNewser"><img src="images/general/twitter.png" width="34" height="34" alt="twitter" title="Twitter"></a></li>
+          </ul>
+        </nav>
+        <!--/socialMedia-->  
+        </div><!--/wrapper-->
+    </footer>
+
+<!-- Basel test page -->
+<!-- Friends Popups -->
+<div class="pagePopup white_content" id="userFriends" style="display:none">
+<div class="pagePopupHeader block">
+<h1 class="firstNameFriends"></h1>
+<a href="javascript:void(0);" class="btnClose" onclick="$('#userFriends, #fade1').hide();"><span>close</span></a>
+</div><!--/pagePopupHeader-->
+<div class="pagePopupContent block">
+	<ul class="popupUserList" id="popupUserFriendList">
+	    <!-- JS/Mustache generated -->
+    </ul><!--/popupUserList-->
+</div><!--/pagePopupContent-->
+</div><!--/pagePopup-->
+<div id="fade1" class="black_overlay" onclick="$('#userFriends, #fade1').hide();"></div>
+ 
+<!-- Followers Popups -->
+<div class="pagePopup white_content" id="userFollowers" style="display:none">
+<div class="pagePopupHeader block">
+<h1 class="firstNameFollowers"></h1>
+<a href="javascript:void(0);" class="btnClose" onclick="$('#userFollowers, #fade2').hide();"><span>close</span></a>
+</div><!--/pagePopupHeader-->
+<div class="pagePopupContent block">
+	<ul class="popupUserList" id="popupUserFollowersList">
+	    <!-- JS/Mustache generated -->
+    </ul><!--/popupUserList-->
+</div><!--/pagePopupContent-->
+</div>
+<div id="fade2" class="black_overlay" onclick="$('#userFollowers, #fade2').hide();"></div> 
+
+<!-- Following Popups -->
+<div class="pagePopup white_content" id="userFollowing" style="display:none">
+<div class="pagePopupHeader block">
+<h1 class="firstNameFollowing"></h1>
+<a href="javascript:void(0);" class="btnClose" onclick="$('#userFollowing, #fade3').hide();"><span>close</span></a>
+</div><!--/pagePopupHeader-->
+<div class="pagePopupContent block">
+	<ul class="popupUserList" id="popupUserFollowingList">
+	    <!-- JS/Mustache generated -->
+    </ul><!--/popupUserList-->
+</div><!--/pagePopupContent-->
+</div>
+<div id="fade3" class="black_overlay" onclick="$('#userFollowing, #fade3').hide();"></div> 
+
+<style type="text/css">
+	#mapCanvas {
+		width: inherit;
+		height: 300px;
+	}
+</style>
+
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC3JpD-ZB_NgciJjjPDaz5u9G11vs37Czc&sensor=true">
+</script>-->
+<script type="text/javascript" src="js/libs/json2.js"></script>    
+<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+<script type="text/javascript" src="js/libs/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/libs/html5placeholder.jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/libs/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.livequery.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.tinyscrollbar.min.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="js/libs/jquery.form.js"></script>
+<script type="text/javascript" src="js/libs/jquery.autosize-min.js"></script>
+<script type="text/javascript" src="js/libs/mustache.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/commentHandler.js"></script>
+<script type="text/javascript" src="js/likeHandler.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/mypagemapshandler.js"></script>
+<script type="text/javascript" src="js/browserDetect.js"></script>
+<script type="text/javascript" src="js/createStory.js"></script>
+<script type="text/javascript" src="js/baseHeader.js"></script>
+<script type="text/javascript" src="js/myPage.js"></script>
+<script type="text/javascript" src="js/newspaperViewLB.js"></script>
+<script type="text/javascript" src="js/sharingHandler.js"></script>
+
+<script id="connectionItem" type="text/html">
+	<li class="{{ connection_li_class }}" id="connection_{{ user_id }}">
+        <div style="width:48px; height:48px; overflow:hidden"><a href="?view={{ user_id }}">
+        <img style="display:none" src="{{ image_url }}" alt="" title="" onload="TN.utils.normalizeImage(this, 48, 48);"></a></div>
+    </li>
+</script>
+<script id="messageBubbleRight" type="text/html">
+    <div class="userMsg-block" style="display:{{ display_state }}">
+        <div class="bubbleRight"> <span class="bubble_top"></span>
+          <p><span class="bubble_mid">{{ message_text }}</span></p>
+          <span class="bubble_bot"></span> 
+        </div>
+        <div class="userMsg-Name colRight">
+          <h3>{{ author }}, <span>{{ elapsed_time }}</span></h3>
+        </div>
+    </div>
+</script>
+<script id="messageBubbleLeft" type="text/html">
+    <div class="userMsg-block" style="display:{{ display_state }}">
+        <div class="bubbleLeft"> <span class="bubble_top"></span>
+          <p><span class="bubble_mid">{{ message_text }}</span></p>
+          <span class="bubble_bot_left"></span> 
+        </div>
+        <div class="userMsg-Name col">
+          <h3>{{ author }}, <span>{{ elapsed_time }}</span></h3>
+        </div>
+    </div>
+</script>
+<script id="userListing" type="text/html">
+    <li>
+        <a href="?view={{ user_id }}">
+            <div style="width:49px; height:49px; overflow:hidden; display:inline">
+                <img style="display:none" src="{{ image_url }}" onload="TN.utils.normalizeImage(this, 49, 49)" alt="" title="User Image">
+            </div>
+            <h2>{{ firstname }} {{ lastname }}</h2>
+        </a>
+        <input class="hidden_user_id" type="hidden" value="{{ user_id }}" style="display:none">
+        <p><span class="userCity">{{ user_city }}&nbsp;</span><span class="userState">{{ user_state }}&nbsp;</span><span class="userCountry">{{ user_country }}</span></p>
+        <a class="btnFollow" style="display:{{ display_btnFollow }}" href="javascript:void(0);" onclick="{{ listing_action }}">{{ listing_status }}</a>
+    </li>
+</script>
+        
+<script type="text/javascript">
+var isFriend = false;
+var isFollowed = false;
+var pendingFriendship = false;
+var offeringFriendship = false;
+
+var placeConnections = function(d, listId, countId) {
+    count = 0;
+	$.each(d, function(i,listItem) {
+	    // filter some things out from third person view:
+	    if (viewId != custId) {
+    		if (listId == "#friendList") {
+    		    if (listItem.requestType == "acceptORreject") return;
+                if (listItem.requestType == "pending") return;
+    		}
+        }
+		if (listItem.imageUrl == "") return;
+		count++;
+		var template = $('#connectionItem').html();
+		var viewParams = {
+			'image_url' : listItem.thumbImageUrl,
+			'connection_li_class' : ( count%5 ? "" : "last"),
+			'user_id' : listItem.id
+		};
+		$(listId).append(Mustache.to_html(
+			template,
+			viewParams
+		));
+	});
+	if ((viewId != custId) && (listId == "#friendList")) {
+	    $(countId).text(count);
+	    if (count == 0) $('#friendsBlock').hide();
+	}
+    else $(countId).text(d.length);
+};
+
+previouslyPlacedMessagesCount = 0;
+var placeMessages = function(d, listId) {
+    var placedMessagesCount = 0;
+    var delta = 0;
+    $.each(d, function(i,listItem) {
+        if (listItem.responseMessageBody == "") return;        
+        placedMessagesCount++;
+        if (placedMessagesCount > previouslyPlacedMessagesCount) {
+            var templateR = $('#messageBubbleRight').html();
+            var templateL = $('#messageBubbleLeft').html();
+            var viewParams = {
+                'message_text' : listItem.responseMessageBody,
+                'author' : listItem.responseCustomerName,
+                'elapsed_time' : listItem.elapsedTime,
+                'display_state' : ((placedMessagesCount < (numberOfComments-5)) ? "none" : "")
+            };
+            $(listId).prepend(Mustache.to_html(
+                ( (placedMessagesCount % 2) ? templateL : templateR ),
+                viewParams
+            ));
+            delta++;
+        }
+    });
+    previouslyPlacedMessagesCount += delta;
+    $('.userMsg').show();
+    if ($('.userMsg-block').filter(":hidden").size() > 0) $('#showAllMessages').show();
+    else $('#showAllMessages').hide();
+};
+
+var placeUserList = function(d, listId) {
+    $.each(d, function(i,listItem) {
+        // filter some things out from third person view:
+        if (viewId != custId) {
+            if (listId == "#popupUserFriendList") {
+                if (listItem.requestType == "acceptORreject") return;
+                if (listItem.requestType == "pending") return;
+            }
+        }
+        var template = $('#userListing').html();
+        var viewParams = {
+            'user_id' : listItem.id,
+            'image_url' : (listItem.thumbImageUrl ? listItem.thumbImageUrl : "/images/LoginAndRegister/uploadPhoto-img.jpg"),
+            'firstname' : listItem.firstname,
+            'lastname' : listItem.lastname,
+            'user_city' : "",
+            'user_state' : "",
+            'user_country' : ""
+        };
+        if (populatingFollowersList) $.extend(viewParams, { 'display_btnFollow' : 'none' });
+        else if (populatingFriendsList) {
+            if (listItem.requestType == "pending") {
+                $.extend(viewParams, { 'listing_status' : 'pending' });
+                $.extend(viewParams, { 'listing_action' : '' });
+                $.extend(viewParams, { 'display_btnFollow' : 'inline' });
+            }
+            else if (listItem.requestType == "acceptORreject") {
+                $.extend(viewParams, { 'listing_status' : 'accept/reject' });
+                $.extend(viewParams, { 'listing_action' : 'parent.location.href="myPage.html?view=' +listItem.id+ '"' });
+                $.extend(viewParams, { 'display_btnFollow' : 'inline' });
+            } 
+            else $.extend(viewParams, { 'display_btnFollow' : 'none' });
+        }
+        else if ((populatingFollowingList) && (viewId == custId)) {
+            $.extend(viewParams, { 'listing_status' : 'unfollow' });
+            $.extend(viewParams, { 'listing_action' : 'return unFollow('+listItem.id+', this)' });
+        }
+        if (viewId != custId) $.extend(viewParams, { 'display_btnFollow' : 'none' });
+        $(listId).append(Mustache.to_html(
+            template,
+            viewParams
+        ));
+    });
+};
+
+var follow = function(viewId) {
+    $('#followUnfollowBtn').unbind();
+    TN.services.addFollowing(viewId).done(function(msg){
+        isFollowed = true;
+        $('#followUnfollowBtn').click(function(){ unFollow(viewId); });
+        $('#followUnfollowBtn').text("Unfollow");
+        $('#followersCount').text( parseInt($('#followersCount').text())+1 );
+    });
+};
+
+var unFollow = function(unfollow_id, deletion_elem) {
+    $('#followUnfollowBtn').unbind();
+    TN.services.unFollow(unfollow_id).done(function(msg){
+        isFollowed = false;
+        // In case we are unFollowing from a list of people, we use this to 
+        // remove respective parent li; otherwise elem null is used:
+        $(deletion_elem).parent().remove();
+        $('#followUnfollowBtn').click(function(){ follow(viewId); });
+        $('#followUnfollowBtn').text("Follow");
+        if (viewId == custId) {
+            $('#followingCount').text( parseInt($('#followingCount').text())-1 );
+            $('#followingList li#connection_'+unfollow_id).remove();
+        }
+        else {
+            $('#followersCount').text( parseInt($('#followersCount').text())-1 );
+            $('#followersList li#connection_'+unfollow_id).remove();
+        }
+    });
+};
+
+var friendRequest = function() {
+    $('#addUnFriendBtn').unbind();
+    TN.services.addShopBeeFriends(viewId).done(function(msg){
+        $('#addUnFriendBtn').text("Friendship pending").click(function(){
+            undoFriendRequest();
+        });
+    });
+};
+
+var undoFriendRequest = function() {
+    if (confirm("Withdraw friend request?")) {
+        $('#addUnFriendBtn').unbind();
+        TN.services.undoFriendRequest(viewId).done(function(){
+            pendingFriendship = false;
+            $('#addUnFriendBtn').click(function(){ friendRequest(); });
+            $('#addUnFriendBtn').text("Add Friend");
+        }).fail(function(){
+            alert("Error occurred");
+        });
+    }
+};
+
+var unFriend = function(unfriend_id) {
+    $('#addUnFriendBtn').unbind();
+    TN.services.unFriend(unfriend_id).done(function(msg){
+        isFriend = false;
+        $('#addUnFriendBtn').click(function(){ friendRequest(); });
+        $('#addUnFriendBtn').text("Add Friend");
+        // $(elem).parent().remove();
+        $('#friendsList li#connection_'+unfriend_id).remove();
+        $('#friendsCount').text( parseInt($('#friendsCount').text())-1 );
+    });
+};
+
+var answerFriendship = function(answer) {
+    $('#addUnFriendBtn').unbind();
+    $('#followUnfollowBtn').unbind();
+    TN.services.answerFriendRequest(viewId, answer).done(function(){
+        if (answer == "Y") {
+            isFriend = true;
+            $('#addUnFriendBtn').click(function(){ unFriend(viewId); });
+            $('#addUnFriendBtn').text("Unfriend");
+            $('#friendsCount').text( parseInt($('#friendsCount').text())+1 );
+        }
+        else {
+            $('#addUnFriendBtn').click(function(){ friendRequest(); });
+            $('#addUnFriendBtn').text("Add Friend");
+        }
+        // restore followUnfollowBtn:
+        if (isFollowed) {
+            $('#followUnfollowBtn').click(function(){ unFollow(viewId); });
+            $('#followUnfollowBtn').text("Unfollow");
+        }    
+        else {
+            $('#followUnfollowBtn').click(function(){ follow(viewId); });
+            $('#followUnfollowBtn').text("Follow");
+        }
+    }).fail(function(){
+        // alert("Error occurred");
+    });
+};
+
+var placeFollowing = function(jqXHR, s) {
+	return placeConnections(jqXHR, "#followingList", "#followingCount");
+};
+
+var placeFollowers = function(jqXHR, s) {
+	return placeConnections(jqXHR, "#followersList", "#followersCount");
+};
+
+var placeFriends = function(jqXHR, s ) {
+	return placeConnections(jqXHR, "#friendList", "#friendsCount");
+};
+
+var placeFriendsList = function(jqXHR, s ) {
+    $("#popupUserFriendList").html("");
+    populatingFriendsList = true; populatingFollowersList = false; populatingFollowingList = false; 
+    return placeUserList(jqXHR, "#popupUserFriendList");
+};
+
+var placeFollowersList = function(jqXHR, s ) {
+    $("#popupUserFollowersList").html("");
+    populatingFollowersList = true; populatingFriendsList = false; populatingFollowingList = false; 
+    return placeUserList(jqXHR, "#popupUserFollowersList");
+};
+
+var placeFollowingList = function(jqXHR, s ) {
+    $("#popupUserFollowingList").html("");
+    populatingFollowingList = true; populatingFriendsList = false; populatingFollowersList = false; 
+    return placeUserList(jqXHR, "#popupUserFollowingList");
+};
+
+var placeBubbles = function(jqXHR, s ) {
+    qTypeMessageId = jqXHR[0]['fittingRoomSummaryList'][0].messageId;
+    numberOfComments = jqXHR[0]['fittingRoomSummaryList'][0].comments;
+    //userId = jqXHR[0]['fittingRoomSummaryList'][0].wsBuzz.custid;
+    if (numberOfComments == 0) {
+        $('.userMsg').hide();
+        return;
+    }
+    else return placeMessages(jqXHR[0]['fittingRoomSummaryList'][0]['messageResponseList'], "#messageBlock");
+};
+
+var refreshBubbles = function () {
+    TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles);
+    $('#messageTextarea').val("");
+    $('#userMsg').show();
+};
+
+function addComment(custId, msgId, commentText, successCallback){
+    $.ajax({
+        type:'POST',
+        cache:false,
+        data: {
+            action : "addFittingRoomResponse",
+            custid : custId,
+            msgresponse : JSON.stringify({
+                "type" : "Q", 
+                responseWords : commentText,
+                "messageId" : msgId,
+                isFavour : ""
+            })
+        },
+        url:'/salebynow/json.htm',
+        success:refreshBubbles,
+        error : function( jqXhr, textStatus, errorThrown ){
+            alert(errorThrown);
+        }
+    });
+};
+
+$('document').ready(function(){
+    
+    TN.myPage.initialize();
+    
+    jQuery.ajax({
+        url: "https://tinynews1.atlassian.net/s/en_USqwqzqv-418945332/812/101/1.2.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=bc77cb6b",
+        type: "get",
+        cache: true,
+        dataType: "script"
+    });
+    
+    TN.services.loadUserInfo(viewId, custId).done(function(msg){
+        $("#newsMapTitle").prepend(msg[0].firstName + "’s ");
+        $("#userFullName").text(msg[0].firstName + ( ( msg[0].lastName == "Lastname" ) ? "" : " " + msg[0].lastName ) );
+        $("#userImage").attr("src", msg[0].profileThumbPicUrl);
+        $("#firstNameMsgs").text(msg[0].firstName+"’s messages");
+        $(".firstNameConnections").text(msg[0].firstName+"’s Connections");
+        $(".firstNameFriends").text(msg[0].firstName+"’s friends");
+        $(".firstNameFollowers").text(msg[0].firstName+"’s followers");
+        $(".firstNameFollowing").text("Who "+msg[0].firstName+"’s following");
+        // If loading others' my page:
+        if (viewId != custId) {
+            if (msg[0].isFollowing == "Y") isFollowed = true;
+            if (msg[0].isFriend == "Y") isFriend = true;
+            if (msg[0].friendRequestType == "pending") pendingFriendship = true;
+            if (msg[0].friendRequestType == "acceptOReject") offeringFriendship = true;
+            // Initial buttons setup:
+            if (isFriend) {
+                $('#addUnFriendBtn').click(function(){ unFriend(viewId); });
+                $('#addUnFriendBtn').text("Unfriend");
+            }
+            else {
+                if (offeringFriendship) {
+                    $('#addUnFriendBtn').text("Accept Friendship").click(function(){
+                        answerFriendship("Y");
+                    });
+                    $('#followUnfollowBtn').text("Reject Friendship").click(function(){
+                        answerFriendship("N");
+                    });
+                }
+                else if (pendingFriendship) {
+                    $('#addUnFriendBtn').text("Friendship pending").click(function(){
+                        undoFriendRequest();
+                    });
+                }
+                else {
+                    $('#addUnFriendBtn').click(function(){ friendRequest(); });
+                    $('#addUnFriendBtn').text("Add Friend");
+                }
+            }
+            if (!offeringFriendship) {
+                if (isFollowed) {
+                    $('#followUnfollowBtn').click(function(){ unFollow(viewId); });
+                    $('#followUnfollowBtn').text("Unfollow");
+                }    
+                else {
+                    $('#followUnfollowBtn').click(function(){ follow(viewId); });
+                    $('#followUnfollowBtn').text("Follow");
+                }
+            }
+
+            if ( msg[0].friendsStatus != "Locked" ) TN.services.getFriendsList(viewId, custId).done(placeFriends).fail(function() { $('#friendsBlock').hide(); });
+            else $('#friendsBlock').hide();
+            if ( msg[0].followingStatus != "Locked" ) TN.services.getFollowingList(viewId, custId).done(placeFollowing).fail(function() { $('#followingBlock').hide(); });            
+            else $('#followingBlock').hide();
+            TN.services.getFollowersList(viewId).done(placeFollowers).fail(function() { $('#followersBlock').hide(); });
+            if ( msg[0].photosStatus != "Locked" ) TN.myPage.populateTopStoriesBar();
+            else $('#top-stories ul').append("<li>Stories locked</li>");
+
+        }
+        // If loading my own page:
+        else {
+            $('.btn_findfriends').show();
+            $('#fakeUploadButton').show();
+
+            TN.services.getFriendsList(viewId, custId).done(placeFriends).fail(function() { $('#friendsBlock').hide(); });
+            TN.services.getFollowingList(viewId, custId).done(placeFollowing).fail(function() { $('#followingBlock').hide(); });
+            TN.services.getFollowersList(viewId).done(placeFollowers).fail(function() { $('#followersBlock').hide(); });
+            TN.myPage.populateTopStoriesBar();
+        }
+
+        // Initialize message board:
+        TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles).fail(function() {
+            // Try to create message board:
+            $.when(servAddressFetch).then(function() {
+                var messageBoardImage = (!!msg[0].profileThumbPicUrl) ? msg[0].profileThumbPicUrl : '/images/LoginAndRegister/uploadPhoto-img.jpg';
+                TN.services.sendBuzzRequest(viewId, 'Message Board', 'Q', 'http://' + TNServerAddress + messageBoardImage)
+                    .done(function(){
+                        TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles);
+                    }).fail(function(){
+                        log("Failed to create message board (Q type story)");
+                        $('.userMsg').hide();
+                    });
+            });
+        });
+
+
+    });
+    
+    // (viewId value gets assigned custId value if viewing one's own profile)
+    if (viewId != custId) $('#thirdPersonButtons').show();
+
+    $('#sendMessageButton').click(function(event){
+       event.preventDefault();
+       message = $('#messageTextarea').val();
+       if (TN.utils.isBlank(message)) alert("Please enter a message");
+       else if (typeof qTypeMessageId === "undefined") alert("This is an old test account without messaging capabilities.");
+       else if ((viewId != custId) && !isFriend) alert("You can only leave message to friends.");
+       else addComment(custId, qTypeMessageId, message);
+    });
+    
+    $('#showAllMessages').click(function(event){
+        event.preventDefault();
+        $('.userMsg-block').show();
+        $('#showAllMessages').hide();
+    });
+    
+    $('#fakeUploadButton').click(function(){
+        $('#file').click();
+    });
+    
+    var regPhotoSubmitOptions = {
+        success: showImageUrlResponse,
+        dataType:'text'
+    };
+    
+    $("#file").change(function() {
+        $('#fakeUploadButton').unbind();
+        $('#fakeUploadButton').text("uploading..");
+        $('#photoForm').ajaxSubmit( regPhotoSubmitOptions );
+    });
+    
+});
+
+// callback for ajaxSubmit:
+function showImageUrlResponse(responseText, statusText, xhr, $form) {
+    $('#userImage').attr('src', responseText);
+    TN.services.updateUserInfo(responseText).done(function(msg){
+        if (msg[0] == true) {
+            $('#fakeUploadButton').text("upload ok");
+        }
+    }).always(function(){
+        $('#fakeUploadButton').click(function(){
+            $('#file').click();
+        });
+        setTimeout(function() { $('#fakeUploadButton').text("edit photo"); }, 3000);
+    });
+};
+
+</script>
+
+<script type="text/javascript" src="http://s.skimresources.com/js/39639X1025068.skimlinks.js"></script>
+</body>
+</html>

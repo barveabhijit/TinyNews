@@ -1,0 +1,79 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/src
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+jqtouch-jquery.js
+file
+
+
+
+
+2013-04-05T14:14:51.000000Z
+8d33f0f7db14ba38e5b663e778ac820d
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+jqtouch-jquery.min.js
+file
+
+
+
+
+2013-04-05T14:14:51.000000Z
+c74089a8983a06211ffa24894b14adfc
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+jqtouch.js
+file
+
+
+
+
+2013-04-05T14:14:51.000000Z
+55d6bde46d918c327d5ebb7846191baa
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+jqtouch.min.js
+file
+
+
+
+
+2013-04-05T14:14:51.000000Z
+8e6e8fa05738e273c733885ae74e3ec9
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+lib
+dir
+

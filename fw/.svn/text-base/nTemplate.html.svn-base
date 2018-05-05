@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiny News - Shared Newspapers</title>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href='newspaper-emailTemp1.css' rel='stylesheet' type='text/css' title='view1'>
+<link href='newspaper-emailTemp2.css' rel='alternative stylesheet' type='text/css' title='view2'>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC3JpD-ZB_NgciJjjPDaz5u9G11vs37Czc&amp;sensor=true"></script>
+<script type="text/javascript" src="../js/libs/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/libs/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="../js/services.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+
+<script type="text/javascript">
+/* From: http://javascript.about.com/library/blswitch.htm */
+function changeStyle(title) {
+    var lnks = document.getElementsByTagName('link');
+    for (var i = lnks.length - 1; i >= 0; i--) {
+        if (lnks[i].getAttribute('rel').indexOf('style')> -1 && lnks[i].getAttribute('title')) {
+            lnks[i].disabled = true;
+            if (lnks[i].getAttribute('title') == title) lnks[i].disabled = false;
+        }
+    }
+}
+
+changeStyle('view1');
+
+$(document).ready(function(){
+
+    var currNewspaperId = 0;
+    if (TN.utils.getQueryStringParam("view")) viewId = TN.utils.getQueryStringParam("view");
+    else viewId = 0;
+    var expandedView = false;
+    var jQView1MainContent, jQView2MainContent, jQFooterContent;
+
+    var footerContent = '\
+        <div class="TNE-footer">\
+            <ul class="TNE-footerList">\
+                <li style="margin-right:30px"><a href="http://nz.tinynews.me" style="font-size:14px;color:#006aa8;font-weight:bold">Go to Website</a></li>\
+                    <li>\
+                        <a href="https://twitter.com/share?text=Checking%20newspapers..&amp;via=TinyNewser" data-count="none">\
+                        <img src="email/tweet.png" width="24" height="17" alt="tweet">Tweet</a>\
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");<\/script>\
+                    </li>\
+                    <!--li><a href="#" style="margin-top:-5px"><img src="email/like.png" width="17" height="21" alt="like">Like</a></li-->\
+                    <li>\
+                        <div id="fb-like-button" class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>\
+                    </li>\
+            </ul>\
+        </div><!--/TNE-footer-->';
+
+    var view1MainContent = '\
+        <div class="TNE-mainContent" title="Click to expand">\
+            <!-- Story-->\
+            <div class="TNE-story">\
+                <div class="TNE-storyInfo">\
+                    <div class="TNE-storyInfoImage">\
+                        <div style="width:399px; height:278px; overflow:hidden"><img id="email_main" src="" alt="" onload="TN.utils.normalizeImage(this, 399, 278)"></div>\
+                         <a class="newHot"></a>\
+                    </div><!--/TNE-storyInfoImage-->\
+                </div><!--/TNE-storyInfo-->\
+                <!--TinyNewsMap-->\
+                <div class="TNE-mapConatiner">\
+                    <div class="TNE-map">\
+                        <!--img src="email/googlemap.png" alt="news map"-->\
+                        <div id="miniStoryMap" style="width:228px; height: 279px;" class="miniStoryMapClass"></div>\
+                    </div><!--/TNE-map-->\
+                </div><!--/TNE-mapConatiner-->\
+                <div style="clear:both"></div>\
+                <h2 id="npHeadline">New Year’s Eve 2012: Parties with no cover charges or hassles</h2>\
+                <ul class="TNE-newslist">\
+                    <li><a href="#"><div style="width:151px; height:151px; overflow:hidden"><img id="email_img_1" src="" onload="TN.utils.normalizeImage(this, 151, 151)" alt=""></div></a></li>\
+                    <li><a href="#"><div style="width:151px; height:151px; overflow:hidden"><img id="email_img_2" src="" onload="TN.utils.normalizeImage(this, 151, 151)" alt=""></div></a></li>\
+                    <li><a href="#"><div style="width:151px; height:151px; overflow:hidden"><img id="email_img_3" src="" onload="TN.utils.normalizeImage(this, 151, 151)" alt=""></div></a></li>\
+                    <li class="last"><a href="#"><div style="width:151px; height:151px; overflow:hidden"><img id="email_img_4" src="" onload="TN.utils.normalizeImage(this, 151, 151)" alt=""></div></a></li>\
+                </ul>\
+            </div><!--/TNE-story-->\
+            <!--About-->\
+            <div class="TNE-about">\
+                <img src="email/TN-img.png" width="89" height="83" alt="tiny news" style="float:right">\
+                 <h2>About Tiny News</h2>\
+                <p>Have an update about the Lower East Side - use Tiny News.</p>\
+                <p>Heard something unbelievable, use Tiny News.</p>\
+                <p>Capture a moment in time and share it with Tiny News.</p>\
+                <p>Tiny News wants to change the definition of news, today. We help you create, view, curate and interact with today’s ever changing news landscape. Make your news as personal and unique as you are.</p> \
+                <div class="TNE-download">\
+                <a class="TNE-downloadBtn" href="https://itunes.apple.com/us/app/tiny-news-nz/id605665858?ls=1&mt=8">Download App Now</a>\
+                <p style="text-align:center;font-size:24px;color:#f04927;text-transform:uppercase;font-weight:bold;margin:10px 0 0">IT’S FREE!</p>\
+                </div><!--/TNE-download-->\
+            </div><!--/TNE-about-->\
+            <div style="clear:both"></div><!--clearFix-->\
+        </div><!--/TNE-mainConten-->';
+    
+    var view2MainContent = '\
+        <div class="TNE-mainContent" title="Previous view">\
+            <!-- Story-->\
+            <div class="TNE-story block">\
+            <div class="block" style="margin-bottom:15px">\
+            <h1 id="npHeadline">PUB CRAWL</h1>\
+            <p class="vol" id="npEdition"></p>\
+            <p class="place" id="npLocation"></p>\
+            </div><!--/block-->\
+            <div class="leftContent">\
+                <div class="block">\
+                <div class="fullArticle">\
+                    <img id="story_img_0" src=""  width="652" alt="">\
+                    <h2 id="story_hl_0"></h2>\
+                    <p id="story_content_0"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_0" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_0"></h3>\
+                        <p id="story_date_0"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/fullArticle-->\
+                </div><!--/block-->\
+                <div class="subArticle">\
+                    <img id="story_img_1" src=""  width="319" alt="">\
+                    <h2 id="story_hl_1"></h2>\
+                    <p id="story_content_1"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_1" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_1"></h3>\
+                        <p id="story_date_1"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/subArticle-->\
+                 <div class="subArticle last">\
+                    <img id="story_img_2" src=""  width="319" alt="">\
+                    <h2 id="story_hl_2"></h2>\
+                    <p id="story_content_2"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_2" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_2"></h3>\
+                        <p id="story_date_2"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/subArticle-->\
+                <!--banner-->\
+                <div style="clear:both"></div>\
+                <!--div class="bannerAdd">\
+                    <a href="https://itunes.apple.com/us/app/tiny-news-nz/id605665858?ls=1&mt=8"><img class="TNE-downloadBtn" src="email/adds.jpg" width="639" height="160" alt="google adds"></a>\
+                </div--><!--/bannerAdd-->\
+                <div style="clear:both"></div><!--clearFix-->\
+            </div><!--/leftContent-->\
+            <div class="rightContent">\
+                <div class="subArticle">\
+                    <img id="story_img_3" src=""  width="247" alt="">\
+                    <h2 id="story_hl_3"></h2>\
+                    <p id="story_content_3"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_3" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_3"></h3>\
+                        <p id="story_date_3"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/subArticle-->\
+                <div class="subArticle">\
+                    <img id="story_img_4" src="" width="247" alt="">\
+                    <h2 id="story_hl_4"></h2>\
+                    <p id="story_content_4"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_4" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_4"></h3>\
+                        <p id="story_date_4"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/subArticle-->\
+                <div class="subArticle last">\
+                    <img id="story_img_5" src="" width="247" alt="">\
+                    <h2 id="story_hl_5"></h2>\
+                    <p id="story_content_5"></p>\
+                    <div class="articleUser block">\
+                        <div style="width:49px; height:48px; overflow:hidden"><img id="email_user-image_5" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                        <h3 id="story_author_5"></h3>\
+                        <p id="story_date_5"></p>\
+                    </div><!--/articleUser-->\
+                </div><!--/subArticle-->\
+            </div><!--/rightContent-->\
+            </div><!--/TNE-story-->\
+        </div><!--/TNE-mainConten-->';
+
+    var leftSubArticleCopy = '<div class="subArticle">\
+            <img class="story_img" src="" width="319" alt="">\
+            <h2 class="story_hl"></h2>\
+            <p class="story_content"></p>\
+            <div class="articleUser block">\
+                <div style="width:49px; height:48px; overflow:hidden"><img class="email_user-image" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                <h3 class="story_author"></h3>\
+                <p class="story_date"></p>\
+            </div><!--/articleUser-->\
+        </div><!--/subArticle-->';
+
+    var centralSubArticleCopy = '<div class="subArticle last">\
+            <img class="story_img" src="" width="319" alt="">\
+            <h2 class="story_hl"></h2>\
+            <p class="story_content"></p>\
+            <div class="articleUser block">\
+                <div style="width:49px; height:48px; overflow:hidden"><img class="email_user-image" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                <h3 class="story_author"></h3>\
+                <p class="story_date"></p>\
+            </div><!--/articleUser-->\
+        </div><!--/subArticle-->';
+
+    var rightSubArticleCopy = '<div class="subArticle last">\
+            <img class="story_img" src="" width="247" alt="">\
+            <h2 class="story_hl"></h2>\
+            <p class="story_content"></p>\
+            <div class="articleUser block">\
+                <div style="width:49px; height:48px; overflow:hidden"><img class="email_user-image" src="" onload="TN.utils.normalizeImage(this, 49, 48)" alt=""></div>\
+                <h3 class="story_author"></h3>\
+                <p class="story_date"></p>\
+            </div><!--/articleUser-->\
+        </div><!--/subArticle-->';
+
+    jQView1MainContent = $(view1MainContent);
+    jQView2MainContent = $(view2MainContent);
+    jQFooterContent = $(footerContent);
+
+    TN.services.getNewspaper(viewId).done(function(json){
+        
+        if( !!json && !!json[0] ){
+
+            var newspaperJson = json[0];
+            var storiesArray = newspaperJson.stories;
+            var numStoriesSmall = (storiesArray.length > 5) ? 5 : storiesArray.length;
+            //var numStoriesBig = (storiesArray.length > 6) ? 6 : storiesArray.length;
+            var numStoriesBig = storiesArray.length;
+            var coordinatesFound = false;
+            var mapCanvas = $('#miniStoryMap');
+            var storyWhereArr = [];
+            var latLng = null;
+            var canvasOptions = null;
+            var currentSubTemplate = 1;
+            var currStoryContent = '';
+
+            $('#userImage').attr('src', (!!newspaperJson.authorImageUrl ? newspaperJson.authorImageUrl : '../images/LoginAndRegister/uploadPhoto-img.jpg'));
+            $('#userFullName').text((!!newspaperJson.custName ? newspaperJson.custName : ''));
+            $('#authorsNumStories').text( !!newspaperJson.authorStories ? (newspaperJson.authorStories > 1 ? newspaperJson.authorStories + ' stories |' : newspaperJson.authorStories + ' story |') : '' );
+            $('#authorsNumFollowers').text( !!newspaperJson.authorFollowers ? (newspaperJson.authorFollowers > 1 ? newspaperJson.authorFollowers + ' followers |' : newspaperJson.authorFollowers + ' follower |') : '' );
+            $('#authorsNumFriends').text( !!newspaperJson.authorFriends ? (newspaperJson.authorFriends > 1 ? newspaperJson.authorFriends + ' friends' : newspaperJson.authorFriends + ' friend') : '' );
+            
+            // Fill template 1:
+            jQView1MainContent.find('#npHeadline').text((!!newspaperJson.headline ? newspaperJson.headline : ''));
+            for( var i = 0; i < numStoriesSmall; i++ ){
+                var currStory = storiesArray[i];
+                if (i == 0) jQView1MainContent.find('#email_main').attr('src', currStory.buzzImageURL);
+                else jQView1MainContent.find('#email_img_'+i).attr('src', currStory.buzzImageURL);
+                storyWhereArr.push(currStory.where);
+            }
+
+            // Fill template 2:
+            jQView2MainContent.find('#npHeadline').text((!!newspaperJson.headline ? newspaperJson.headline : ''));
+            jQView2MainContent.find('#npEdition').text((!!newspaperJson.headline ? newspaperJson.edition : ''));
+            jQView2MainContent.find('#npLocation').text((!!newspaperJson.headline ? newspaperJson.location : ''));
+            for( var i = 0; i < numStoriesBig; i++ ){
+                var currStory = storiesArray[i];
+
+                // First 6 stories added "manually" into HTML...
+                if (i < 6) {
+                    jQView2MainContent.find('#story_img_'+i).attr('src', currStory.buzzImageURL);
+                    jQView2MainContent.find('#email_user-image_'+i).attr('src', currStory.authorImageUrl);
+                    jQView2MainContent.find('#story_hl_'+i).text(currStory.headline);
+                    jQView2MainContent.find('#story_author_'+i).text(currStory.authorName);
+                    jQView2MainContent.find('#story_date_'+i).text(currStory.date);
+                    currStoryContent = '';
+                    (!!currStory.what) ? currStoryContent += 'Who: ' + currStory.what + '<br>' : '';
+                    (!!currStory.when) ? currStoryContent += 'When: ' + currStory.when + '<br>' : '';
+                    (!!currStory.where) ? currStoryContent += 'Where: ' + currStory.where + '<br>' : '';
+                    (!!currStory.who) ? currStoryContent += 'Who: ' + currStory.who + '<br>' : '';
+                    (!!currStory.why) ? currStoryContent += 'Why: ' + currStory.why + '<br>' : '';
+                    (!!currStory.how) ? currStoryContent += 'How: ' + currStory.how + '<br>' : '';
+                    (!!currStory.oped) ? currStoryContent += '<br>' + currStory.oped : '';
+                    jQView2MainContent.find('#story_content_'+i).html(currStoryContent);
+                }
+                // ..additional ones added by using subArticle "copy-templates":
+                else {
+
+                    if (currentSubTemplate == 1) {
+                        var jQLSAC = $(leftSubArticleCopy);
+
+                        jQLSAC.find('.story_img').attr('src', currStory.buzzImageURL);
+                        jQLSAC.find('.email_user-image').attr('src', currStory.authorImageUrl);
+                        jQLSAC.find('.story_hl').text(currStory.headline);
+                        jQLSAC.find('.story_author').text(currStory.authorName);
+                        jQLSAC.find('.story_date').text(currStory.date);
+                        currStoryContent = '';
+                        (!!currStory.what) ? currStoryContent += 'Who: ' + currStory.what + '<br>' : '';
+                        (!!currStory.when) ? currStoryContent += 'When: ' + currStory.when + '<br>' : '';
+                        (!!currStory.where) ? currStoryContent += 'Where: ' + currStory.where + '<br>' : '';
+                        (!!currStory.who) ? currStoryContent += 'Who: ' + currStory.who + '<br>' : '';
+                        (!!currStory.why) ? currStoryContent += 'Why: ' + currStory.why + '<br>' : '';
+                        (!!currStory.how) ? currStoryContent += 'How: ' + currStory.how + '<br>' : '';
+                        (!!currStory.oped) ? currStoryContent += '<br>' + currStory.oped : '';
+                        jQLSAC.find('.story_content').html(currStoryContent);
+                        jQView2MainContent.find('.leftContent').append(jQLSAC);
+                        currentSubTemplate++;
+                    }
+                    else if (currentSubTemplate == 2) {
+                        var jQCSAC = $(centralSubArticleCopy);
+
+                        jQCSAC.find('.story_img').attr('src', currStory.buzzImageURL);
+                        jQCSAC.find('.email_user-image').attr('src', currStory.authorImageUrl);
+                        jQCSAC.find('.story_hl').text(currStory.headline);
+                        jQCSAC.find('.story_author').text(currStory.authorName);
+                        jQCSAC.find('.story_date').text(currStory.date);
+                        currStoryContent = '';
+                        (!!currStory.what) ? currStoryContent += 'Who: ' + currStory.what + '<br>' : '';
+                        (!!currStory.when) ? currStoryContent += 'When: ' + currStory.when + '<br>' : '';
+                        (!!currStory.where) ? currStoryContent += 'Where: ' + currStory.where + '<br>' : '';
+                        (!!currStory.who) ? currStoryContent += 'Who: ' + currStory.who + '<br>' : '';
+                        (!!currStory.why) ? currStoryContent += 'Why: ' + currStory.why + '<br>' : '';
+                        (!!currStory.how) ? currStoryContent += 'How: ' + currStory.how + '<br>' : '';
+                        (!!currStory.oped) ? currStoryContent += '<br>' + currStory.oped : '';
+                        jQCSAC.find('.story_content').html(currStoryContent);
+                        jQView2MainContent.find('.leftContent').append(jQCSAC);
+                        currentSubTemplate++;
+                    }
+                    else if (currentSubTemplate == 3) {
+                        var jQRSAC = $(rightSubArticleCopy);
+
+                        jQRSAC.find('.story_img').attr('src', currStory.buzzImageURL);
+                        jQRSAC.find('.email_user-image').attr('src', currStory.authorImageUrl);
+                        jQRSAC.find('.story_hl').text(currStory.headline);
+                        jQRSAC.find('.story_author').text(currStory.authorName);
+                        jQRSAC.find('.story_date').text(currStory.date);
+                        currStoryContent = '';
+                        (!!currStory.what) ? currStoryContent += 'Who: ' + currStory.what + '<br>' : '';
+                        (!!currStory.when) ? currStoryContent += 'When: ' + currStory.when + '<br>' : '';
+                        (!!currStory.where) ? currStoryContent += 'Where: ' + currStory.where + '<br>' : '';
+                        (!!currStory.who) ? currStoryContent += 'Who: ' + currStory.who + '<br>' : '';
+                        (!!currStory.why) ? currStoryContent += 'Why: ' + currStory.why + '<br>' : '';
+                        (!!currStory.how) ? currStoryContent += 'How: ' + currStory.how + '<br>' : '';
+                        (!!currStory.oped) ? currStoryContent += '<br>' + currStory.oped : '';
+                        jQRSAC.find('.story_content').html(currStoryContent);
+                        jQView2MainContent.find('.rightContent').append(jQRSAC);
+                        currentSubTemplate = 1;
+                    }
+                }
+
+                if ( (i+1) == numStoriesBig ) jQView2MainContent.find('.leftContent').append('<div class="bannerAdd">\
+                    <a href="https://itunes.apple.com/us/app/tiny-news-nz/id605665858?ls=1&mt=8"><img class="TNE-downloadBtn" src="email/adds.jpg" width="639" height="160" alt="google adds"></a>\
+                </div><!--/bannerAdd-->');
+
+            }
+
+            $('.TNE-innerWrapper1').hide();
+            $('.TNE-innerWrapper1').append(jQView1MainContent);
+            $('.TNE-innerWrapper1').append(jQFooterContent);
+            $('.TNE-innerWrapper1').show();
+            //console.log(storyWhereArr);
+            // We don't currently have coordinates available for stories or newspaper readily available so we do a hack..
+            /*jQuery.each(storyWhereArr, function(index, val){
+                TN.services.getLatLong(val).done(function(json){
+                    if (!!json && !!json[0]) {
+
+                        if (!coordinatesFound) {
+                            coordinatesFound = true;
+
+                            latLng = new google.maps.LatLng(parseFloat(json[0]), parseFloat(json[1]));
+
+                            canvasOptions = {    
+                                zoom: 10,
+                                center: latLng,
+                                disableDefaultUI: true,
+                                mapTypeId: google.maps.MapTypeId.HYBRID,
+                                enableEventPropagation:false
+                            };
+                            mapCanvas.empty();
+                            mapCanvasObject = new google.maps.Map(document.getElementById("miniStoryMap"), canvasOptions);
+
+                            var marker = new google.maps.Marker({
+                              position:latLng,
+                              icon:'email/googlemapicon.png'
+                              });
+
+                            marker.setMap(mapCanvasObject);
+
+                            $('#miniStoryMap').click(function(event){
+                                event.stopPropagation();
+                            });
+
+                        }
+                    }
+
+                    if ( (index == 4) && (!coordinatesFound) ) {
+                        $('.TNE-map').empty();
+                        $('.TNE-map').append('<img src="email/googlemap.png" alt="news map">');
+                    }
+
+                });
+
+            });*/
+            $('.TNE-map').empty();
+            $('.TNE-map').append('<img src="email/googlemap.png" alt="news map">');
+        }
+
+    });
+    
+    function switchView(){
+        if (!expandedView) {
+            $('.TNE-innerWrapper1').unbind();
+            $('.TNE-innerWrapper1, .TNE-innerWrapper2').hide();
+            changeStyle('view2');
+            jQFooterContent.addClass('block');
+            $('.TNE-innerWrapper1').html(jQFooterContent);
+            $('.TNE-innerWrapper2').html(jQView2MainContent);
+            $('.TNE-innerWrapper2').click(function(event){
+                //console.log(event);
+                if (event.target.className != "TNE-downloadBtn") switchView();
+            });
+            $('.TNE-innerWrapper1, .TNE-innerWrapper2').fadeIn('slow');
+            expandedView = true;
+        }
+        else {
+            $('.TNE-innerWrapper2').unbind();
+            $('.TNE-innerWrapper1, .TNE-innerWrapper2').hide();
+            changeStyle('view1');
+            $('.TNE-innerWrapper1').html(jQView1MainContent);
+            jQFooterContent.removeClass('block');
+            $('.TNE-innerWrapper2').html(jQFooterContent);
+            $('.TNE-innerWrapper1').click(function(event){
+                //console.log(event);
+                if (event.target.className != "TNE-downloadBtn") switchView();
+            });
+            $('.TNE-innerWrapper1, .TNE-innerWrapper2').fadeIn('slow');
+            expandedView = false;   
+        }
+    }
+
+    $('.TNE-innerWrapper1').click(function(event){
+        if (event.target.className != "TNE-downloadBtn") switchView();
+    });
+
+});
+</script>
+</head>
+
+<body style="font-family: 'News Cycle', Helvetica Light, sans-serif">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="TNE-wrapper">
+<!--header-->
+<div class="TNE-header">
+	<div class="TNE-userStory" style="float:left">
+    	<div class="TNE-userStory_image">
+        	<div style="width:64px; height:64px; overflow:hidden"><img id="userImage" src="" onload="TN.utils.normalizeImage(this, 64, 64)" alt=""></div>
+        </div><!--/TNE-userStory_image-->
+        <h1 style="text-transform:capitalize" id="userFullName"></h1>
+        <ul class="userInfo" style="list-style-type:none">
+        	<li id="authorsNumStories"></li>
+            <li id="authorsNumFollowers"></li>
+            <li id="authorsNumFriends"><li>
+        </ul>
+    </div><!--/TNE-userStory-->
+    <div class="TNE-AppStore" style="float:right">
+    	<a href="https://itunes.apple.com/us/app/tiny-news-nz/id605665858?ls=1&amp;mt=8"><img src="email/appleStore.png" width="197" height="64" alt="Tiny News Apple Application"></a>
+    </div><!--/TNE-AppStore-->
+    <div style="clear:both"></div><!--clearFix-->
+</div><!--/TNE-header-->
+<!--content-->
+<div class="TNE-innerWrapper1">
+</div>
+<div class="TNE-innerWrapper2">
+</div>
+
+</div><!--/TNE-wrapper-->
+</body>
+</html>

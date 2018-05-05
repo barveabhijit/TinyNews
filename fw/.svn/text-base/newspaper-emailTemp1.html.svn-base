@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiny News - Email Template 1</title>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href='newspaper-emailTemp1.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body style="font-family: 'News Cycle', Helvetica Light, sans-serif">
+<div class="TNE-wrapper">
+<!--header-->
+<div class="TNE-header">
+	<div class="TNE-userStory" style="float:left">
+    	<div class="TNE-userStory_image">
+        	<img src="email/user-image.jpg" width="64" height="64" alt="user image">
+        </div><!--/TNE-userStory_image-->
+        <h1 style="text-transform:capitalize">Candy Stryper</h1>
+        <ul class="userInfo" style="list-style-type:none">
+        	<li>15 stories |</li>
+            <li>94 followers |</li>
+            <li>153 friend</li>
+        </ul>
+    </div><!--/TNE-userStory-->
+    <div class="TNE-AppStore" style="float:right">
+    	<a href="#"><img src="email/appleStore.png" width="197" height="64" alt="Tiny News Apple Application"></a>
+    </div><!--/TNE-AppStore-->
+    <div style="clear:both"></div><!--clearFix-->
+</div><!--/TNE-header-->
+<!--content-->
+<div class="TNE-mainContent">
+	<!-- Story-->
+	<div class="TNE-story">
+    	<div class="TNE-storyInfo">
+        	<div class="TNE-storyInfoImage">
+                <img src="email/main.png" width="399" height="278" alt="user image">
+                 <a class="newHot"></a>
+            </div><!--/TNE-storyInfoImage-->    
+        </div><!--/TNE-storyInfo-->
+        <!--TinyNewsMap-->
+        <div class="TNE-mapConatiner">
+            <div class="TNE-map">
+                <!--img src="email/googlemap.png" alt="news map"-->
+                <iframe width="228" height="279" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=0,0&amp;aq=&amp;sll=37.09024,-95.712891&amp;sspn=51.708931,114.169922&amp;ie=UTF8&amp;t=m&amp;ll=0.76902,0&amp;spn=6.126882,5.031738&amp;z=6&amp;output=embed"></iframe>
+            </div><!--/TNE-map-->
+        </div><!--/TNE-mapConatiner-->
+        <div style="clear:both"></div>
+        <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+        <ul class="TNE-newslist">
+        	<li><a href="#"><img src="email/img1.jpg" width="151" height="151" alt="image"></a></li>
+            <li><a href="#"><img src="email/img2.jpg" width="151" height="151" alt="image"></a></li>
+            <li><a href="#"><img src="email/img3.jpg" width="151" height="151" alt="image"></a></li>
+            <li class="last"><a href="#"><img src="email/img4.jpg" width="151" height="151" alt="image"></a></li>
+        </ul>
+    </div><!--/TNE-story-->
+    
+    <!--About-->
+    <div class="TNE-about">
+        <img src="email/TN-img.png" width="89" height="83" alt="tiny news" style="float:right">
+         <h2>About Tiny News</h2>
+        <p>Have an update about the Lower East Side - use Tiny News.</p>
+        <p>Heard something unbelievable, use Tiny News.</p>
+        <p>Capture a moment in time and share it with Tiny News.</p>
+        <p>Tiny News wants to change the definition of news, today. We help you create, view, curate and interact with today’s ever changing news landscape.  Make your news as personal and unique as you are.</p>
+        <div class="TNE-download">
+        <a class="TNE-downloadBtn" href="#">Download App Now</a>
+        <p style="text-align:center;font-size:24px;color:#f04927;text-transform:uppercase;font-weight:bold;margin:10px 0 0">IT’S FREE!</p>
+        </div><!--/TNE-download-->
+    </div><!--/TNE-about-->
+    <div style="clear:both"></div><!--clearFix-->
+</div><!--/TNE-mainConten-->
+<!--footer-->
+<div class="TNE-footer">
+	<ul class="TNE-footerList">
+    	<li style="margin-right:30px"><a href="http://nz.tinynews.me" style="font-size:14px;color:#006aa8;font-weight:bold">Go to Website</a></li>
+            <li>
+                <a href="https://twitter.com/share?text=Checking%20newspapers..&amp;via=TinyNewser" data-count="none">
+                <img src="email/tweet.png" width="24" height="17" alt="tweet">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </li>
+            <!--li><a href="#" style="margin-top:-5px"><img src="email/like.png" width="17" height="21" alt="like">Like</a></li-->
+            <li>
+                <div id="fb-like-button" class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+            </li>
+    </ul>
+</div><!--/TNE-footer-->
+</div><!--/TNE-wrapper-->
+</body>
+</html>

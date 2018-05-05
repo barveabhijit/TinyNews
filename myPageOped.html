@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>T I N Y NEWS: My Page Stories</title>
+<meta content="T I N Y NEWS: Tell Your Story" name="description">
+<link media="screen" type="text/css" href="stylesheets/reset2.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/screen.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/fonts.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/lightbox2.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/createStory.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/global.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/storyStyle.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/main.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/header-new.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/clip.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/homePopups.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/stylesheet.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/buttons.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/lightbox-popup.css" rel="stylesheet">
+<link href="stylesheets/addFriends.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/libs/html5shiv.js"></script>
+</head>
+<body>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-top.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-mid.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-bot.png')"></div>
+
+<!-- Header -->
+<header>
+  <div class="top-bar contain-to-grid">
+    <div class="row">
+      <div class="twelve">
+        <ul class="left">
+          <li class="name"><a href="fw/index.html" class="logo"></a></li>
+        </ul>
+        <section>
+          <ul class="right">
+            <li><a href="index.html">See What's Happening</a></li>
+            <li><a id="addstory" href="#">Post a Story</a></li>
+            <li><a href="newspaper.html">Make a Newspaper</a></li>
+            <li><a href="stories.html">Check Out Stories</a></li>
+
+		    <li class="has-dropdown">
+            	<a class="active" href="myPage.html">MyPage</a>
+                <ul class="dropdown">
+                  <li id="myNamePage"><a href="myPage.html"></a></li>
+                  <li><a id="addClipThis" href="#">Add Post It Button</a></li>
+                  <li><a href="settings.html">Settings</a></li>
+                  <li><a href="#" id="signOut">Sign out</a></li>
+                  <li class="has-dropdown">
+                    <a href="#">Notifications</a>
+                    <ul class="dropdown" id="notificationsList">
+                      <li id="noNotifications" style="display: none"><a href="#" class="notifications full-width"><span class="text-center">You have currently no notifications.</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+             </li>
+          </ul>
+        </section>
+      </div>
+      <!--/twelve--> 
+    </div>
+    <!--/row--> 
+  </div>
+  <!--/container--> 
+</header>
+
+<!-- Main Content -->
+<div class="myPage">
+  <div class="block">
+    <div class="wrapper"> 
+      <!-- User Profile -->
+      <div class="userProfile col">
+        <div class="block">
+          <div class="userInfo">
+            <div class="block">
+              <h1 class="colRight" id="userFullName"></h1>
+                <div style="width: 150px; height: 150px; overflow: hidden">
+                    <img style="display:none" src="" alt="user picture" title="Profile Picture" class="col" id="userImage" onload="TN.utils.normalizeImage(this, 150, 150)">
+                </div> <!--a href="#" class="user_editPhoto">edit photo</a--> </div>
+            <!--/block-->
+            <div class="block" id="follow_add_block" style="display:none"> <a href="#" class="btn_addFriend col">add friend</a> <a href="#" class="btn_follow col">follow</a> </div>
+            <!--/block--> 
+            
+          </div>
+          <!--/userInfo-->
+          <div class="contactUser">
+            <div class="block">
+              <form method="post" action="#">
+                <textarea id="messageTextarea"></textarea>
+                <label>Leave A Message</label>
+                <input type="submit" class="btn_sendText colRight" value="Send" id="sendMessageButton">
+              </form>
+            </div>
+            <!--/block--> 
+          </div>
+          <!--/contactUser-->
+          <div class="userMsg">
+              <h2 id="firstNameMsgs"></h2>
+            <div class="block" id="messageBlock">
+            </div>
+            <!--/block--> 
+            <br><a href="#" id="showAllMessages">Show All</a>
+          </div>
+          <!--/userMsg--> 
+        </div>
+        <!--/block--> 
+      </div>
+      <!--/userProfile--> 
+      
+      <!-- User Profile -->
+      <div class="userProfileOped col">
+        <!--div class="userProfileTrending block">
+          <h1>trending now</h1>
+          <ul class="userProfileTrendingList">
+            <li><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img1.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+            <li><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img2.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+            <li><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img3.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+            <li><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img4.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+            <li><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img1.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+            <li class="last"><a href="#"> <img src="images/myPage/myPageStories/TrendingList-img2.png" width="136" height="116" alt="trend story" title="trend story">
+              <p>Fight The Five Signs of Aging</p>
+              </a> </li>
+          </ul>
+        </div-->
+        <!--/userProfileTrending-->
+        <div class="userProfileTrendingCat">
+          <h2 id="main_title"></h2>
+          <!--form action="#" method="get">
+            <label title="name">Story Filter Options: <span>Category</span></label-->
+            <select class="CatDropDown" id="catSelector" style="display:none">
+              <option selected="selected">- Select -</option>
+            </select>
+          <!--/form-->
+        </div>
+        <!--/userProfileTrendingCat-->
+
+
+          <div id="container" class="block" style="width:770px; margin-left: auto; margin-right: auto">
+              <!-- Row 1-->
+              <!-- article-->
+              <div id='imageContainer'></div>
+          </div>
+
+        <!--/container--> 
+      </div>
+      <!--/userProfileOped--> 
+      
+    </div>
+    <!--/wrapper--> 
+  </div>
+  <!--/block--> 
+</div>
+<!--/myPage-->
+
+<!--Footer-->
+        
+    <footer class="block">
+    <div class="wrapper">
+        <p>Copyright 2013 Tiny News. All rights reserved.</p>
+        <nav>
+          <ul class="socialMedia">
+            <li><a href="mailto:happydays@tinynews.me"><img src="images/general/email.png" width="34" height="34" alt="mail" title="Mail"></a></li>
+            <li><a href="http://www.facebook.com/pages/Tiny-News/326376470776048"><img src="images/general/facebook.png" width="34" height="34" alt="facebook" title="Facebook"></a></li>
+            <li><a href="javascript:alert('We are getting there!');"><img src="images/general/google.png" width="34" height="34" alt="gmail" title="Gmail"></a></li>
+            <!--li><a href="#"><img src="images/general/linkedin.png" width="34" height="34" alt="linkedin" title="LinkedIn"></a></li-->
+            <li class="last"><a href="https://twitter.com/TinyNewser"><img src="images/general/twitter.png" width="34" height="34" alt="twitter" title="Twitter"></a></li>
+          </ul>
+        </nav>
+        <!--/socialMedia-->  
+        </div><!--/wrapper-->
+    </footer>
+    
+<script type="text/javascript" src="js/libs/json2.js"></script>    
+<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+<script type="text/javascript" src="js/libs/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/libs/html5placeholder.jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/libs/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.livequery.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.tinyscrollbar.min.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="js/libs/jquery.form.js"></script>
+<script type="text/javascript" src="js/libs/jquery.autosize-min.js"></script>
+<script type="text/javascript" src="js/libs/mustache.js"></script>
+
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/commentHandler.js"></script>
+<script type="text/javascript" src="js/likeHandler.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/browserDetect.js"></script>
+<script type="text/javascript" src="js/createStory.js"></script>
+<script type="text/javascript" src="js/baseHeader.js"></script>
+<script type="text/javascript" src="js/viewmy.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script src="js/masonry.js" type="text/javascript"></script>
+
+<script id="messageBubbleRight" type="text/html">
+    <div class="userMsg-block" style="display:{{ display_state }}">
+        <div class="bubbleRight"> <span class="bubble_top"></span>
+          <p><span class="bubble_mid">{{ message_text }}</span></p>
+          <span class="bubble_bot"></span> 
+        </div>
+        <div class="userMsg-Name colRight">
+          <h3>{{ author }}, <span>{{ elapsed_time }}</span></h3>
+        </div>
+    </div>
+</script>
+<script id="messageBubbleLeft" type="text/html">
+    <div class="userMsg-block" style="display:{{ display_state }}">
+        <div class="bubbleLeft"> <span class="bubble_top"></span>
+          <p><span class="bubble_mid">{{ message_text }}</span></p>
+          <span class="bubble_bot_left"></span> 
+        </div>
+        <div class="userMsg-Name col">
+          <h3>{{ author }}, <span>{{ elapsed_time }}</span></h3>
+        </div>
+    </div>
+</script>
+        
+<script type="text/javascript">
+var isFriend = false;
+var isFollowed = false;
+var pendingFriendship = false;
+var offeringFriendship = false;
+
+previouslyPlacedMessagesCount = 0;
+var placeMessages = function(d, listId) {
+    var placedMessagesCount = 0;
+    var delta = 0;
+    $.each(d, function(i,listItem) {
+        if (listItem.responseMessageBody == "") return;        
+        placedMessagesCount++;
+        if (placedMessagesCount > previouslyPlacedMessagesCount) {
+            var templateR = $('#messageBubbleRight').html();
+            var templateL = $('#messageBubbleLeft').html();
+            var viewParams = {
+                'message_text' : listItem.responseMessageBody,
+                'author' : listItem.responseCustomerName,
+                'elapsed_time' : listItem.elapsedTime,
+                'display_state' : ((placedMessagesCount < (numberOfComments-5)) ? "none" : "")
+            };
+            $(listId).prepend(Mustache.to_html(
+                ( (placedMessagesCount % 2) ? templateL : templateR ),
+                viewParams
+            ));
+            delta++;
+        }
+    });
+    previouslyPlacedMessagesCount += delta;
+    $('.userMsg').show();
+    if ($('.userMsg-block').filter(":hidden").size() > 0) $('#showAllMessages').show();
+    else $('#showAllMessages').hide();
+};
+
+var placeBubbles = function(jqXHR, s ) {
+    qTypeMessageId = jqXHR[0]['fittingRoomSummaryList'][0].messageId;
+    numberOfComments = jqXHR[0]['fittingRoomSummaryList'][0].comments;
+    //userId = jqXHR[0]['fittingRoomSummaryList'][0].wsBuzz.custid;
+    if (numberOfComments == 0) {
+        $('.userMsg').hide();
+        return;
+    }
+    else return placeMessages(jqXHR[0]['fittingRoomSummaryList'][0]['messageResponseList'], "#messageBlock");
+};
+
+var refreshBubbles = function () {
+    TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles);
+    $('#messageTextarea').val("");
+    $('#userMsg').show();
+};
+
+function addComment(custId, msgId, commentText, successCallback){
+    $.ajax({
+        type:'POST',
+        cache:false,
+        data: {
+            action : "addFittingRoomResponse",
+            custid : custId,
+            msgresponse : JSON.stringify({
+                "type" : "Q", 
+                responseWords : commentText,
+                "messageId" : msgId,
+                isFavour : ""
+            })
+        },
+        url:'/salebynow/json.htm',
+        success:refreshBubbles,
+        error : function( jqXhr, textStatus, errorThrown ){
+            alert(errorThrown);
+        }
+    });
+};
+
+$(function(){
+    TN.viewMy.initialize();
+    
+    jQuery.ajax({
+        url: "https://tinynews1.atlassian.net/s/en_USqwqzqv-418945332/812/101/1.2.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=bc77cb6b",
+        type: "get",
+        cache: true,
+        dataType: "script"
+    });
+    
+    TN.services.loadUserInfo(viewId, custId).done(function(msg){
+        $("#userFullName").text(msg[0].firstName + ( ( msg[0].lastName == "Lastname" ) ? "" : " " + msg[0].lastName ) );
+        $("#userImage").attr("src", msg[0].profileThumbPicUrl);
+        $("#firstNameMsgs").text(msg[0].firstName+"’s messages");
+        $("#main_title").text(msg[0].firstName+"’S STORIES AND FAVORITES");
+        // If loading others' my page oped:
+        if (viewId != custId) {
+            if (msg[0].isFollowing == "Y") isFollowed = true;
+            if (msg[0].isFriend == "Y") isFriend = true;
+            if (msg[0].friendRequestType == "pending") pendingFriendship = true;
+            if (msg[0].friendRequestType == "acceptOReject") offeringFriendship = true;
+        }
+        // Initialize message board:
+        TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles).fail(function() {
+            // Try to create message board:
+            $.when(servAddressFetch).then(function() {
+                var messageBoardImage = (!!msg[0].profileThumbPicUrl) ? msg[0].profileThumbPicUrl : '/images/LoginAndRegister/uploadPhoto-img.jpg';
+                TN.services.sendBuzzRequest(viewId, 'Message Board', 'Q', 'http://' + TNServerAddress + messageBoardImage)
+                    .done(function(){
+                        TN.services.getMyRequestSummaries(viewId, 1, 1, "Q").done(placeBubbles);
+                    }).fail(function(){
+                        log("Failed to create message board (Q type story)");
+                        $('.userMsg').hide();
+                    });
+            });
+        });
+    });
+
+    $('#sendMessageButton').click(function(event){
+        event.preventDefault();
+        message = $('#messageTextarea').val();
+        if (TN.utils.isBlank(message)) alert("Please enter a message");
+        else if (typeof qTypeMessageId === "undefined") alert("This is an old test account without messaging capabilities.");
+        else if ((viewId != custId) && !isFriend) alert("You can only leave message to friends.");
+        else addComment(custId, qTypeMessageId, message);
+    });
+    
+    $('#showAllMessages').click(function(event){
+        event.preventDefault();
+        $('.userMsg-block').show();
+        $('#showAllMessages').hide();
+    });
+
+});
+</script>
+
+<script type="text/javascript" src="http://s.skimresources.com/js/39639X1025068.skimlinks.js"></script>
+</body>
+</html>

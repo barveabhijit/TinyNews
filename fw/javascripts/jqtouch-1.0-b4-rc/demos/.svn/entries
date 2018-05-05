@@ -1,0 +1,64 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/demos
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+clock
+dir
+
+customanimation
+dir
+
+customanimation2
+dir
+
+ext_autotitles
+dir
+
+ext_floaty
+dir
+
+ext_location
+dir
+
+ext_offline
+dir
+
+mail
+dir
+
+main
+dir
+
+public_objects
+dir
+
+skel
+dir
+
+todo
+dir
+

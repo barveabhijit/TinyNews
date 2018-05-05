@@ -1,0 +1,124 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/compass-recipes
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+Gemfile
+file
+
+
+
+
+2013-04-05T14:14:44.000000Z
+09ef9418e045e06d556af0e444158679
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+LICENSE
+file
+
+
+
+
+2013-04-05T14:14:36.000000Z
+3a0deb1c4b362b88c3147857c3a639f0
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+README.md
+file
+
+
+
+
+2013-04-05T14:14:45.000000Z
+364c4bafa5e8f3de68a9cec960b2e8a0
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+Rakefile.rb
+file
+
+
+
+
+2013-04-05T14:14:44.000000Z
+ed3644a79a9f978ad210ca51ffc3a91d
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+VERSION
+file
+
+
+
+
+2013-04-05T14:14:44.000000Z
+44b732a6709d52e07db0367d4938965c
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+compass-recipes.gemspec
+file
+
+
+
+
+2013-04-05T14:14:36.000000Z
+a3fac432edb262481be68c8b2bbdfa2b
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+config.rb
+file
+
+
+
+
+2013-04-05T14:14:44.000000Z
+70e7a321d9585b5398343211c67a9f7c
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+fonts
+dir
+
+lib
+dir
+
+stylesheets
+dir
+
+tests
+dir
+

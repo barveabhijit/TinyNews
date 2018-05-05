@@ -1,0 +1,622 @@
+/* Global
+---------------------------------------------------------------------------------------- */
+.col{float:left}
+.colRight{float:right}
+.lastcol{float:none;display:block;display:table-cell;width:9999em;*width:auto;*zoom:1;}
+.hRulerHead{height: 12px;border: 0;box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);z-index:2;position:relative;margin:0}
+.hRulerStory{background:url(../images/story/hRuler.png) no-repeat center; height:1px;border:none}
+.wrapper{width:1280px; margin:0 auto}
+.block:before,.block:after{content:"";display:table;}
+.block:after{clear:both;}
+
+/* Popups Overlay
+---------------------------------------------------------------------------------------- */
+.black_overlay {display: none;position: absolute;top: 0%;left: 0%;width: 100%;height: 207%;background-color:white;z-index:1001;-moz-opacity: 0.75;opacity:.75;filter: alpha(opacity=75);overflow:hidden}
+.white_content {display: none;height: auto;left: 35%;margin-left: -220px;overflow: auto;position: absolute;top: 15%;z-index: 1002;}
+
+/* Header
+--------------------------------------------------------------------------------------- */
+/*header{height: 18px; position:relative}
+header h1{float:left;margin-left:280px;text-transform:capitalize}
+header .logo{float:left;width:15%;height:48px}
+header nav{ float:right;width:30%}
+header nav ul{float:right;width:320px}
+header nav ul li{float:left;margin-right:15px}
+header nav ul li.add{}
+header nav ul li.notifications{margin-right:0}
+header nav ul li.add a img{margin-top:0}
+header nav ul li.user{}
+header nav ul li a{margin-right:7px}
+header nav ul li a img{float:left; margin-top:-5px;margin-right:10px}
+
+
+
+
+.header_shadow {
+	background: url(../images/myPage/backgrounds/header-shadow-ng.png) repeat-x;
+	height: 34px;
+	position:absolute;
+	z-index:1;
+	width: 100%
+}*/
+
+
+/* Edit Content
+---------------------------------------------------------------------- */
+
+.content {
+	background: #73c2e7 url(../images/general/bgrd.jpg) repeat;
+	padding: 15px 0 50px;
+}
+.edit {
+	width: 716px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 0 50px
+}
+.edit h1 {
+	text-transform: uppercase;
+	color: #06315d;
+	font-family: 'OpenSansExtrabold';
+}
+.hRuler {
+	background: url(../images/general/hRuler-ng.png) -70px 0px no-repeat;
+	width: 853px;
+	height: 1px;
+	display: block;   
+}
+label {
+	font-size: 18px;
+	color: #333
+}
+label.secrecy {
+	font-size: 14px
+}
+input[type="text"], input[type="email"] {
+	width: 192px;
+	height: 25px;
+	line-height: 1.6em;
+-webkit-border-radius: 5px-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	/*margin: 0 5px 0 50px*/
+    margin: 0 5px 0 0px
+}
+.formBlock {
+	width: 610px;
+	margin: 15px auto;
+	font-family: 'OpenSansCondensedLight';
+	position: relative
+}
+.formName {
+	width: 80px;
+	text-align: right;
+	float: left;
+}
+.form_btn {
+	background: url(../images/general/btnChangePassword-bg.png) repeat-x;
+	height: 33px;
+	text-align: center;
+	border: 1px solid #2484be;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 50px;
+	font-weight: bold
+}
+.profileImage {
+	float: left;
+	margin-bottom: 15px;
+	cursor: pointer;
+	margin-left: 50px
+}
+.btnOn {
+	float: left;
+	display: block;
+	margin-left: 50px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.btnOff {
+	float: left;
+	display: block;
+	margin-left: 130px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.btnLearnmore {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	color: #06315d;
+	font-size: 14px;
+	font-weight: bold
+}
+.form_btn_save {
+	background: url(../images/general/btnSave-bg.png) repeat-x;
+	height: 49px;
+	border: 1px solid #ccc;
+	text-align: center;
+	color: #ccc;
+	font-size: 24px;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 130px;
+	margin-bottom: 30px;
+	padding: 0 20px
+}
+
+/* myPage "Inner Page"
+---------------------------------------------------------------------- */
+.myPage{margin-top:-10px;z-index:0;position:relative}
+.myPageHor_ruler{background:url(../images/myPage/backgrounds/myPageHor_ruler-bg.png) ; width:685px;height:22px;border:none;}
+
+/* User Profile Section
+-----------------------*/
+.userProfile{width:245px;padding:44px 25px 0 20px; background:#f7f7f7; font-family: 'OpenSansCondensedBold';min-height:1132px}
+.userInfo{position:relative; margin-bottom:10px}
+.userInfo img{margin:0 15px 10px 0}
+.userInfo h1{margin:20px 0 40px 0; font-size:24px; color:#333;width:75px;font-family: 'OpenSansCondensedBold';}
+.userInfo a.user_editPhoto{position:absolute; top:125px; left:90px; display:block; background-color:#0b68a8; width:60px; color:#fff; text-align:center;font-size:10px;padding:6px 0;font-family: 'OpenSansRegular';}
+
+.userInfo a.btn_addFriend{display:block; background:url(../images/myPage/backgrounds/btn_bg.jpg) repeat-x; width:123px;height:11px ;text-align:center;text-transform:capitalize;font-size:16px;color:#13345c; border:1px solid #ccc; padding:10px 0;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-right:5px}
+.userInfo a.btn_addFriend:hover{background:url(../images/myPage/backgrounds/btn_bg_hover.jpg) repeat-x;color:#fff;border:1px solid #2484be}
+.userInfo a.btn_follow{display:block; background:url(../images/myPage/backgrounds/btn_bg.jpg) repeat-x; width:108px;height:11px ;text-align:center;text-transform:capitalize;font-size:16px;color:#13345c; border:1px solid #ccc; padding:10px 0;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.userInfo a.btn_follow:hover{background:url(../images/myPage/backgrounds/btn_bg_hover.jpg) repeat-x;color:#fff;border:1px solid #2484be}
+
+.contactUser{margin-bottom:10px}
+.contactUser form{width:245px;}
+.contactUser label{font-size:18px; color:#333;}
+.contactUser textarea{margin:15px 0; width:243px; height:55px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border:1px solid #979797; }
+.contactUser input[type="submit"].btn_sendText{display:block; background:url(../images/myPage/backgrounds/btn_bg.jpg) repeat-x; width:74px; height:31px;font-family: 'OpenSansCondensedBold'; font-size:16px;  text-align:center; text-transform:capitalize; color:#13345c; border:1px solid #ccc;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; cursor:pointer}
+.contactUser input[type="submit"].btn_sendText:hover{background:url(../images/myPage/backgrounds/btn_bg_hover.jpg) repeat-x;color:#fff;border:1px solid #2484be}
+
+.userMsg{font-family: 'OpenSansCondensedBold';}
+.userMsg h2{margin:15px 0; font-size:18px;color:#333;}
+.userMsg-block{margin:25px 0; font-family: 'OpenSansCondensedLight';}
+.userMsg-block p{font-size:16px; color:#000;}
+.userMsg-block span.bubble_top{ background:url(../images/myPage/backgrounds/message/top-message-bgrd.png) no-repeat top; display:block; padding:19px 18px 0; width:209px}
+.userMsg-block span.bubble_mid{background:url(../images/myPage/backgrounds/message/middle-message-bgrd.png) repeat bottom; display:block; padding:0 18px;width:209px;font-family: 'OpenSansCondensedLight';}
+.userMsg-block span.bubble_bot{background:url(../images/myPage/backgrounds/message/bottom-message-bgrd.png) no-repeat bottom; display:block; padding:33px 18px 0;width:209px}
+.userMsg-block span.bubble_bot_left{background:url(../images/myPage/backgrounds/message/bottom-message-bgrd-left.png) no-repeat bottom; display:block; padding:38px 18px 0;width:209px}
+.userMsg-Name{font-family: 'OpenSansCondensedBold';}
+.userMsg-Name h3{margin:0 20px; font-size:12px;font-family: 'OpenSansCondensedBold';color:#333}
+
+
+
+
+
+/* Main Content Section
+-----------------------*/
+
+.mainContent{width:698px; padding-top:50px;font-family: 'OpenSansCondensedBold'; /*border-right:1px solid #ccc; border-left:1px solid #ccc;*/ padding-bottom:8px;padding-bottom:5px\9}
+.mainContent h1{font-size:26px; color:#13345c; margin:0 15px 20px}
+.mainContent_block{padding:0 19px;}
+.mainContent_block h2{font-size:24px; color:#0b68a8; margin:20px 0;}
+.mainContent_block a.btn_more{display:block;background:url(../images/myPage/backgrounds/view-all-icon.png) no-repeat;width:44px;height:16px}
+.mainContent_block a.btn_more:hover{background:url(../images/myPage/backgrounds/view-all-iconHover.png) no-repeat;}
+.mainContent_block ul{ margin-top:10px}
+.mainContent_block ul li{margin-right:25px}
+.mainContent_block ul li.last{margin-right:0}
+.mainContent_block ul li p{font-size:12px; color:#000;margin:10px 0 20px;text-align:center;width:146px;word-wrap:break-word}
+.mainContent_block ul li h3{font-size:21px; color:#0b68a8;margin:10px 0 20px; text-align:center; text-transform:uppercase; width:140px}
+
+
+
+
+
+
+
+
+
+/* User Activities Section
+-------------------------*/
+.userActivities{width:256px;padding:48px 17px 0 16px;font-family: 'OpenSansCondensedBold';background:#f7f7f7;min-height:1128px}
+.userActivities a.btn_workSpace{display:block; cursor:pointer; background:url(../images/myPage/backgrounds/btn_workspace-bg.jpg) repeat-x; height:15px; text-align:center; color:#fff; padding:8px 0; border:1px solid #13345c;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; font-size:16px; margin-bottom:5px}
+.userActivities a.btn_workSpace:hover{background:url(../images/myPage/backgrounds/btn_workspace-bg_hover.jpg) repeat-x;border:1px solid #2484be}
+.userActivities h2{ margin:15px 0; font-size:18px; color:#333}
+
+.userActivities_block{margin-bottom:20px}
+.userActivities_block h3{font-family: 'OpenSansCondensedLight'; font-size:16px; color:#333; margin-bottom:10px; text-transform:none}
+.userActivities_block a.userActivities_relatedFriends{font-size:14px;color:#0b68a8; float:right}
+.userActivities_block ul{}
+.userActivities_block ul li{ float:left;margin:0 3px 5px 0;width:48px; height:48px}
+.userActivities_block ul li.last{margin-right:0}
+.userActivities_block ul li img{}
+.userActivities_block ul li img:hover{border:1px solid #0066cc;}
+
+.userActivities_block input[type="button"].btn_findfriends{display:block; background:url(../images/myPage/backgrounds/btn_bg.jpg) repeat-x; width:134px; height:31px;font-family: 'OpenSansCondensedBold'; font-size:16px;  text-align:center; text-transform:capitalize; color:#13345c; border:1px solid #ccc;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; cursor:pointer}
+.userActivities_block input[type="button"].btn_findfriends:hover{background:url(../images/myPage/backgrounds/btn_bg_hover.jpg) repeat-x;color:#fff;border:1px solid #2484be}
+
+/* My Page --> Oped 
+--------------------------------------------------------------------------------------- */
+.userProfileOped {
+	width: 990px;
+	/*background: url(../images/general/bgrd.jpg) repeat;*/
+	height: 1180px;
+	overflow-y: scroll
+}
+.userProfileTrending {
+	padding: 35px 20px 0
+}
+.userProfileTrending h1 {
+	font-family: 'BebasNeue';
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 15px;
+	text-shadow: 0px -1px 0px #000;
+	filter: dropshadow(color=#000, offx=0, offy=-1);
+}
+.userProfileTrendingList {
+}
+.userProfileTrendingList li {
+	width: 130px;
+	float: left;
+	margin-right: 30px
+}
+.userProfileTrendingList li.last {
+	margin: 0
+}
+.userProfileTrendingList li img {
+}
+.userProfileTrendingList li p {
+	font-family: 'OpenSansCondensedBold';
+	color: #fff;
+	font-size: 14px;
+	text-align: center
+}
+.userProfileTrendingCat {
+	width: 525px;
+	margin: 45px auto 20px;
+	text-align: center
+}
+.userProfileTrendingCat h2 {
+	font-family: "BebasNeueRegular",Arial Narrow,san-serif;
+	font-size: 36px;
+	color: #13345C;
+	margin-bottom: 15px;
+	text-shadow: 0px -1px 0px #dddddd;
+	filter: dropshadow(color=#dddddd, offx=0, offy=-1);
+}
+.userProfileTrendingCat form label {
+	font-family: 'OpenSansCondensedBold';
+	font-size: 14px;
+	color: #fff
+}
+.userProfileTrendingCat form select {
+	width: 150px
+}
+.Content {
+	background: url(../images/story/body-bg.jpg) center top repeat;
+	padding-top: 30px
+}
+.ContentCategory {
+	width: 375px;
+	margin: 15px auto
+}
+.ContentCategory label {
+	font-family: 'OpenSansCondensedBold';
+	font-size: 16px;
+	color: #333;
+	margin-right: 8px
+}
+.ContentCategory select {
+	width: 280px;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: url(../images/story/test.gif) no-repeat;
+	height: 27px;
+	padding: 3px 0 3px 5px;
+	width: 292px;
+	-webkit-appearance: none;
+	-webkit-box-shadow: -.5px -.5px 10px 0px #999;
+	box-shadow: -.5px -.5px 10px 0px #999;
+}
+article.story {
+	margin: 15px 0
+}
+.item {
+	width: 260px;
+	margin: 10px;
+	float: left
+}
+.userStoryBoardItem {
+	width: 225px;
+	margin: 0px;
+	float: left
+}
+.storyBlcok {
+	width: 201px;
+	padding: 12px;
+	padding-bottom: 0;
+	background-color: #fff;
+	-webkit-box-shadow: -.5px 1px 5px 2px #cacaca;
+	box-shadow: -.5px 1px 5px 2px #cacaca
+}
+section header {
+	padding: 0
+}
+section h1 {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-left:0;
+}
+section img {
+	margin-bottom: 10px
+}
+.storyInfo {
+}
+.storyInfo ul {
+}
+.storyInfo ul li {
+	float: left;
+	text-align: left
+}
+.storyInfo ul li a {
+	font-size: 12px;
+	color: #13345c
+}
+.storyInfo p {
+	margin: 5px 0;
+	font-size: 12px;
+	color: #333;
+	word-wrap: break-word
+}
+.storyComment {
+	/*width: 195px;*/
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: -12px;
+	/*padding: 5px 15px;*/
+	margin-top: 15px
+}
+.storyCommentList {
+}
+.storyCommentList li {
+	float: left;
+	/*margin-right: 30px;
+	height: 15px*/
+}
+.storyCommentList li.last {
+	margin: 0
+}
+.storyCommentList li a {
+	color: #13345c;
+	font-size: 12px
+}
+.storyCommentList li a:hover {
+	color: #50b5e5
+}
+.storyCommentList li a img {
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px
+}
+.storyPerson {
+	padding: 10px 0
+}
+.storyPerson img {
+	float: left;
+	margin-right: 5px
+}
+.storyPerson h2 {
+	font-size: 11px;
+	color: #000;
+	font-weight: normal;
+	text-transform: none;
+	overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis
+}
+.storyPerson h2 a {
+	color: #13345c;
+	margin-left: 5px;
+	font-size: 12px
+}
+.storyPerson p {
+	font-size: 11px;
+	color: #666;
+	font-weight: normal;
+	margin: 5px 0
+}
+.Personinfo {
+}
+.Personinfo li {
+	float: left;
+	/*margin-right: 24px*/
+}
+.Personinfo li.last {
+	margin: 0
+}
+.Personinfo li a {
+	font-size: 11px;
+	color: #666
+}
+.storyComments {
+	background-color: #f5f5f5;
+	width: 195px;
+	margin-left: -12px;
+	padding: 10px 15px;
+	border-top: 1px solid #ccc
+}
+.storyComments a.allStoryBlocks {
+	font-size: 13px;
+	color: #13345c;
+	margin-left: 50px
+}
+.CommentBlock {
+}
+.CommentBlock img {
+	float: left;
+	margin-right: 10px
+}
+.CommentBlock h3 {
+	font-size: 12px;
+	color: #13345c
+}
+.CommentBlock h3 a {
+	font-size: 12px
+}
+.CommentBlock p {
+	font-size: 11px;
+	color: #666;
+	font-weight: normal
+}
+form {
+	margin: 5px 0
+}
+.CommentUser {
+	float: left;
+	margin-right: 5px;
+	margin-left: -6px
+}
+.CommentText {
+	width: 154px!important;
+	border: 1px solid #ccc;
+	padding: 8px 5px!important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	height:19px!important;
+	border-radius: 5px;
+	color: #999;
+	font-size: 14px;
+	font-family: 'OpenSansLight';
+	margin:-1px -6px 0 0!important;
+}
+
+
+/* userProfileNewsPaper 
+--------------------------------------------------------------------------------------- */
+.userProfileNewsPaper{width:75%;padding:10px}
+.userProfileNewsPaper h2{margin:15px 0 15px 15px}
+
+/*
+.NewsPaperBlock{float:left;height:175px;padding:10px;margin-right:25px;border:1px solid #000;overflow:hidden}
+.NewsPaperBlockHeader{}
+.NewsPaperBlockHeader h1{text-align:center;color:#e34121;font-size:20px}
+.NewsPaperBlockHeader p{font-size:12px}
+.NewsPaperBlockHeader p.version{float:left}
+.NewsPaperBlockHeader p.place{float:right}
+.NewsPaperHruler{bordeR:none; border-bottom:1px dashed #e34121; height:1px} */
+
+.newspaperBox{width:262px;padding:18px;-webkit-box-shadow:  0px 0px 10px 0px #000;
+        
+        box-shadow:  0px 0px 10px 0px #000;}
+.newspaperBox:hover{border:1px solid #ccc}
+.newspaperBox_header{margin-bottom:10px}
+.newspaperBox_header img{width:100%;height:auto}
+.newspaperBox_content{}
+.newspaperBox_list{}
+.newspaperBox_list li{float:left;margin-right:4px}
+.newspaperBox_list li:last-child{margin:0}
+
+.NewsPaperBlockContent{}
+.NewsPaperBlockContent img{max-width:100%;height:auto;vertical-align:middle}
+.NewsPaperBlockContent h1{}
+.NewsPaperBlockContent p{}
+
+.width20{width:15%}
+.width30{width:25%}
+.width40{width:35%}
+.width50{width:45%}
+.width60{width:55%}
+.width70{width:65%}
+.width80{width:75%}
+
+/* Leadership Board 
+--------------------------------------------------------------------------------------- */
+.tinyNewsLeadershipBoard{width:500px}
+.tinyNewsLeadershipBoard a{text-transform:capitalize}
+.tinyNewsLeadershipBoard h1{font-family: 'BebasNeueRegular';color:#0b68a8;font-size:26px;font-weight:normal; text-align:left; margin:10px 0}
+.LeadershipBlock{}
+.LeadershipBlock_Head{}
+.LeadershipBlock_Head h2{text-align:center;background-color:#e6e6e6;padding:5px 0;margin-bottom:10px}
+.LeadershipBlock_Head h2 a{}
+.LeadershipBlock_Cont{}
+.LeadershipBlock_Cont ul{}
+.LeadershipBlock_Cont ul li{height:50px;padding:10px 5px;border-bottom:1px solid #e6e6e6;margin-bottom:5px}
+.LeadershipBlock_Cont ul li.last{border:none}
+.LeadershipBlock_Cont ul li img{float:left;margin-right:10px}
+.LeadershipBlock_Cont ul li a{margin-top:15px;float:left}
+
+/* Popup
+-------------------------------------------------------------------------- */
+.pagePopup{width:535px; margin:0px  auto;background:#fff;-webkit-box-shadow:0px 0px 3px 0px #000;box-shadow:0px 0px 3px 0px #000;}
+
+/* Popup Header
+-------------------------------------------------------------------------- */
+.pagePopupHeader{height:30px;padding:10px;}
+.pagePopupHeader h1{font-family: 'BebasNeueRegular';font-size:32px;color:#13345c;font-weight:normal;float:left}
+.pagePopupHeader a.btnClose{display:block;background:url(../images/myPage/myPage-Fiendspopup/close-button.png) no-repeat;width:21px;height:21px;float:right}
+.pagePopupHeader a.btnClose:hover{background:url(../images/myPage/myPage-Fiendspopup/close-btn-hover.png)}
+.pagePopupHeader a span{display:none}
+
+/* Popup Content
+-------------------------------------------------------------------------- */
+.pagePopupContent{height:660px;overflow-y:scroll;border-top:1px solid #ccc;}
+.pagePopupContent ul.popupUserList{}
+.pagePopupContent ul.popupUserList li{padding:10px;border-bottom:1px solid #ccc}
+.pagePopupContent ul.popupUserList li:before,.pagePopupContent ul.popupUserList li:after{content:"";display:table;}
+.pagePopupContent ul.popupUserList li:after{clear:both;}
+.pagePopupContent ul.popupUserList li img{float:left;margin-right:5px}
+.pagePopupContent ul.popupUserList li h2{font-family: 'OpenSansCondensedBold';font-size:14px;color:#333;font-weight:normal;margin-top:5px;width:200px}
+.pagePopupContent ul.popupUserList li p{font-family: 'OpenSansCondensedLight';font-size:14px;color:#333;font-weight:normal;width:200px}
+.pagePopupContent ul.popupUserList a.btnFollow{display:none;font-family: 'OpenSansCondensedBold';font-size:14px;color:#fff;font-weight:normal;float:right; margin-top:-25px;background:url(../images/myPage/myPage-Fiendspopup/popup-followBtn-bg.png) repeat-x;border:1px solid #13345c;padding:3px 10px;text-align:center;text-transform:capitalize;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.pagePopupContent ul.popupUserList li:hover a.btnFollow{display:block}
+
+
+/* Footer 
+--------------------------------------------------------------------------------------- */
+/*footer{padding:20px 0}*/
+footer ul.socialMedia{list-style:none;float:right}
+footer ul.socialMedia li{float:left;margin-right:8px}
+footer ul.socialMedia li.last{margin-right:0px}
+footer ul.socialMedia li a{}
+footer ul.socialMedia li a img{}
+footer p{font-family: 'OpenSansCondensedLight';font-size:14px;font-weight:normal;color:#333;/*float:right;*/margin:8px}
+
+/* from My Page original stylesheet.css: */
+#footer{
+  margin: 0px 18px;
+  padding: 40px 0;
+  font-family: "OpenSansRegular";
+  font-size: 16px;
+  background: url("../images/general/footer-divider.png") no-repeat top center;
+}
+.footer{
+  margin: 0px 18px\9;
+  padding: 40px 0\9;
+  font-family: "OpenSansRegular"\9;
+  font-size: 16px\9;
+  background: url("../images/general/footer-divider.png") no-repeat top center\9;
+}
+/* line 165, ../sass/_home.sass */
+#footer ul, .footer ul {
+  display: inline;
+  float: left;
+  margin-right: 40px;
+  
+}
+#footer ul li, .footer ul li{margin-bottom:10px}
+/* line 168, ../sass/_home.sass */
+#footer ul li a, .footer ul li a {
+  color: #13345c;
+}
+/* line 170, ../sass/_home.sass */
+#footer small, .footer small {
+  display: inline;
+  float: right;
+  font-size: 14px;
+  margin-right:50px
+}
+
+#top-stories ul li.col div, #top-stories ul li.col p{cursor:pointer}
+#op-ed ul li.col div, #op-ed ul li.col p{cursor:pointer}
+
+.storyViaLink{margin-left: 0px !important}

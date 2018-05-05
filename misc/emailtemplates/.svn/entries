@@ -1,0 +1,98 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/misc/emailtemplates
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-02-10T22:02:33.650097Z
+1776
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+css
+dir
+
+emailTemplat1.vm
+file
+
+
+
+
+2013-04-05T14:15:07.000000Z
+6238d8e4c6c7e42431bc4402c273f8c9
+2013-02-10T22:02:33.650097Z
+1776
+gstarcev
+has-props
+
+emailTemplat3.html
+file
+
+
+
+
+2013-04-05T14:15:07.000000Z
+5b10d35b429899406379833172b91eee
+2013-02-10T22:02:33.650097Z
+1776
+gstarcev
+has-props
+
+images
+dir
+
+images1
+dir
+
+imgs
+dir
+
+notice_css
+dir
+
+notice_images
+dir
+
+shopbee_template_staging.html
+file
+
+
+
+
+2013-04-05T14:15:07.000000Z
+0f39518d5a84f5a7ea1171b6bcaadf1f
+2013-02-10T22:02:33.650097Z
+1776
+gstarcev
+has-props
+
+test.php
+file
+
+
+
+
+2013-04-05T14:15:09.000000Z
+e2fcbc800a1cbeb02c7575d9a28232ab
+2013-02-10T22:02:33.650097Z
+1776
+gstarcev
+has-props
+

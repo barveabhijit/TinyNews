@@ -1,0 +1,43 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;font-weight:400;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1;font:normal 15px 'News Cycle' ,Arial, Helvetica, sans-serif}
+ol,ul{list-style:none}
+a{text-decoration:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+.TNE-wrapper{width:1024px;margin:0 auto}
+.TNE-header{background:linear-gradient(tobottom,#ffffff0%,#dee3e6100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dee3e6',GradientType=0);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dee3e6));background: -webkit-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: -o-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: -ms-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: linear-gradient(to bottom, #ffffff 0%,#dee3e6 100%);height:64px;-webkit-box-shadow:0 0 10px 0 #434343;box-shadow:0 0 10px 0 #434343;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;padding:13px 20px 13px 32px}
+.TNE-userStory{width:50%}
+.TNE-userStory h1{font-size:36px;font-weight:700;margin:-15px 0 0}
+.TNE-userStory_image{float:left;margin:0 5px 5px}
+.userInfo li{float:left;margin-right:10px;font-size:14px}
+.TNE-mainContent{width:934px;background:#fff;position:relative;border:1px solid #ccc;margin:0 auto;padding:12px 14px}
+.TNE-story{}
+.TNE-story h1{font-size:36px;color:#000;text-align:center;font-weight:bold;font-weight:normal\9}
+.TNE-story p{font-size:12px;color:#000}
+.TNE-story p.vol{float:left}
+.TNE-story p.place{float:right}
+.leftContent{width:655px;float:left;margin-right:25px}
+.rightContent{width:250px;float:left}
+.rightContent .subArticle{width:250px;float:none;margin-bottom:45px}
+.fullArticle{margin-bottom:15px}
+.fullArticle h2{font-size:38px;color:#000;font-weight:bold;padding-right:10px;font-weight:normal\9}
+.fullArticle p, .subArticle p{font-size:14px;color:#000;font-weight:bold;margin-bottom:10px;padding-right:20px;font-weight:normal\9}
+.subArticle{width:320px;float:left;margin-right:10px}
+.subArticle.last{margin:0}
+.subArticle h2{font-size:24px;color:#000;font-weight:bold;padding-right:15px;font-weight:normal\9}
+.articleUser{}
+.articleUser img{float:left;margin:0 10px 10px 0}
+.articleUser h3{font-size:18px;color:#000;font-weight:bold;font-weight:normal\9}
+.articleUser p{font-size:14px;color:#000;font-weight:bold;font-weight:normal\9}
+.bannerAdd{margin:15px 0 0 0}
+.block:before,.block:after{content:"";display:table;}
+.block:after{clear:both;}
+.TNE-footer{padding:5px 30px;margin:10px 0}
+.TNE-footerList{float:right}
+.TNE-footerList li{float:left;margin-right:20px;display:inline-block}
+.TNE-footerList li:last-child{margin:0}
+.TNE-footerList li img{margin-right:3px;float:left}
+.TNE-footerList li a{color:#000;font-size:14px}
+.TNE-mainContent{cursor: pointer}

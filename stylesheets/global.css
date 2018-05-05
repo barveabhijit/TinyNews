@@ -1,0 +1,30 @@
+/*#########################################GLOBAL############################################*/
+.block:before,.block:after{content:"";display:table;}
+.block:after{clear:both;}
+.wrapper{width:1280px;margin: 0 auto;}
+.wrapperForHeaderMenus{width:1280px;overflow:hidden;margin: 0 auto;}
+/* Float
+--------- */
+.col{float:left}
+.colRight{float:right}
+.lastcol{float:none;display:block;display:table-cell;width:9999em;*width:auto;*zoom:1;}
+/* Text Alignment
+--------- */
+.alignCenter{text-align:center}
+.alignLeft{text-align:left}
+.alignRight{text-align:right}
+/* Fonts
+--------- */
+h1{font-family:"BebasNeueRegular", Arial Narrow, san-serif;font-size:32pt;font-weight:normal;text-transform:uppercase;color:#13345c}
+h2{font-family:"BebasNeueRegular", Arial Narrow, san-serif;font-size:24pt;font-weight:normal;text-transform:uppercase;color:#0b68a8}
+h3{font-family:"BebasNeueRegular", Arial Narrow, san-serif;font-size:21pt;font-weight:normal;text-transform:uppercase;color:#333}
+h4{font-family:OpenSansCondensedBold, Arial Narrow, san-serif;font-size:18pt;font-weight:normal;color:#333}
+h5{font-family:OpenSansCondensedLight, Arial Narrow, san-serif;font-size:21pt;font-weight:normal;color:#13345c}
+h6{font-family:"BebasNeueRegular", Arial Narrow, san-serif;font-size:18pt;font-weight:normal;text-transform:uppercase;color:#13345c}
+p{font-family:OpenSansCondensedBold, Arial Narrow, san-serif;font-size:12pt;font-weight:normal;color:#333}
+a{font-family:OpenSansCondensedBold, Arial Narrow, san-serif;font-size:12pt;font-weight:normal;color:#13345c}
+a:hover{color:#50b5e5}
+a:active{color:##0b68a8}
+
+
+/*#########################################ENDGLOBAL############################################*/

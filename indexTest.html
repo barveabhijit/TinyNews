@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lt IE 9]>
+          <script src="html5shiv.js"></script>
+<![endif]-->
+<meta charset="utf-8">
+<title>TINY NEWS: home</title>
+<link href="stylesheets/fonts.css" type="text/css" rel="stylesheet" media="all">
+<link href="stylesheets/indextest.css" type="text/css" rel="stylesheet" media="all">
+<link href="stylesheets/lightbox2.css" type="text/css" rel="stylesheet">
+<link href="stylesheets/loginAndRegistrationStyle.css" type="text/css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/maphandler.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/index-inmap.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/clip.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="wrapper block">
+    <div class="logo"> <a href="#"><img src="images/test/logo.png" width="106" height="24" alt="tinenews" title="TinyNews"></a> </div>
+    <div class="headerText">
+    </div>
+    <!--/headerText-->
+    <nav>
+      <ul>
+        <li class="add"><a href="#">Add<span class="effectWhite"></span></a><div class="popup" id="AddDropDown">
+	<span class="top"></span>
+    <span class="mid block">
+        <ul>
+            <li><a id="addstory" href="#">Add New Story</a></li>
+            <li><a id="addfriend" href="#">Add Friend</a></li>
+            <li><a id="addClipThis" href="#">Clip This Button</a></li>
+        </ul>
+        </span>        
+        <span class="bot"></span>
+      </div><!--/popup--> </li>
+        <li class="user"><a href="#">Priyanka<span class="effectWhite"></span></a><div class="popup" id="UserDropDown">
+      <span class="top"></span>
+      <span class="mid block">
+      	     <ul>
+            <li><a href="#">Find Friends</a></li>
+            <li><a href="newspaper.html">Workspace</a></li>
+            <li><a href="myPage.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </span>        
+        <span class="bot"></span>
+      </div><!--/popup--></li>
+        <li class="notifications"><a href="#"><img src="images/story/notification-img.png" width="25" height="25" alt="" title="Notification"></a></li>
+        <li class="last signout"><a href="#">Sign Out</a></li>
+      </ul>
+    </nav>
+  </div><!--/wrapper--> 
+</header>
+
+<!-- Main -->
+<section class="wrapper block Content">
+
+<!-- Hide until we do the ajax call for it 11/23/2012
+<section id="SearchBox" class="block">
+	<div class="searchBox">
+    	<input type="text" name="search" class="tnSearch" value="Find what your looking for">
+        <button class="tnCate" name="categories">all categories<span class="effect"></span></button>
+        <input type="submit" name="find" class="tnFind" value="">
+    </div><!--/searchBox
+</section> 
+-->
+
+<!-- Sidebar -->
+<aside>
+<h1>What’s happening now</h1>
+<!-- Sidebar List-->
+<div class="sidebrList">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img1.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+<div class="sidebrList">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img2.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+<div class="sidebrList">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img3.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+<div class="sidebrList">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img1.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+<div class="sidebrList">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img2.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+<div class="sidebrList last">
+<div class="imageContainer">
+	<img src="images/test/sidebar_img3.jpg" alt="story image" title="Story Image">
+</div><!--/imageContainer-->
+<h2><a href="">Tornado touches down in Nebraska, 3 dead 26...</a></h2>
+<h3><a href="">Candy Stryper</a></h3>
+</div><!--/sidebrList-->
+</aside>
+<section class="main">
+	<nav class="block">
+    	<ul class="mainNav">	
+        <li><a href="">breaking news</a></li>
+        <li><a href="">happening</a></li>
+        <li class="selected"><a href="">nightlife</a></li>
+        <li><a href="">style</a></li>
+        <li><a href="">food/drink</a></li>
+        <li><a href="">art</a></li>
+        <li><a href="">heros</a></li>
+        <li><a href="">Cops &amp; Robbers</a></li>
+        <li><a href="">Sports</a></li>
+        <li><a href="">funny</a></li>
+        </ul>
+    </nav><!--/mainNav-->
+    <section class="googleContainer">
+    	<section id="map">
+                <div id='mapCanvas'>
+                    <img id="artMap" src="images/general/wordartmap.jpg" alt=""/>
+                </div>
+                <div id='mapInset'>
+                </div>
+                <div id='mapFilterBar'>
+                    <input type='checkbox' class="styled" id='mapShowHeadlines'/>
+                    <label for='mapShowHeadlines'>Show Headlines</label>
+                    <span id='mapFilterOptionsLabel'>Story Filter Options:</span>
+                    <ul id='mapFilterOptions'>
+                        <li>
+                            <input type='radio' name='mapFilterRadio' value='all' id='all' checked='checked' />
+                            <label for='all'>All</label>
+                        </li>
+                        <li>
+                            <input type='radio' name='mapFilterRadio' value='me' id='me' />
+                            <label for='me'>Me</label>
+                        </li>
+                        <li>
+                            <input type='radio' name='mapFilterRadio' value='friends' id='friends' />
+                            <label for='friends'>Friends</label>
+                        </li>
+                        <li>
+                            <input type='radio' name='mapFilterRadio' value='following' id='following' />
+                            <label for='following'>Following</label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    </section><!--/googleContainer-->
+    <section class="trendingStories block">
+    	<h1>trending stories</h1>
+        <section class="trendingCate block">
+        	<div class="imageContainerBig">
+            	<img src="images/test/img1.jpg" alt="test1">
+            </div><!--/imageContainerBig-->
+            <div class="imageContainerBig">
+            	<img src="images/test/img2.jpg" alt="test1">
+            </div><!--/imageContainerBig-->
+            <div class="imageContainerBig">
+            	<img src="images/test/img3.jpg" alt="test1">
+            </div><!--/imageContainerBig-->
+            <div class="imageContainerBig">
+            	<img src="images/test/img4.jpg" alt="test1">
+            </div><!--/imageContainerBig-->
+            <div class="imageContainerBig">
+            	<img src="images/test/img4.jpg" alt="test1">
+            </div><!--/imageContainerBig-->
+            <!-- Trending Story List -->
+            <div class="trendingCateList">
+            <ul>
+            	<li><a href="#">OP ED</a></li>
+                <li class="selected"><a href="#">Stories</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Newspapers</a></li>
+            </ul>
+            </div><!--/trendingCateList-->
+        </section><!--/trendingCate-->
+    </section><!--/trendingStories-->
+</section><!--/main-->
+</section><!--/Content-->
+
+
+<!-- Footer -->
+<footer class="block">
+<div class="wrapper">
+    <p>Copyright 2012 Tiny News. All rights reserved.</p>
+    <nav>
+      <ul class="socialMedia">
+        <li><a href="#"><img src="images/general/email.png" width="34" height="34" alt="mail" title="Mail"></a></li>
+        <li><a href="#"><img src="images/general/facebook.png" width="34" height="34" alt="facebook" title="Facebook"></a></li>
+        <li><a href="#"><img src="images/general/google.png" width="34" height="34" alt="gmail" title="Gmail"></a></li>
+        <li><a href="#"><img src="images/general/linkedin.png" width="34" height="34" alt="linkedin" title="LinkedIn"></a></li>
+        <li class="last"><a href="#"><img src="images/general/twitter.png" width="34" height="34" alt="twitter" title="Twitter"></a></li>
+      </ul>
+    </nav>
+    <!--/socialMedia-->  
+    </div><!--/wrapper-->
+</footer>
+
+<script type="text/javascript" src="js/libs/json2.js"></script>    
+<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/libs/html5placeholder.jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/libs/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.livequery.js"></script>
+<script type="text/javascript" charset="utf=8" src="js/libs/jquery.tinyscrollbar.min.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="js/libs/jquery.form.js"></script>
+<script type="text/javascript" src="js/libs/jquery.autosize-min.js"></script>
+
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/commentHandler.js"></script>
+<script type="text/javascript" src="js/likeHandler.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/mapshandler.js"></script>
+<script type="text/javascript" src="js/browserDetect.js"></script>
+<script type="text/javascript" src="js/createStory.js"></script>
+<script type="text/javascript" src="js/baseHeader.js"></script>
+<script type="text/javascript" src="js/tinynews.js"></script>
+
+<script>
+$(document).ready(function(){
+    TN.initialize();
+    
+    jQuery.ajax({
+        url: "https://tinynews1.atlassian.net/s/en_USqwqzqv-418945332/812/101/1.2.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=bc77cb6b",
+        type: "get",
+        cache: true,
+        dataType: "script"
+    });
+
+    // Register and login panel(s) JS:
+    $("#signInDropDown").click(function(){
+        $("#login").hide();
+        $("#loginDropDownWrapper").slideDown("slow");
+    });
+    
+    $("#register").click(function(){
+        $("#loginDropDownWrapper").hide();
+        $("#login").slideDown("slow");
+    });
+    
+    $("#cancelLogin, #cancelLogin2").click(function(){
+        $("div.login.block").slideUp("slow");
+    });
+    
+    $("#mainForm").submit(function(event) {
+        event.preventDefault(); 
+        var $form = $(this),
+        name_val = $form.find('input[name="formName"]').val(),
+        email_val = $form.find('input[name="formEmail"]').val(),
+        pass_val = $form.find('input[name="formPass"]').val(),
+        file_val = $('#file').val();
+        if ((typeof imageUploaded) !== "undefined") {
+            if (imageUploaded === true) photo_url = $('#userPhoto').attr("src");
+            else photo_url = "http://204.27.59.53/newTN/images/LoginAndRegister/uploadPhoto-img.jpg"; // $('#userPhoto').attr("src"); // $('#userPhoto')[0].src;
+        }
+        else photo_url = "http://204.27.59.53/newTN/images/LoginAndRegister/uploadPhoto-img.jpg"; // $('#userPhoto').attr("src"); // $('#userPhoto')[0].src;
+        if (!name_val) $('#registerTicker').text('All Fields Are Required');
+        else if (!email_val) $('#registerTicker').text('All Fields Are Required');
+        else if (!pass_val) $('#registerTicker').text('All Fields Are Required');
+        else {
+            $('#registerTicker').html('<br>');
+            TN.services.registerCustomer(email_val, pass_val, name_val, "Lastname", photo_url).done(function(msg){
+                if (msg[0] == true) {
+                    TN.utils.setCookie("TNUser", email_val, null, 259200);
+                    $("#usernameLogin").val(email_val);
+                    $("#passLogin").val(pass_val);
+                    TN.services.loginCustomer('', email_val, pass_val).done(function(){
+                        TN.services.sendBuzzRequest(email_val, "Message Board", "Q", photo_url).done(function(){
+                            $("#signInForm").submit();
+                        }).fail(function(){
+                            $("#signInForm").submit();
+                        });
+                    }).fail(function(){
+                        $("#signInForm").submit();
+                    });
+                }
+                else alert ("Error occured");
+            }).fail(function(msg){
+                jQuery.each( msg, function(key, value){ if (key == "status") regfail = value; });
+                // console.log(msg);
+                if (regfail == 401) $('#emailInUse').show();
+                else if (regfail == 500) $('#registerTicker').text('All Fields Are Required');
+                else alert ("Error occured");
+            });
+        }
+    });
+    
+    $("#signInForm").submit(function(event){
+        event.preventDefault(); 
+        var $form = $(this),
+        email_val = $form.find('input[name="username"]').val(),
+        pass_val = $form.find('input[name="password"]').val();
+        if (!email_val) $('#signInTicker').text('All Fields Are Required');
+        else if (!pass_val) $('#signInTicker').text('All Fields Are Required');
+        else {
+            $('#signInTicker').text('');
+            TN.services.loginCustomer('', email_val, pass_val).done(function(msg){
+                if (msg[0] == true) {
+                    TN.utils.setCookie("TNUser", email_val, null, 259200);
+                    location.reload();
+                }
+                else alert ("Error occured");
+            }).fail(function(msg){
+                jQuery.each( msg, function(key, value){ if (key == "status") loginfail = value; });
+                if (loginfail == 401) $('#wrongCredentials').show();
+                else if (loginfail == 500) $('#signInTicker').text('All Fields Are Required');
+                else alert ("Error occured");
+            });
+        }
+    });
+    
+    $('#formEmail, #formPassword, #formName').focus(function(){ $('#emailInUse').hide(); });
+    $('.emailInUse').click(function(){ $('#emailInUse').hide(); });
+    $('#passLogin, #usernameLogin').focus(function(){ $('#wrongCredentials').hide(); });
+    $('.wrongCredentials').click(function(){ $('#wrongCredentials').hide(); });
+
+    // callback for ajaxSubmit:
+    function showImageUrlResponse(responseText, statusText, xhr, $form) {
+        $('#userPhoto').attr('src', responseText);
+        window.imageUploaded = true;
+    };
+    
+    // Store image and preview by copying given url to registration's image src attribute:
+    var regPhotoSubmitOptions = {
+        success: showImageUrlResponse,
+        dataType:'text'
+    };
+
+    $("#file").change(function() {
+        $('#photoForm').ajaxSubmit(regPhotoSubmitOptions  );
+    });
+});
+</script>
+
+</body>
+</html>

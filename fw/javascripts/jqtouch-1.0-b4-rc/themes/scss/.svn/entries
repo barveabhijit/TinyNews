@@ -1,0 +1,85 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/scss
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+.sass-cache
+dir
+
+apple.scss
+file
+
+
+
+
+2013-04-05T14:14:35.000000Z
+51c8edddb0a25bc97d9e67b7839811f5
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+config.rb
+file
+
+
+
+
+2013-04-05T14:14:27.000000Z
+fbf256ae3e1c2e28c91931a3d52a26fa
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+include
+dir
+
+jqtouch.scss
+file
+
+
+
+
+2013-04-05T14:14:27.000000Z
+623f6a17651e72427ae4b67fa0839d11
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+reference
+dir
+
+vanilla.scss
+file
+
+
+
+
+2013-04-05T14:14:27.000000Z
+8351b650eaf0b993a4a2d0c4c4629e19
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+

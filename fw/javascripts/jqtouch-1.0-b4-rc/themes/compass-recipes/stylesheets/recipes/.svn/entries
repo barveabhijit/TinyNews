@@ -1,0 +1,226 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/compass-recipes/stylesheets/recipes
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+_background.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+62197709607ae500eb099a7f77904db5
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_base.scss
+file
+
+
+
+
+2013-04-05T14:14:45.000000Z
+05358813641bcb6556156d89f9157876
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_color.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+0758876dc2be1b9486e41ee3d2623f50
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_effect.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+d58e43d079cd223cb2e8a857cc2476a9
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_form.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+907e14950c544de7473af8d468d55733
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_google-webfont.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+7d46d9a43517d7e0defff5ec96d25c40
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_icons.scss
+file
+
+
+
+
+2013-04-05T14:14:45.000000Z
+334ec3c90a35be217de2700e05cec7d6
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_layout.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+14746b76e04d002f029604192d2eb81c
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_media-queries.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+c8d7c41b7c2af78d66114aa8aac318c6
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_shadow.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+23c0889ddb3f040fd2b829762d73e4fd
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_shape.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+648cd8f094150e69719002edeeb0a98a
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_shared.scss
+file
+
+
+
+
+2013-04-05T14:14:45.000000Z
+5ffeddde54f6f81501d76666f825ad86
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_ui.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+8466689a67f32d4bbfd7f0e6fcd81435
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_webfont-icon.scss
+file
+
+
+
+
+2013-04-05T14:14:47.000000Z
+ea3c17ccaee7fac4d831d93ee98cafb3
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+animation
+dir
+
+background
+dir
+
+base
+dir
+
+effect
+dir
+
+form
+dir
+
+layout
+dir
+
+shadow
+dir
+
+shape
+dir
+
+shared
+dir
+
+ui
+dir
+

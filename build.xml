@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+    
+    <property environment="env"/>
+    <property name="deploy_srv" value="${DEPLOY_SERVER}" />
+        
+    <target name="all">
+        <!-- TODO define script. See Help menu or http://ant.apache.org/ -->
+    </target>
+    <target name="clean" description="Clean application.">
+	<delete dir="dist"/>
+    </target>
+        
+        
+    <target name="zip" depends="clean">
+        <mkdir dir="dist"/>
+        
+        <zip basedir="." zipfile="dist/tinynewsweb.zip" >
+            <exclude name="**/.svn/*" />
+            <exclude name="build.xml" />
+        </zip>
+    </target>
+    
+    <target name="deploy" depends="zip" description="Deploy application">
+	<exec executable="curl" dir="." failonerror="true">
+	    <arg value="-F" />
+	    <arg value="fileupload=@dist/tinynewsweb.zip" />
+            <!--<arg value="http://192.95.18.122:20081/fileupload/store" />-->
+            <arg value="http://${deploy_srv}/fileupload/store" />
+	    
+	</exec>
+<!--	<exec executable="curl" dir="." failonerror="true">
+	    <arg value="-F" />
+	    <arg value="fileupload=@dist/tinynewsweb.zip" />
+            <arg value="http://204.27.59.53:20081/fileupload/store" />
+	    
+	</exec>-->
+
+    </target>
+        
+    
+</project>

@@ -1,0 +1,76 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/compass-recipes/tests/recipes
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+background
+dir
+
+base
+dir
+
+color
+dir
+
+effect
+dir
+
+form
+dir
+
+google-webfont
+dir
+
+index.html
+file
+
+
+
+
+2013-04-05T14:14:40.000000Z
+a4ef49d121e6c616eb09d3ca656c41c5
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+layout
+dir
+
+media-queries
+dir
+
+shadow
+dir
+
+shape
+dir
+
+shared
+dir
+
+ui
+dir
+

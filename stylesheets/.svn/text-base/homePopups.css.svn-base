@@ -1,0 +1,17 @@
+/* popup1
+--------------------------------------------------------------- */
+.popup1{background:url(../images/homePopups/dropdown-bg1.png) no-repeat;width:134px;height:131px;padding:10px}
+.popup1 ul{margin:10px}
+.popup1 ul li{height:20px;margin-left:-14px;width:100%; padding:4px 15px}
+.popup1 ul li a{font-family: 'OpenSansCondensedLight';font-size:20px;color:#13345c;}
+.popup1 ul li:hover{background:#0066cc}
+.popup1 ul li:hover a{color:#fff;}
+
+/* popup2
+--------------------------------------------------------------- */
+.popup2{background:url(../images/homePopups/dropdown-bg2.png) no-repeat;width:123px;height:101px;padding:10px}
+.popup2 ul{margin:10px}
+.popup2 ul li{height:20px;margin-left:-14px;width:100%; padding:4px 15px}
+.popup2 ul li a{font-family: 'OpenSansCondensedLight';font-size:20px;color:#13345c;}
+.popup2 ul li:hover{background:#0066cc}
+.popup2 ul li:hover a{color:#fff;}

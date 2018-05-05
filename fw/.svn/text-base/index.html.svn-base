@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
+<title>Tiny News | Home</title>
+
+<!-- Included CSS Files (Compressed) -->
+<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/foundation.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<link media="screen" type="text/css" href="stylesheets/createStory.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<header>
+  <div class="top-bar contain-to-grid">
+    <div class="row">
+      <div class="twelve">
+        <ul class="left">
+          <li class="name"><a href="index.html" class="logo"></a></li>
+        </ul>
+        <section>
+          <ul class="right">
+           <li><a href="javascript:void(0);" onclick="(!!custId) ? location.href='../' : $('#signInRegisterModal').reveal();">See What's Happening</a></li>
+            <li><a href="javascript:void(0);" onclick="(!!custId) ? TN.createStory.show() : $('#signInRegisterModal').reveal();">Post a Story</a></li>
+            <li><a href="javascript:void(0);" onclick="(!!custId) ? location.href='newspaper.html' : $('#signInRegisterModal').reveal();">Make a Newspaper</a></li>
+            <li><a href="javascript:void(0);" onclick="(!!custId) ? location.href='stories.html' : $('#signInRegisterModal').reveal();">Check Out Stories</a></li>
+
+                                <li class="has-dropdown">
+                                  <a class="active" href="javascript:void(0);" onclick="(!!custId) ? location.href='../myPage.html' : $('#signInRegisterModal').reveal();">MyPage</a>
+                                  <ul class="dropdown">
+                                    <!--li><a href="#">Shanelle's Page</a></li-->
+                                    <!--li><a href="#" id="addPostItButton">Add Post It Button</a></li-->
+                                    <!--li><a href="#">Settings</a></li-->
+                                    <!--li><a href="#">Sign out</a></li-->
+                                    <!--li class="has-dropdown">
+                                        <a href="#">Notifications</a>
+                                          <ul class="dropdown">
+                                             <li class="bottom-border">
+                                             	<a href="#" class="author">
+                                             		<figure class="notifications-profile-img">
+                                             			<img src="images/pri.jpg"/>
+                                             		</figure>
+                                             	</a>
+                                             	<span class="notifications-text">Priyanka posted a new story</p>
+                                             </li>
+                                             <li class="bottom-border"><a href="#" class="author"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text">Priyanka posted a new story</p></li>
+                                             <li class="bottom-border"><a href="#" class="author"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text">Priyanka posted a new story</p></li>
+                                             <li class="bottom-border"><a href="#" class="author"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text">Priyanka posted a new story</p></li>
+                                             <li class="bottom-border"><a href="#" class="author"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text">Priyanka posted a new story</p></li>
+                                        <li><a href="#" data-reveal-id="NotificationsModal" class="notifications full-width"><span class="text-center">See All</span></a></li>
+                                      </ul>
+                                    </li-->
+                                  </ul>
+  
+             </li>
+          </ul>
+        </section>
+      </div>
+      <!--/twelve--> 
+    </div>
+    <!--/row--> 
+  </div>
+  <!--/container--> 
+</header>
+
+<!--Signout-->
+<div class="row">
+  <div class="twelve columns">
+    <div class="signout right" style="cursor:pointer" id="signInOutLink"></div>
+  </div>
+</div>
+
+<!-- Main Page Content and Sidebar -->
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <div class="row">
+        <div class="three columns"> <a href="javascript:void(0);" onclick="(!!custId) ? location.href='../' : $('#signInRegisterModal').reveal();" class="Selectors">
+          <h3>See What's Happening </h3>
+          <div class="row">
+            <div class="twelve columns">
+              <figure class="reasons-image"><img src="images/aukland-map.jpg"/> </figure>
+            </div>
+          </div>
+          </a> </div>
+        <div class="three columns"> <a id="addstory" href="javascript:void(0);" onclick="(!!custId) ? TN.createStory.show() : $('#signInRegisterModal').reveal();" class="Selectors">
+          <h3>Post a Story </h3>
+          <div class="row">
+            <div class="twelve columns">
+              <figure class="reasons-image"><img src="images/post-story-graphic-4.png"/> </figure>
+            </div>
+          </div>
+          </a> </div>
+        <div class="three columns" > <a href="javascript:void(0);" onclick="(!!custId) ? location.href='newspaper.html' : $('#signInRegisterModal').reveal();" class="Selectors">
+          <h3>Make a Newspaper </h3>
+          <div class="row">
+            <div class="twelve columns">
+              <figure class="reasons-image"><img src="images/surfs-up.png"/> </figure>
+            </div>
+          </div>
+          </a> </div>
+        <div class="three columns"> <a href="javascript:void(0);" onclick="(!!custId) ? location.href='stories.html' : $('#signInRegisterModal').reveal();" class="Selectors">
+          <h3>Check out Stories </h3>
+          <div class="row">
+            <div class="twelve columns">
+              <figure class="reasons-image"><img src="images/stories.png"/> </figure>
+            </div>
+          </div>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfooter"></div>
+</div>
+<!-- End Main Content and Sidebar --> 
+
+<div id="NotificationsModal" class="reveal-modal notificationsSrollbar">
+  <h2>Notifications</h2>
+  <div class="row">
+  <div class="twelve columns">
+  <ul class="side-nav">
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></li>
+   <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li ><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></li>
+   <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li ><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+     <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></li>
+   <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+    <li class="divider"></li>
+   <li ><a href="#"><figure class="notifications-profile-img"><img src="images/pri.jpg"/></figure></a><span class="notifications-text"><a href="#" class="author left">Priyanka</a> posted a new story<br/><span class="post-time">45 minutes ago</span></span></li>
+   </ul>
+   </div>
+ </div>
+  <a class="close-reveal-modal"></a>
+</div>
+
+<div id="signInRegisterModal" class="reveal-modal small">
+  <h2 class="Signin">Sign in</h2>
+  <form>
+    <div class="row">
+      <div class="ten columns centered">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="i.e. - jane@wrightstuff.com" name="username" id="username_input" />
+        <small style="display: none;" class="error" id="usernameTicker"></small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="ten columns centered">
+        <label><b>Password</b></label>
+        <input type="password" name="password" id="password_input" />
+        <small style="display: none;" class="error" id="passwordTicker"></small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns offset-by-seven">
+        <a class="radius button" href="javascript:void(0);" id="signInButton">Sign In</a>
+      </div>
+    </div>
+  </form>
+  
+  <!--p class="text-center">Not registered, <a href="#"  data-reveal-id="registerModal">click here</a></p>
+  <a class="close-reveal-modal"></a-->
+  <p class="text-center">Not registered, <a href="javascript:void(0);" onclick="$('#registerModal').reveal()">click here</a></p>
+  <a class="close-reveal-modal"></a>
+</div>
+
+<div id="registerModal" class="reveal-modal expand">
+ 
+  <form id="registerForm">
+	<div class="row">
+		<div class="twelve columns">
+
+			<div class="row">
+			<!-- 
+				<div class="five columns">
+
+					<div class="row">
+						<div class="eight columns top-margin">
+
+							<figure class="facepile"><img src="images/facepile.png" /></figure>
+							<a href="#" class="primary button expand"><figure class="facebook-mark"></figure>Register with Facebook</a>
+						</div>
+						<div class="four columns"><span class="OR-text">OR</span></div>
+					</div>
+				</div>
+				-->
+				<div class="twelve columns">
+					<div class="row">
+						<div class="eight columns">
+							<div class="row">
+								<div class="nine columns top-margin">
+									<label><b>Name</b></label>
+									<input type="text" placeholder="i.e. - Joey or JRock, you decide" name="username" id="username_input" />
+									<label><b>Email</b></label>
+									<input type="text" placeholder="i.e. - jane@wrightstuff.com" name="email" id="email_input" />
+									<label><b>Password</b></label>
+									<input type="password" name="password" id="password_input"/>
+        							<small style="display: none;" class="error" id="registerTicker"></small>
+									<div class="row">
+										<div class="eight columns">
+<!-- 											<a href="#" class="signin-top-margin right close-reveal-modal">Cancel</a> -->
+										</div>
+										<div class="four columns">
+											<input type="submit" name="Register" value="Submit" class="button right" />
+										</div>
+									</div>
+
+								</div>
+								<div class="three columns">
+									<span class="OR-text">&amp;</span>
+								</div>
+							</div>
+						</div>
+						<div class="four columns">
+							<h4>Upload Photo</h4>
+							<figure class="add-photo"><img id="userPhoto" src="images/no-photo.png" /></figure>
+							<a href="#" onclick="$('#file').click();" class=" radius button">Add Profile Picture</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+  </form>
+  
+  <form action="/php/store_image.php" method="post" enctype="multipart/form-data" id="photoForm">
+	<input type="file" name="file" id="file" />
+  </form> 
+  <a class="close-reveal-modal"></a>
+</div>
+
+<!-- Footer -->
+<footer class="row"> <div class="twelve columns">
+  <div class="row">
+    <div class="six columns">
+      <p>&copy; 2013 Tiny News.  All rights reserved.</p>
+    </div>
+    <div class="six columns">
+      <ul class="link-list right">
+        <!--li><a href="contact.html" ><img src="images/email.png"  alt="mail" title="Contact Tiny News" class="has-tip tip-top" data-width="80"></a></li-->
+        <li><a href="mailto:happydays@tinynews.me" ><img src="images/email.png"  alt="mail" title="Contact Tiny News" class="has-tip tip-top" data-width="80"></a></li>
+        <li><a href="http://www.facebook.com/pages/Tiny-News/326376470776048"><img src="images/facebook.png"  alt="facebook" title="Friend Us On Facebook" class="has-tip tip-top" data-width="90"></a></li>
+        <li><a href="javascript:alert('We are getting there!');"><img src="images/google.png"  alt="gmail" title="Join Us On Google Plus" class="has-tip tip-top" data-width="90"></a></li>
+        <!--li><a href="#"><img src="images/linkedin.png" alt="linkedin" title="Connect With Us On LinkedIn" class="has-tip tip-top" data-width="100"></a></li-->
+        <li ><a href="https://twitter.com/TinyNewser"><img src="images/twitter.png" alt="twitter" title="Follow Us on Twitter" class="has-tip tip-top" data-width="70"></a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<!-- Latest version of jQuery -->
+<!-- Included JS Files (Minified) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="javascripts/foundation/foundation.min.js"></script> 
+<script src="javascripts/foundation/app.js"></script>
+
+<script src="javascripts/foundation/jquery.placeholder.js"></script>
+<script type="text/javascript" src="javascripts/libs/json2.js"></script>    
+<script type="text/javascript" src="javascripts/libs/jquery.mockjax.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.form.js"></script>
+<script type="text/javascript" src="javascripts/services.js"></script>
+<script type="text/javascript" src="javascripts/utils.js"></script>
+<script type="text/javascript" src="javascripts/commentHandler.js"></script>
+<script type="text/javascript" src="javascripts/likeHandler.js"></script>
+<script type="text/javascript" src="javascripts/createStory.js"></script>
+<script type="text/javascript" src="javascripts/baseHeader.js"></script>
+<script type="text/javascript" src="javascripts/tinynews.js"></script>
+<script>
+  $(document).ready(function(){
+
+    TN.initialize();
+
+  });
+</script>
+</body>
+</html>

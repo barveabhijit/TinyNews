@@ -1,0 +1,91 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+.htaccess
+file
+
+
+
+
+2013-04-05T14:14:59.000000Z
+80b0c6c5a95eb0c2d51f8027eaa1462b
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+.sass-cache
+dir
+
+LICENSE.txt
+file
+
+
+
+
+2013-04-05T14:14:27.000000Z
+a1b0340accb43f85d221722a384fce43
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+README.md
+file
+
+
+
+
+2013-04-05T14:14:59.000000Z
+e1f4a4de706c811ba5e0bab5bb23675e
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+demos
+dir
+
+extensions
+dir
+
+sample.htaccess
+file
+
+
+
+
+2013-04-05T14:14:59.000000Z
+80b0c6c5a95eb0c2d51f8027eaa1462b
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+src
+dir
+
+themes
+dir
+

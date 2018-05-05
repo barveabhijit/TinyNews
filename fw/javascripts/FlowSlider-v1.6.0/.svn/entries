@@ -1,0 +1,50 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/FlowSlider-v1.6.0
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+examples
+dir
+
+flowslider.jquery.js
+file
+
+
+
+
+2013-04-05T14:15:00.000000Z
+8bc251876cd3e916136f0124688e9337
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+has-props
+
+js
+dir
+
+skins
+dir
+

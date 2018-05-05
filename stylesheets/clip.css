@@ -1,0 +1,98 @@
+
+    /* {
+           border: 1px solid red !important;
+    }*/
+
+    #clipThisHowTo {
+        height:430px;
+        width:560px;
+        -moz-box-shadow: 0 0 5px #888;
+        -webkit-box-shadow: 0 0 5px#888;
+        box-shadow: 0 0 5px #888;
+        margin:20px;
+	      background:#FFFFFF;
+    
+    }
+
+    #clipThisTitle {
+        height:65px;
+    }
+    
+    #clipThisTitle h1 {
+        font-family:"BebasNeueRegular";
+        font-size:32px;
+        color:#13345c;
+        margin-left:28px;
+        line-height:68px;
+    }
+    #clipThisClose img{
+        background:no-repeat; 
+        float:right;
+        margin-right:10px;
+        margin-top:-55px;
+    }
+
+    
+
+    #clipThisInstructions ul{
+        margin-left:30px;
+        list-style-position:inside;
+      }
+
+
+    #clipThisInstructions h3 {
+        font-family:"OpenSansCondensedLight";
+        font-size:25px;
+        color:#333;
+        margin-left:30px;
+    }
+    #clipThisInstructions h4 {
+        font-family:"OpenSansCondensedLight";
+        font-size:18px;
+        color:#333;
+    }
+   
+    #clipThisInstructions h4 span{
+      font-family:"OpenSansCondensedBold";
+    }
+    #clipThisCallToAction {
+       background-color:#e6e6e6;
+        height:70px;
+        padding-left:10px;
+    }
+
+    #clipThisCallToAction p{
+        font-family:"OpenSansCondensedBold";
+        font-size:20px;
+        color:#333;
+        float:right;
+        margin-right:80px;
+        
+    }
+    
+    #clipThisCallToAction img{
+        margin:15px 0px 0px 30px;}
+        
+
+    #clipThisLightbox-panel{
+      display:none;
+      position:fixed;
+      top:100px;
+      left:50%;
+      margin-left:-300px;
+      z-index:1001;
+  }
+ 	
+ 	#clipThisLightbox-bg {
+ 	  display:none;
+      background:#000000;
+      opacity:0.9;
+      filter:alpha(opacity=90);
+      position:fixed;
+      top:0px;
+      left:0px;
+      min-width:100%;
+      min-height:100%;
+      z-index:1000;
+ 	}
+ 

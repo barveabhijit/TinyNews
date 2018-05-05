@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Tiny News | Videos</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  
+  <!-- Included CSS Files (Compressed) -->
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/modernizr.foundation.js"></script>  
+</head>
+<body>
+<!--Header-->
+<header>
+</header>
+
+<div class="row">
+	<div class="twelve columns"> 
+		<div class="topSearchbar">	    
+			<!-- Postfix action -->
+			<div class="row collapse">
+				 <div class="one column  labeltext" >
+				    <div class="customheadline">Stories</div>
+				 </div>
+				 <div class="eight columns searchbox-position">
+				 	<input id="storiesSearch" type="text" value="" placeholder="Find What you are looking for"/>
+				 </div>
+				 <div class="two columns">
+				 	<div class="left">
+						<form class="custom">
+              				<div class="custom dropdown" id="storyCatsDropDown">
+              					<a href="#" class="current"></a>
+              					<a href="#" class="selector"></a>
+              					<ul>
+              					</ul>
+              				</div>
+						</form>
+				  	</div>
+				</div>
+				<div class="one column searchbox-position"><a href="#" class="TNsearchBtn" id="storySearchIcon"><span class="search-icon "></span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+<div class="row"> 
+	<div class="twelve columns">
+    	
+         <div class="row"> 
+         	<div class="four columns centered">
+         	<div class="top-margin-stories">
+         <!-- Even Button Groups -->
+         <ul class="button-group even three-up radius">
+           <li><a href="stories.html" class="button">Stories</a></li>
+           <li><a href="newspapers.html" class="button">Newspapers</a></li>
+           <li><a href="videos.html" class="button active">Videos</a></li>
+         </ul>
+         </div>
+         </div>
+         </div>
+        <!--Masonry Effect-->
+       <!--Masonry Effect-->
+                     <div id="container">
+                     	<!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="160" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Fast & Furious 6 - Big Game Spot</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="113" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Serious accident kills driver and injures 3 others</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="136" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Homer in the bottom of the ninth secures victory</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="160" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Fast & Furious 6 - Big Game Spot</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="113" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Serious accident kills driver and injures 3 others</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="136" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Homer in the bottom of the ninth secures victory</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="160" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Fast & Furious 6 - Big Game Spot</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="113" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Serious accident kills driver and injures 3 others</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="136" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Homer in the bottom of the ninth secures victory</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="160" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Fast & Furious 6 - Big Game Spot</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="113" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Serious accident kills driver and injures 3 others</h2>
+                         </div><!--/myPageVideoBox-->
+                         <!--VideoBox-->
+                         <div class="myPageVideoBox item">
+                         	<div class="videoContainer">
+                             	<iframe height="136" src="http://www.youtube.com/embed/ozG6KQftTmc" frameborder="0" allowfullscreen></iframe>
+                             </div><!--/videoContainer-->
+                             <h2>Homer in the bottom of the ninth secures victory</h2>
+                         </div><!--/myPageVideoBox-->
+                         
+                         
+                     </div><!--/container for Masonry-->
+             </div><!--/myPageVideos-->
+         </div><!--/twelve-->
+</div><!--/row-->
+
+<div class="clearfooter"></div>
+ 
+ <script src="" type="text/javascript">
+ </script>
+   <!-- End Footer -->
+
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+
+<script src="javascripts/app.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+<script src="javascripts/libs/jquery.masonry.js" type="text/javascript"></script> 
+
+<script type="text/javascript" src="javascripts/services.js"></script>
+<script type="text/javascript" src="javascripts/utils.js"></script>
+<script type="text/javascript" src="javascripts/header.js"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		TN.header.initialize();
+//		TN.viewAll.initialize();
+	});
+</script>
+<script type="text/javascript" src="http://s.skimresources.com/js/39639X1025068.skimlinks.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+/** {
+      border: 1px solid red !important;
+     }*/
+
+input::-webkit-input-placeholder {
+  color:#999;
+}
+
+input:-moz-placeholder {
+  color:    #999;
+}
+
+input:-ms-input-placeholder {
+  color:    #999;
+}
+
+
+#clipThisDrag {
+	display:none;
+}
+
+#clipThisFav {
+	display:none;
+}
+
+.friendRead .imageCont,.friendPosted .imageCont{
+	width:56px;
+	height:56px;
+	cursor:pointer;
+  	float: left;
+  	margin-right:6px;
+ 	overflow:hidden;
+}
+
+.smallImageSquare {
+	width:56px;
+	height:56px;
+}
+
+.smallImageWide {
+	height:56px;
+}
+
+.smallImageTall {
+	width:56px;
+}
+
+.friendRead p,.friendPosted p{
+	cursor:pointer;
+} 
+
+.friendRead p { 
+font-family: OpenSansSemibold, Arial, sans- serif;
+font-size: 14pt;
+color: #13345c;
+}
+
+#friendsReadLabel {
+	display:none;
+}
+
+.friendPosted p:hover, .friendRead p:hover{
+  color:#0b68a8;
+}
+
+#friendsPostedLabel {
+	display:none;
+}
+
+#loginDropDownWrapper, #login{
+  display:none;
+  position:relative;
+  height:230px;
+  width:1280px;
+  padding:20px 0px 0px 0px;
+  background:url("../images/general/hRuler-bg.jpg") bottom  no-repeat;
+  margin: 0px auto;
+}
+
+#login{
+  height:295px;
+}
+
+#loginDropDown{
+  display:inline;
+  position:relative;
+  height:100px;
+  padding:5px;
+  width:50%;
+  margin:0px auto;
+}
+
+#facebookLogin{
+  background:no-repeat;
+  float:left;
+  height:100px;
+  margin:20px 60px 0px 260px;
+  padding:0 20px 0 20px;
+}
+
+#facebookLogin img{
+  margin:30px 0 0 0;
+}
+
+#dropDownOr{
+  position:absolute;
+  width:110px;
+  height:100px;
+  float:left;
+  font-size:56px;
+  margin:15px 0px 0px 0px;
+  text-align:center;
+  left:50%;
+  padding:0 20px 0 20px;
+}
+
+
+
+
+#dropDownOr p{
+  position:absolute;
+  margin:10px 0px 0px 0px;
+  color:#cccccc;
+  font-size:72px;
+  padding:0px 20px 0px 20px;
+}
+
+
+#dropDownLoginForm{
+  /*position:absolute;*/
+  float:right;
+  font-family:"OpenSansCondensedBold";
+  height:100px;
+  width:440px;
+  margin: 35px 0px 0px 250px; 
+}
+
+
+#dropDownLoginForm p{
+  font-size:12px;
+  font-weight:bold;
+}
+
+
+#dropDownLoginForm a{
+  float:left;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #13345c;
+}
+
+#dropDownLoginForm a:hover{
+  color:#50b5e5;
+}
+
+#dropDownLoginForm input {
+  font-size:12px;
+  padding:4px 2px;
+  border:solid 1px #999999;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  width:200px;
+  margin-top:5px;
+}
+#dropDownLoginForm input[type="placeholder"]{
+  color:#e6e6e6;
+}
+#dropDownLoginForm input[type="text"]{
+  margin-left:12px;
+}
+#dropDownLoginForm input[type="password"]{
+  margin-left:15px;
+}
+
+#dropDownLoginForm input[type="submit"]{
+  background:url(../images/LoginAndRegister/btnSign-bg.png) repeat-x; 
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  width:78px;
+  float:right;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius: 5px;
+  height:32px;
+  font-family: 'OpenSansCondensedBold';
+  font-weight:normal;
+  cursor:pointer;
+  border:none
+  margin-top:-20px;
+}
+
+#dropDownLoginForm input[type="submit"]:hover{
+  background:url(../images/LoginAndRegister/btnSign-bg-hover.png) repeat-x; 
+}
+
+
+#forgotPassword{
+  margin:0px 0px 30px 68px;
+}
+#signIn{
+  width:190px;
+  margin-left:85px;
+}
+
+#signIn a{
+  margin: 15px 20px 0px 50px; 
+}
+
+#cancelLogin2{
+  margin-top:10px;
+  font-family:"OpenSansRegular";
+}
+
+.opedItem, .topStories, .topCategory{
+	width:124px;
+	align:center;
+}
+
+.opedItem div {
+  /*border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px; */
+ /* width:124px; */
+  height:104px;
+	overflow:hidden;
+	cursor:pointer;
+
+}
+
+.opedItem img {
+	/* width:124px;*/
+	/* width:100%; */
+}
+
+.opedItem p, .topStories p{
+  margin: 0px 2px 0px 2px;
+	/* overflow-x:hidden;  changed date 30-11-2012 --> basel anfouqa */
+	text-align:center;
+	cursor:pointer;
+}
+
+.topCategory h3{
+  margin: 0px 2px 0px 2px;
+	overflow-x:hidden;
+	text-align:center;
+	cursor:pointer;
+}
+
+.topCategory div {
+	/*width:124px;*/
+  height:104px;
+ /* border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;*/
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.topCategory img{
+	/* width:124px; */
+	/* width:100%; */
+}
+
+.topStories div {
+	/*
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;*/
+  height:104px;
+	overflow:hidden;
+	cursor:pointer;
+ /* width:124px; */
+}
+
+.topStories img {
+	/* width:124px; */
+	/* width:100% */
+}
+
+.more img{
+  margin-top:90px;
+  display:inline;
+  position:absolute;
+}
+
+
+.more-arrow{
+  width:50px;
+  height:15px;
+  float:right; 
+  display:inline;
+  margin-top:-80px;
+  position:relative;
+  background:url("../images/general/view-all-icon.png") no-repeat;
+}
+
+#top-categories .more-arrow, #top-newspapers .more-arrow{
+  margin-top:-110px;
+}
+
+.more-arrow:hover{
+  background:url("../images/general/view-all-hover.png") no-repeat;
+  cursor:pointer;
+}
+
+.showOpaque {
+	opacity:0.2;
+	filter:alpha(opacity=20);
+}
+
+

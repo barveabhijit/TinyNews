@@ -1,0 +1,319 @@
+/* ------------------------------------------------------------------------- */
+/* Layout */
+/* line 9, ../sass/screen.sass */
+body {
+ margin: 0 auto;
+ font-size: 14px;
+ width: 95%;
+}
+ 
+/* line 14, ../sass/screen.sass */
+#page {
+ font-family: Arial, sans-serif;
+ color: #13345c;
+}
+ 
+/* line 5, ../sass/_global.sass */
+header {
+ background-image: url("../images/general/header-bg.png");
+ background-repeat: repeat-x;
+ height: 62px;
+ width: 100%;
+ position: relative;
+ color: white;
+}
+/* line 12, ../sass/_global.sass */
+header a {
+ color: white;
+ float: left;
+}
+ 
+#catSelectorBar{
+        margin-left:40%;
+        padding:2px;
+}
+ 
+#catSelectorLabel {
+        font-family:OpenSansCondensedBold;
+        font-size:14pt;
+        color:#333333;
+}
+ 
+/* line 16, ../sass/_global.sass */
+#logo {
+ background: url("../images/general/tn-logo.png") no-repeat;
+ position: absolute;
+ top: 6px;
+ left: 20px;
+ width: 145px;
+ height: 49px;
+}
+ 
+#imageContainer {
+ margin:12.5px;
+}
+ 
+.imageItem {
+ float:left;
+ padding-top:12.5px;
+ margin:5px;
+ width:225px;
+ cursor:default;
+}
+ 
+.imageItem>*{
+        padding-left:12.5px;
+        padding-right:12.5px;
+}
+ 
+.imageItem .analytics {
+        font-family:OpenSansCondensedLight;
+        font-size:8pt;
+        color:#666666;
+}
+ 
+.imageItem .analytics li {
+        float:left;
+        list-style:none;
+}
+ 
+.imageItem .analytics .likesCount {
+        width:67px;
+}
+ 
+.imageItem .analytics .commentsCount {
+        width:66px;
+}
+ 
+.imageItem .analytics .reclipsCount {
+        width:67px;
+        text-align:right;
+}
+ 
+.imageItem .authorCont {
+ clear:both;
+ margin-top:12.5px;
+ margin-bottom:12.5px;
+ height:36px;
+}
+ 
+.imageItem .authorCont img {
+        width:36px;
+        height:36px;
+        margin-right:12.5px;
+        float:left;
+}
+ 
+.imageItem .authorCont .authorInfo {
+        float:left;
+}
+ 
+ 
+.imageItem .authorCont .authorInfo .byLinkGroup {
+        float:left;
+}
+ 
+.imageItem .authorCont .authorInfo .byLinkGroup .by {
+        font-family:OpenSansCondensedLight;
+        font-size:10pt;
+        color:#333333;
+}
+ 
+.imageItem .authorCont .authorInfo .byLinkGroup .link {
+        font-family:OpenSansCondensedBold;
+        font-size:10pt;
+        color:#13345c;
+        cursor:pointer;
+}
+ 
+.imageItem .authorCont .authorInfo .dateTime {
+        font-family:OpenSansCondensedLight;
+        font-size:10pt;
+        color:#666666;
+        float:left;
+}
+ 
+.imageItem .commentItemsCont {
+        border-top:1px solid #e6e6e6;
+        background-color:#f5f5f5;
+        float:left;
+}
+ 
+.imageItem .commentItemsCont .commentInputCont {
+        width:200px;
+        float:left;
+        list-style:none;
+}
+ 
+.imageItem .commentItemsCont .commentInputCont>* {
+        margin-top:12.5px;
+        margin-bottom:12.5px;
+        float:left;
+}
+ 
+.imageItem .commentItemsCont .commentInputCont img {
+        width:36px;
+        height:36px;
+}
+ 
+.imageItem .commentItemsCont .commentInputCont input {
+        height:36px;
+        margin-left:4px;
+        width:150px;
+}
+ 
+.imageItem .commentItemsCont .commentItems {
+        width:200px;
+        float:left;
+        list-style:none;
+        border-bottom:1px solid #e6e6e6;
+}
+ 
+.imageItem .commentItemsCont .commentItems>* {
+        margin-top:12.5px;
+        margin-bottom:12.5px;
+        float:left;
+}
+ 
+.imageItem .commentItemsCont .commentItems img {
+        width:36px;
+        height:36px;
+}
+ 
+.imageItem .commentItemsCont .commentItems .commentItem {
+        margin-left:4px;
+        width:158px;
+        overflow-x:hidden;
+}
+ 
+.imageItem .commentItemsCont .commentItems .commentItem .author {
+        font-family:OpenSansCondensedBold;
+        font-size:10pt;
+        color:#13345c;
+}
+ 
+.imageItem .commentItemsCont .commentItems .commentItem .comment {
+        font-family:OpenSansCondensedLight;
+        font-size:10pt;
+        color:#333333;
+}
+ 
+.imageItem .commentItemsCont .getAllComments {
+        font-family:OpenSansCondensedBold;
+        font-size:14pt;
+        color:#13345c;
+        text-align:center;
+        cursor:pointer;
+}
+ 
+.imageItem .headline {
+        font-family:OpenSansCondensedBold;
+        font-size:14pt;
+        color:#13345c;
+}
+ 
+.imageItem .storyImageCont {
+        position:relative;
+}
+ 
+.imageItem .storyImageCont .storyImage {
+        width:200px;
+        cursor:pointer;
+}
+ 
+.imageItem .storyImageCont .imageHoverBox {
+        position:absolute;
+        margin-left:12.5px;
+        margin-right:12.5px;
+        width:200px;
+        height:20px;
+        background-image:url('../images/general/comment-bar-bgrd.png');
+        display:none;
+        z-index:100;
+        font-family:OpenSansCondensedBold;
+        font-size:8pt;
+        padding-top:2px;
+}
+ 
+.imageItem .storyImageCont .imageHoverBox li {
+        float:left;
+        list-style:none;
+        width:33%;
+}
+        
+.imageItem .storyImageCont .imageHoverBox li:hover {
+        cursor:pointer;
+}
+ 
+.imageItem .storyImageCont .imageHoverBox .comment .commentIcon {
+        background-image:url('../images/icons/mini-comment-icon.png');
+}
+ 
+.imageItem .storyImageCont .imageHoverBox .like .likeIcon {
+        background-image:url('../images/icons/mini-like-icon.png');
+}
+        
+.imageItem .storyImageCont .imageHoverBox .reclip {
+        align:right;
+        text-align:right;
+}
+ 
+.imageItem .storyImageCont .imageHoverBox .reclip .reclipIcon {
+        background-image:url('../images/icons/mini-clip-icon.png');
+}
+ 
+ 
+.imageItem .storyCopy {
+       clear:both;
+        font-family:OpenSansCondensedBold;
+        font-size:12pt;
+        padding-top:10px;
+        padding-bottom:10px;
+        color:#333333;
+        border-top:1px solid #666666;
+        border-bottom:1px solid #666666;
+}
+ 
+.imageItem .storyCopy li{
+        overflow-x:hidden;
+}
+ 
+.imageItemBoxShadow {
+        box-shadow: 0px 0px 2px #000;
+        -webkit-box-shadow: 0px 0px 2px #000;
+        -moz-box-shadow: 0px 0px 2px #000;
+}
+ 
+/* line 25, ../sass/_global.sass */
+#user-authentication {
+ float: right;
+ font-family: "OpenSansSemibold";
+}
+/* line 28, ../sass/_global.sass */
+#user-authentication .divider {
+ width: 1px;
+ height: 22px;
+ position: relative;
+ background: white;
+ top: 19px;
+ float:left;
+ margin-left:20px;
+ margin-right:20px;
+}
+/* line 35, ../sass/_global.sass */
+#user-authentication .login,
+#user-authentication .signup {
+ position: relative;
+ top: 20px;
+ float:left
+}
+/* line 41, ../sass/_global.sass */
+#user-authentication .signup {
+ margin-right:20px;
+}
+ 
+/* line 43, ../sass/_global.sass */
+#user-authentication a {
+ color: white;
+ text-decoration: none;
+}

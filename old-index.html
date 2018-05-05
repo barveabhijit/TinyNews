@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<html>
+	<head>
+		<title>Tiny News</title>
+		
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+	    <script type="text/javascript" charset="utf-8" src="js/modernizr-2.5.3.js"></script>
+		<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.masonry.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.imagesloaded.min.js"></script>
+		<script type="text/javascript" charset="utf=8" src="js/jquery.livequery.js"></script>
+		
+	</head>
+	<body>
+ 		<div id='searchCategoryDropDown'>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Popular</span></div>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Fashion</span></div>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Money</span></div>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Sports</span></div>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Entertainment</span></div>
+			<div class='searchCategoryDropDownItem'><span class='dropDownItemText'>Music</span></div>
+		</div>
+		<div class='siteHeader'>
+			<span class='siteLogo'>
+				<img src='images/logo_wtext.png' alt='Tiny News'/>
+			</span>
+			<span class='siteSearchInput'>
+				<img class='searchMagnifyingGlass' src='images/magnifyingglass.png'/>
+				<input id='searchInputBox' type='search' placeholder='Search Tiny News' size='30'/>
+				<span class='searchSeparator'>|</span>
+				<span class='searchCategories'>Categories</span>
+				<span id='searchCategoryArrow'>_  _</span>
+				<img class='searchGoButton' src='images/go_btn.png' alt='Go'/>
+			</span>
+			<span class='siteRightLinks'>
+				<a href='#' onclick='TN.addClipThisButton()'>Add Clip this button</a><span> | </span></a><a href='#'>Sign up</a><span> | </span><a href='#'>Login</a><span> | </span><a href='#'>About</a>
+			</span>
+		</div>
+		<div class='clipThis displayNone' id='clipThisFav'>
+			<img class='closeIcon' src='images/close.png' onclick='$(".clipThis").hide();'/><span class='clipThisContainer imageItemBoxShadow'><a onclick="alert('Add me to the favorites'); return false;" title="Clip this">Clip this</a></span><span>Right-click and select 'Add to Favorites Bar' -->   </span>
+        </div>
+		<div class='clipThis displayNone' id='clipThisDrag'>
+			<img class='closeIcon' src='images/close.png' onclick='$(".clipThis").hide();'/><span class='clipThisContainer imageItemBoxShadow'><a onclick="alert('Drag me to the bookmarks bar'); return false;" title="Clip this">Clip this</a></span><span>Add this link to your Bookmarks Bar -->   </span>
+        </div>
+		<div class='topStories'>
+			<span><a href='#' onclick='TN.topStories();'>Top stories</a></span><span> | </span><a href='#' onclick='TN.hotZone();'>Hot zone</a>
+		</div>
+		<div id="map_canvas"></div>
+		<div id="imageContainer"></div>
+	    <div class="popupCanvas">
+		    <div class="popupImageItem imageItemBoxShadow"></div>
+	    </div>
+	    <div id='loadingBar'>
+	    	<p align='center'>Loading.  Please wait...<img src='images/ajax-loader.gif'/></p>
+	    </div>
+	    <div id='newEntry' align='center'>
+	    	<img/>
+	    	<br/>
+	    	<label for='headline'>Headline: </label>
+	    	<input id=headline type='text' placeholder='Headline'/>
+	    	<br/>
+	    	<label for='who'>Who: </label>
+	    	<input id='who' type='text' placeholder='Who'/>
+	    	<br/>
+	    	<label for='what'>What: </label>
+	    	<input id='what' type='text' placeholder='What'/>
+	    	<br/>
+	    	<label for='when'>When: </label>
+	    	<input id='when' type='text' placeholder='When'/>
+	    	<br/>
+	    	<label for='where'>Where: </label>
+	    	<input id='where' type='text' placeholder='Where'/>
+	    	<br/>
+	    	<label for='how'>How: </label>
+	    	<input id='how' type='text' placeholder='How'/>
+	    	<br/>
+	    	<label for='why'>Why: </label>
+	    	<input id='why' type='text' placeholder='Why'/>
+	    	<br/>
+	    	<label for='lat'>Latitude: </label>
+	    	<input id='lat' type='text' placeholder='Latitude'/>
+	    	<br/>
+	    	<label for='long'>Longitude: </label>
+	    	<input id='long' type='text' placeholder='Longitude'/>
+	    	<br/>
+	    	<button onclick='TN.newEntrySubmit();'>Submit story</button>
+	    	<button onclick='TN.newEntryCancel();'>Cancel</button>
+	    </div>
+	    
+		<script type="text/javascript" charset="utf-8" src="js/tinynews.js"></script> 		
+		
+	    <script type="text/javascript">    	
+		    $(document).ready(function () { 
+		    	
+		        $('#loadingBar').bind("ajaxSend", TN.showLoadingBar).bind("ajaxComplete", TN.hideLoadingBar); 
+		     
+		    	TN.initAndLoadHomePage();	    	
+		    }); 	    
+	    </script>
+	</body>
+</html>
+

@@ -1,0 +1,81 @@
+/* Newspaper preview lightbox-relevant CSS extracted from newspaperStyle.css */
+
+.newspaper-title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+.newspaper-header {
+    height: 100px;
+    position: relative;
+}
+.contentRight h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: normal;
+    /*margin-bottom: 20px;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/*h1{
+text-transform: uppercase;
+}*/
+.contentRight p {
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+.contentRight p.newspaperSection {
+    position: absolute;
+    top: 70px;
+}
+.contentRight p.newspaperPlace {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.originator-content.block {
+    margin-top: 8px;
+}
+.originator-content.block > img {
+    float: left;
+    margin-left: 5px;
+    margin-right: 3px;
+    max-height: 37px;
+    max-width: 37px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.contentRight h1 {
+    text-align: center;
+}
+.originator-content h1 {
+    text-align: left;
+    color: #13345C;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.originator-content p {
+    color: #666666;
+    font-size: 11px;
+}
+.dividerHeading p{
+    position:absolute;
+    bottom:0px;
+    text-align:center;
+    width:100%;
+    color:#13345C;
+    font-size:18px;
+    font-weight:normal;
+    border-bottom:1px solid;
+    cursor:default;
+}
+#NPLBBackButton, #NPLBReturnButton{
+    cursor: pointer;
+}

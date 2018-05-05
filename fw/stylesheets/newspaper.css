@@ -1,0 +1,49 @@
+#masonryWrapper{
+	height:725px;
+	overflow-y:scroll;
+}
+
+.story-content{
+	display:none;
+}
+
+.originator-content{
+	display:none;
+}
+
+.highlighted{
+	background-color:yellow;
+}
+
+#npHeadline, #npEdition, #npLocation{
+	cursor:pointer;
+}
+
+#npHeadlineInput, #npEditionInput, #npLocationInput {
+	display:none;
+}
+
+.dividerCont p{font-family:"News Cycle", Helvetica Light, sans-serif;font-size:18px;text-align:center;cursor:pointer;border-bottom:1px solid;}
+.dividerCont:hover{border:2px solid #006aa8}
+.dividerCont .newsClose{background:url(../images/newspaper/newsClose.jpg) no-repeat;width:33px;height:31px;position:absolute;top:0px;right:0px;display:none}
+.dividerCont:hover .newsClose{display:block}
+
+.editable {}
+
+input.editable-txt {
+	display: none;
+}
+
+input.editable-txt-active {
+	display: inline;
+}
+
+.editable.inactive {}
+
+.editable.inactive-over {
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.editable.active {
+}

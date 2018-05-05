@@ -1,0 +1,68 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/demos/clock
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+clock.css
+file
+
+
+
+
+2013-04-05T14:14:50.000000Z
+fc44de43bda5aac183b465c445db3e98
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+icon.png
+file
+
+
+
+
+2013-04-05T14:14:50.000000Z
+d8a292169c429ab59cddfeb6ab0be9ee
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+has-props
+
+img
+dir
+
+index.html
+file
+
+
+
+
+2013-04-05T14:14:50.000000Z
+929adec0fd5a59dac1447381bc86b279
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+

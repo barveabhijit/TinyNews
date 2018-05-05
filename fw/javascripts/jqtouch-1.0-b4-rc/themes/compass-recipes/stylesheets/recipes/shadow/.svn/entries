@@ -1,0 +1,55 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/jqtouch-1.0-b4-rc/themes/compass-recipes/stylesheets/recipes/shadow
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+_drop.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+e7963ed68b9709d322dd903cb20e1e0f
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+_top-edge.scss
+file
+
+
+
+
+2013-04-05T14:14:46.000000Z
+110b531e2e23ddbe3a59eb792f0733f5
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+drop
+dir
+

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiny News - Email Template 1</title>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href='newspaper-emailTemp2.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="TNE-wrapper">
+<!--header-->
+<div class="TNE-header">
+	<div class="TNE-userStory" style="float:left">
+    	<div class="TNE-userStory_image">
+        	<img src="email/user-image.jpg" width="64" height="64" alt="user image">
+        </div><!--/TNE-userStory_image-->
+        <h1 style="text-transform:capitalize">Candy Stryper</h1>
+        <ul class="userInfo" style="list-style-type:none">
+        	<li>15 stories |</li>
+            <li>94 followers |</li>
+            <li>153 friend</li>
+        </ul>
+    </div><!--/TNE-userStory-->
+    <div class="TNE-AppStore" style="float:right">
+    	<a href="#"><img src="email/appleStore.png" width="197" height="64" alt="Tiny News Apple Application"></a>
+    </div><!--/TNE-AppStore-->
+    <div style="clear:both"></div><!--clearFix-->
+</div><!--/TNE-header-->
+<div class="TNE-footer block">
+	<ul class="TNE-footerList">
+    	<li style="margin-right:30px"><a href="http://nz.tinynews.me" style="font-size:14px;color:#006aa8;font-weight:bold">Go to Website</a></li>
+            <li>
+                <a href="https://twitter.com/share?text=Checking%20newspapers..&amp;via=TinyNewser" data-count="none">
+                <img src="email/tweet.png" width="24" height="17" alt="tweet">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </li>
+            <!--li><a href="#" style="margin-top:-5px"><img src="email/like.png" width="17" height="21" alt="like">Like</a></li-->
+            <li>
+                <div id="fb-like-button" class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+            </li>
+    </ul>
+</div><!--/TNE-footer-->
+    <div style="clear:both"></div><!--clearFix-->
+<!--content-->
+<div class="TNE-mainContent">
+	<!-- Story-->
+	<div class="TNE-story block">
+    <div class="block" style="margin-bottom:15px">
+    <h1>PUB CRAWL</h1>
+    <p class="vol">vol.1 issue 3</p>
+    <p class="place">Brisbane, Australia</p>
+    </div><!--/block-->
+    <div class="leftContent">
+    	<div class="block">
+        <div class="fullArticle">
+            <img src="email/main2.jpg" width="652" height="621" alt="main image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras nec vestibulum eros. Nam gravida pellentesque lacus, sed rutrum quam ultrices nec. Integer et neque nisi, id lacinia eros.Donec in urna velit, in placerat augue. Fusce ullamcorper feugiat pellentesque.</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/fullArticle-->
+        </div><!--/block-->
+        <div class="subArticle">
+        	<img src="email/e2-img1.jpg" width="319" height="209" alt="article image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/subArticle-->
+         <div class="subArticle last">
+        	<img src="email/e2-img2.jpg" width="319" height="209" alt="article image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/subArticle-->
+        <!--banner-->
+        <div style="clear:both"></div>
+        <div class="bannerAdd">
+        	<img src="email/adds.jpg" width="639" height="160" alt="google adds">
+        </div><!--/bannerAdd-->
+		<div style="clear:both"></div><!--clearFix-->   
+    </div><!--/leftContent-->
+    <div class="rightContent">
+    	<div class="subArticle">
+        	<img src="email/e2-right-main.jpg" width="247" height="172" alt="article image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/subArticle-->
+        <div class="subArticle">
+        	<img src="email/e2-right-main.jpg" width="247" height="172" alt="article image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/subArticle-->
+        <div class="subArticle last">
+        	<img src="email/e2-right-main.jpg" width="247" height="172" alt="article image">
+            <h2>New Year’s Eve 2012: Parties with no cover charges or hassles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mattis felis, in porttitor nisl luctus nec. Suspendisse nec elit vel lacus pellentesque commodo. Morbi ut tempus mauris. Aenean nec dapibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="articleUser block">
+            	<img src="email/user-image2.jpg" width="49" height="48" alt="user">
+                <h3>Aaron Chang</h3>
+                <p>1/21/2013</p>
+            </div><!--/articleUser-->
+        </div><!--/subArticle-->
+    </div><!--/rightContent-->
+    </div><!--/TNE-story-->
+</div><!--/TNE-mainConten-->
+
+</div><!--/TNE-wrapper-->
+</body>
+</html>

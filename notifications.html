@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<link media="screen" type="text/css" href="stylesheets/fonts.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+
+<style type="text/css">
+
+body {
+    font-family:"OpenSansCondensedBold";
+}
+ul#dropdown-messages{
+    padding-top:20px;
+}
+
+#notifications-header{
+    height:30px;
+    font-family:"OpenSansCondensedBold";
+    color:white;
+    padding:10px 0px 10px 0px;
+    background-color:#0B68A8;
+    border-top-right-radius:6px;
+    border-top-left-radius:6px;
+    text-align:center;
+    width:262px;
+}
+
+#notifications-header h1{
+    color:white;
+    font-size:14px;
+    font-family:"OpenSansCondensedBold";
+    margin-left:-30px;
+}
+#nav{
+    height:550px;
+}
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+}
+
+
+#nav li { /* all list items */
+	float: left;
+	width: 15.1em; /* width needed or else Opera goes nuts */
+    padding:10px;
+    border-bottom:#f2f2f2 1px solid
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 15.1em;
+    display:none;
+}
+
+#nav li:hover{
+    cursor:pointer;
+    background:#f2f2f2;
+}
+
+
+#nav img{
+    float:left;
+    padding:5px;
+}
+
+/**#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items 
+	left: auto;
+
+}**/
+
+#content {
+	clear: left;
+	color: #ccc;
+}
+
+.author-link{
+    color:#333;
+    font-size:14px;
+    font-family:"OpenSansCondensedBold";
+    text-decoration:none;
+}
+
+.story-title{
+    font-family:"OpenSansCondensedLightItalic";
+    text-decoration:none;
+    font-size:14px;
+    color:#13345c;
+}
+
+.story-time{
+    font-family:"OpenSansCondensedLight";
+    color:#808080;
+    font-size:14px;
+    margin:1px 0px 0px 40px;
+}
+
+
+</style>
+<script>
+    $(document).ready(function(){
+        $('#notifications').click(function(){
+            $("#dropdown-messages").slideDown("fast");
+        });
+        $("#dropdown-messages").click(function(){
+            $("#dropdown-messages").slideUp("fast");
+        });
+     });
+        
+    
+
+
+</script>
+
+<a id="notifications" href="#">Notifications</a>
+<ul id="nav">
+    
+	<li>		<ul id="dropdown-messages">
+            <div id="notifications-header"><h1>Notifications<h1></div>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a> posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+        class="story-time">13 minutes ago</p></li>
+            <li><img class="avatar"
+            src="images/demo/notifications-avatar.jpg"/><a class="author-link"
+            href="#">Priyanka</a>posted a new story titled<a
+            class="story-title" href="#"> Visions in White</a><p
+            class="story-time">13 minutes ago</p></li>
+
+					</ul>
+	</li>
+
+</ul>

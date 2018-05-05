@@ -1,0 +1,127 @@
+body {
+    font-family:"OpenSansCondensedBold";
+}
+ul#dropdown-messages{
+    /*padding-top:20px;*/
+}
+
+#notifications-header{
+    height:9px;
+    font-family:"OpenSansCondensedBold";
+    color:white;
+    padding:10px 0px 10px 0px;
+    background-color:#0B68A8;
+    border-top-right-radius:6px;
+    border-top-left-radius:6px;
+    margin-left:-120px;/*added margin to keep the notification inside screen*/
+    text-align:center;
+    width:262px;
+}
+
+#notifications-header h1{
+    color:white;
+    font-size:14px;
+    font-family:"OpenSansCondensedBold";
+    margin-left:-125px;/*added margin to keep the notification inside screen*/
+    float:none;
+}
+#nav{
+    height:550px;
+}
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+        margin-left:-120px;/*added margin to keep the notification inside screen*/
+	list-style: none;
+	line-height: 1;
+}
+#nav a {
+}
+.notification_content a {
+	color:#000
+}
+.notification_content a:hover {
+	color:#50b5e5
+}
+#notifsShowMore a {
+	color:#13345C
+}
+#notifsShowMore a:hover {
+	color:#50b5e5
+}
+#noNotifications {
+	color:#000
+}
+#nav li { /* all list items */
+    float: left;
+    width: 15.1em; /* width needed or else Opera goes nuts */
+    padding:10px;
+    /*border-bottom:#f2f2f2 1px solid;*/
+}
+#nav li span{color:#999}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 15.1em;
+    /*display:none;*/   
+}
+
+#notificationsList.overview li.notification:hover{
+    cursor:pointer;
+    background:#e6f0f6;
+}
+
+#nav img{
+    float:left;
+    padding:5px;
+}
+
+/**#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items 
+	left: auto;
+
+}**/
+
+#content {
+	clear: left;
+	color: #ccc;
+}
+
+.author-link{
+    color:#13345C;
+    font-size:14px;
+    font-family:"OpenSansCondensedBold";
+    /*text-decoration:none;*/
+}
+
+.story-title{
+    font-family:"OpenSansCondensedLightItalic";
+    text-decoration:none;
+    font-size:14px;
+    color:#13345c;
+}
+
+.story-time{
+    font-family:"OpenSansCondensedLight";
+    color:#808080;
+    font-size:14px;
+    margin:1px 0px 0px 40px;
+}
+
+/* Tiny Scrollbar */
+#scrollbar1 { width: 262px; margin: 0px 0 10px; background: #f2f2f2; }
+#scrollbar1 .viewport { width: 242px; height: 400px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(../images/homePopups/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(../images/homePopups/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../images/homePopups/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../images/homePopups/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.confirmControl a {
+    color:#13345C;
+}
+.confirmControl a:hover {
+    color:#50b5e5;
+}

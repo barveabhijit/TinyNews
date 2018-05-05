@@ -1,0 +1,39 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;font-weight:400;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1;font:normal 15px Tahoma ,Arial, Helvetica, sans-serif}
+ol,ul{list-style:none}
+a{text-decoration:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+.TNE-wrapper{width:1024px;margin:0 auto}
+.TNE-header{background:linear-gradient(tobottom,#ffffff0%,#dee3e6100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dee3e6',GradientType=0);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dee3e6));background: -webkit-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: -o-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: -ms-linear-gradient(top, #ffffff 0%,#dee3e6 100%);background: linear-gradient(to bottom, #ffffff 0%,#dee3e6 100%);height:64px;-webkit-box-shadow:0 0 10px 0 #434343;box-shadow:0 0 10px 0 #434343;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;padding:13px 20px 13px 32px}
+.TNE-userStory{width:50%}
+.TNE-userStory h1{font-size:36px;font-weight:700;margin:-15px 0 0}
+.TNE-userStory_image{float:left;margin:0 5px 5px}
+.userInfo li{float:left;margin-right:10px;font-size:14px}
+.TNE-mainContent{width:935px;background:#fff;position:relative;border:1px solid #ccc;margin:40px auto 20px;padding:12px 14px}
+.TNE-about{width:260px;float:left;padding-left:15px;margin-top:15px}
+.TNE-about h2{font-family:'Shadows Into Light Two', cursive;color:#222;text-transform:capitalize;font-size:21px;margin-bottom:22px}
+.TNE-about p{font-size:14px;margin:20px 0}
+.TNE-downloadBtn{background:linear-gradient(tobottom,#ffffff0%,#dfe4e7100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dfe4e7',GradientType=0);background: -moz-linear-gradient(top, #ffffff 0%, #dfe4e7 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dfe4e7));background: -webkit-linear-gradient(top, #ffffff 0%,#dfe4e7 100%);
+background: -o-linear-gradient(top, #ffffff 0%,#dfe4e7 100%);background: -ms-linear-gradient(top, #ffffff 0%,#dfe4e7 100%);background: linear-gradient(to bottom, #ffffff 0%,#dfe4e7 100%);display:block;text-align:center;text-transform:capitalize;color:#e94e3c;font-size:22px;font-weight:700;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:-1px -1px 3px 0 #b1b1b1;box-shadow:-1px -1px 3px 0 #b1b1b1;padding:12px 44px}
+.TNE-story{width:643px;border-right:1px solid #ccc;float:left;padding-right:16px}
+.TNE-storyInfo{width:400px;float:left;margin-right:15px}
+.TNE-story h2{font-size:20px;font-weight:700;color:#000;margin-bottom:15px}
+.TNE-story p{font-size:14px}
+.TNE-newslist{}
+.TNE-newslist li{float:left;display:inline-block;margin-right:13px}
+.TNE-newslist li.last{margin:0}
+.TNE-newslist li a{}
+.TNE-storyInfoImage{position:relative}
+.newHot{background:url(email/hotofthepress.png) no-repeat;width:159px;height:141px;display:block;position:absolute;top:-11px;left:-11px}
+.TNE-mapConatiner{width:228px;height:279px;float:left}
+.TNE-map{width:100%;height:auto}
+.TNE-footer{padding:5px 30px}
+.TNE-footerList{float:right}
+.TNE-footerList li{float:left;margin-right:20px;display:inline-block}
+.TNE-footerList li:last-child{margin:0}
+.TNE-footerList li img{margin-right:3px;float:left}
+.TNE-footerList li a{color:#000;font-size:14px}
+.TNE-mainContent{cursor: pointer}

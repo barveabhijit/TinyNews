@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
+<html lang="en">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>TINY NEWS: settings</title>
+    <meta content="T I N Y NEWS: Tell Your Story" name="description">
+    
+    <link media="screen" type="text/css" href="stylesheets/reset.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/screen.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/fonts.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/lightbox2.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/createStory.css" rel="stylesheet">
+    <!--link media="screen" type="text/css" href="stylesheets/global.css" rel="stylesheet"-->
+    <link media="screen" type="text/css" href="stylesheets/main.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/header-new.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/clip.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/homePopups.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="stylesheets/main.css" rel="stylesheet">      
+    <link media="screen" type="text/css" href="stylesheets/settings.css" rel="stylesheet"> 
+    <link media="screen" type="text/css" href="stylesheets/buttons.css" rel="stylesheet">
+    <link href="stylesheets/addFriends.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/libs/html5shiv.js"></script>
+    <script type="text/javascript">
+	function changeImage(obj){
+	var el = obj.childNodes[0];
+	el.src = el.src.indexOf("on.png") >-1?"images/general/onClick-off.png":"images/general/onClick-on.png";
+	}
+	</script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/general/favicon.ico">
+
+</head>
+<body>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-top.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-mid.png')"></div>
+<div class="imagepreload" style="background-image: url('images/general/popups/popupMain-bot.png')"></div>
+
+<!-- Header -->
+<header>
+  <div class="top-bar contain-to-grid">
+    <div class="row">
+      <div class="twelve">
+        <ul class="left">
+          <li class="name"><a href="fw/index.html" class="logo"></a></li>
+        </ul>
+        <section>
+          <ul class="right">
+            <li><a href="index.html">See What's Happening</a></li>
+            <li><a id="addstory" href="#">Post a Story</a></li>
+            <li><a href="newspaper.html">Make a Newspaper</a></li>
+            <li><a href="stories.html">Check Out Stories</a></li>
+
+		    <li class="has-dropdown">
+            	<a class="active" href="myPage.html">MyPage</a>
+                <ul class="dropdown">
+                  <li id="myNamePage"><a href="myPage.html"></a></li>
+                  <li><a id="addClipThis" href="#">Add Post It Button</a></li>
+                  <li><a href="settings.html">Settings</a></li>
+                  <li><a href="#" id="signOut">Sign out</a></li>
+                  <li class="has-dropdown">
+                    <a href="#">Notifications</a>
+                    <ul class="dropdown" id="notificationsList">
+                      <li id="noNotifications" style="display: none"><a href="#" class="notifications full-width"><span class="text-center">You have currently no notifications.</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+             </li>
+          </ul>
+        </section>
+      </div>
+      <!--/twelve--> 
+    </div>
+    <!--/row--> 
+  </div>
+  <!--/container--> 
+</header>
+
+      <!-- Main Content -->
+      <div class="content">
+      
+      	<div class="wrapper">
+        
+        	<div class="edit">
+        	    
+            	<h1>edit profile</h1>
+            	
+                <div class="hRuler"></div>
+                
+                <form action="#" method="post" id="global_settings">
+                
+                    <div class="formBlock">
+                    <div class="formName">
+                    <label class="Email">Email</label>
+                    </div><!--/formName-->
+                    <input type="email" name="Email text" title="Email" id="email" >
+                    <label class="secrecy">Not Shown Publicly</label>
+                    </div><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">
+                    <div class="formName">
+                    <label class="Password">Password</label>
+                    </div><!--/formName-->
+                    <input id="password_button" type="button" name="change password" title="Change Password" value="Change Password" class="form_btn">
+                    <label class="secrecy" id="password_change_ticker" style="margin-left: 5px;"></label>
+                    
+                    <div id="password_inputs" style="display:none; margin-top: 30px;">
+                    <form action="#" method="post" id="password_settings">
+                        <div class="formName">
+                        <label class="Email">New</label>
+                        </div><!--/formName-->
+                        <input type="password" name="New password" title="New password" id="password_new1">
+                        <br><br>
+                        <div class="formName">
+                        <label class="Email">Confirm</label>
+                        </div><!--/formName-->
+                        <input type="password" name="New password confirmation" title="New password confirmation" id="password_new2">
+                        <input id="password_button_save" type="button" name="save password" title="save password" value="Save Password" class="form_btn">
+                    </form>
+                    </div>
+                    </div><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">
+                    <div class="formName">
+                    <label class="fName">First Name</label>
+                    </div><!--/formName-->
+                    <input type="text" name="Name text" title="First name" id="first_name" >
+                    </div><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">
+                    <div class="formName">
+                    <label class="Password">Last Name</label>
+                    </div><!--/formName-->
+                    <input type="text" name="Name text" title="Last name" id="last_name" >
+                    </div><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">
+                    <div class="formName">
+                    <label class="Password">Location</label>
+                    </div><!--/formName-->
+                    <input type="text" name="Name text" title="Location" id="location" disabled="disabled">
+                    <label class="secrecy">e.g. Bellevue, WA</label>
+                    </div><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">
+                        <form action="/php/store_image.php" method="post" enctype="multipart/form-data" id="photoForm">
+                            <div class="formName">
+                            <label class="Password">Picture</label>
+                            </div><!--/formName-->
+                            <img src="images/general/img.jpg" width="150" alt="Profile Image" title="Profile Image" class="profileImage" id="userPhoto">
+                            <input type="button" name="Upload New Photo button" title="Upload new photo" value="Upload New Photo" class="form_btn" id="fakeUploadButton">
+                            <input type="file" id="file" name="file" style="display: none">
+                        </form>
+                    </div><!--/formBlock-->
+                    <div style="clear:both"></div>
+                    
+                    <!--div class="hRuler"></div>
+                           
+                    <div class="hRuler"></div>
+                    <div class="formBlock">
+                    <div class="formName">
+                    <!label class="Password">Deactivate</label-->
+                    <!--/div--><!--/formName-->
+                    <!--input type="button" name="Deactivate account" title="Deactivate account" value="Deactivate Account" class="form_btn"-->
+                    <!--/div--><!--/formBlock-->
+                    
+                    <div class="hRuler"></div>
+                    
+                    <div class="formBlock">                           
+                    <input type="button" name="Save profile" title="Save Profile" value="Save Profile" class="form_btn_save" id="form_btn_save">
+                    <a id="cancelButton" href="javascript:window.history.back();">Cancel</a>
+                    </div><!--/formBlock-->
+                    
+                </form>
+                
+            </div><!--/edit-->
+            
+        </div><!--/wrapper-->
+        
+      </div><!--/content-->
+           
+    <footer class="block">
+    <div class="wrapper">
+        <p>Copyright 2013 Tiny News. All rights reserved.</p>
+        <nav>
+          <ul class="socialMedia">
+            <li><a href="mailto:happydays@tinynews.me"><img src="images/general/email.png" width="34" height="34" alt="mail" title="Mail"></a></li>
+            <li><a href="http://www.facebook.com/pages/Tiny-News/326376470776048"><img src="images/general/facebook.png" width="34" height="34" alt="facebook" title="Facebook"></a></li>
+            <li><a href="javascript:alert('We are getting there!');"><img src="images/general/google.png" width="34" height="34" alt="gmail" title="Gmail"></a></li>
+            <!--li><a href="#"><img src="images/general/linkedin.png" width="34" height="34" alt="linkedin" title="LinkedIn"></a></li-->
+            <li class="last"><a href="https://twitter.com/TinyNewser"><img src="images/general/twitter.png" width="34" height="34" alt="twitter" title="Twitter"></a></li>
+          </ul>
+        </nav>
+        <!--/socialMedia-->  
+        </div><!--/wrapper-->
+    </footer>
+      
+                    
+      <script type="text/javascript" src="js/libs/json2.js"></script>    
+      <script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+      <script type="text/javascript" src="js/libs/jquery.mockjax.js"></script>    
+      <script type="text/javascript" src="js/libs/html5placeholder.jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="js/libs/jquery.imagesloaded.min.js"></script>
+      <script type="text/javascript" charset="utf=8" src="js/libs/jquery.livequery.js"></script>
+      <script type="text/javascript" charset="utf=8" src="js/libs/jquery.tinyscrollbar.min.js"></script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <script type="text/javascript" src="js/libs/jquery.form.js"></script>
+
+      <script type="text/javascript" src="js/services.js"></script>
+      <script type="text/javascript" src="js/utils.js"></script>
+      <script type="text/javascript" src="js/commentHandler.js"></script>
+      <script type="text/javascript" src="js/likeHandler.js"></script>
+      <script type="text/javascript" src="js/lightbox.js"></script>
+      <script type="text/javascript" src="js/browserDetect.js"></script>
+      <script type="text/javascript" src="js/createStory.js"></script>
+      <script type="text/javascript" src="js/baseHeader.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+      <script type="text/javascript">
+      	$('document').ready(function(){
+      		$.ajax({
+                url: "https://tinynews1.atlassian.net/s/en_US3mm4ow-418945332/807/95/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=5c0bac71",
+                type: "get",
+                cache: true,
+                dataType: "script"
+            });
+      	});
+      </script>
+
+
+<script>
+$(document).ready(function(){
+    
+    TN.baseHeader.initialize();
+    
+    jQuery.ajax({
+        url: "https://tinynews1.atlassian.net/s/en_USqwqzqv-418945332/812/101/1.2.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=bc77cb6b",
+        type: "get",
+        cache: true,
+        dataType: "script"
+    });
+    
+    // Settings
+    $('#password_button').click(function(){
+        $('#password_inputs').toggle();
+        if (!!$('#password_change_ticker').text()) $('#password_change_ticker').text("");
+    });
+    
+    //window.imageUploaded = false;
+    //var loginid = 'test@test.com';
+
+    TN.services.loadUserInfo(custId, custId).done(function( msg ) {
+        $('#email').val(msg[0].emailid);
+        $('#first_name').val(msg[0].firstName);
+        $('#last_name').val(msg[0].lastName);
+        if (!!msg[0].profilePicUrl) $('.profileImage').attr("src", msg[0].profilePicUrl);
+    });
+    
+    $('#form_btn_save').click(function(){
+        $.ajax({
+        cache: false,
+        type:'POST',
+        data: {
+            action : "updateUserInfo",
+            userinfo : JSON.stringify({
+                "emailid" : $('#email').val(),
+                "firstName" : $('#first_name').val(),
+                "lastName" : $('#last_name').val(),
+                "userId" : TN.userInfo.emailid
+            })
+        },
+        url:'/salebynow/json.htm'
+        }).done(function( msg ) {
+            TN.userInfo.firstName = $('#first_name').val();
+            TN.userInfo.lastName = $('#last_name').val();
+            TN.utils.setCookie("TNUser", $('#email').val(), 15);
+            TN.utils.setHeader(true); 
+            alert("Profile successfully changed");
+        });
+        
+    });
+    
+    $('#password_button_save').click(function(){
+        if ($('#password_new1').val() == $('#password_new2').val()) {
+            $('#password_change_ticker').text("");
+            $.ajax({
+            cache: false,
+            type:'POST',
+            data: {
+                action : "updateUserInfo",
+                userinfo : JSON.stringify({
+                    "password" : $('#password_new1').val(), 
+                    "userId" : TN.userInfo.emailid
+                })
+            },
+            url:'/salebynow/json.htm'
+            }).done(function(){
+                $('#password_change_ticker').text("Password successfully updated.");
+            });
+        }
+        else $('#password_change_ticker').text("Password fields don't match!");
+    });
+    
+    $('#fakeUploadButton').click(function(){
+        $('#file').click();
+    });
+    
+    var regPhotoSubmitOptions = {
+        success: showImageUrlResponse,
+        dataType:'text'
+    };
+
+    $("#file").change(function() {
+        $('#fakeUploadButton').unbind();
+        $('#fakeUploadButton').val("Uploading..");
+        $('#photoForm').ajaxSubmit(regPhotoSubmitOptions  );
+    });
+
+});
+
+// callback for ajaxSubmit:
+function showImageUrlResponse(responseText, statusText, xhr, $form) {
+    $('#userPhoto').attr('src', responseText);
+    TN.services.updateUserInfo(responseText).done(function(msg){
+        if (msg[0] == true) {
+            $('#fakeUploadButton').val("Upload New Photo");
+        }
+    }).always(function(){
+        $('#fakeUploadButton').click(function(){
+            $('#file').click();
+        });
+    });
+};
+
+</script>
+
+</body>
+</html>

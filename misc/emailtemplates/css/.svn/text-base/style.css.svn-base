@@ -1,0 +1,430 @@
+img {
+	border:0;
+	text-align: center;
+}
+.clear {
+	clear:both;
+}
+body {
+	margin:0px;
+	padding:0px;
+	background:#97cdd6;
+	width:100%;
+}
+
+#wrapper {
+	width:960px;
+	height:auto;
+	margin:0 auto;
+	padding:0px;	
+	background:#97cdd6;
+}
+#content_main {
+	width:895px;
+	height:auto;
+	margin:30px;
+	padding:0px;
+	float:left;
+}
+#container_left_main {
+	width:470px;
+	height:auto;
+	margin:0px auto;
+	padding:0px;
+	
+}
+#white_bg_top_left_corner {
+	width:25px;
+	height:25px;
+	margin:6px 0 0 0;
+	padding:0px;
+	float:left;
+	background:url(../images/white_bg_top_left_corner.png) no-repeat;
+}
+#white_topbg_middle {
+	width:420px;
+	height:25px;
+	margin:6px 0 0 0;
+	padding:0px;
+	float:left;
+	background:url(../images/white_topbg_middle.png) repeat-x;
+}
+#white_bg_top_right_corner {
+	width:25px;
+	height:25px;
+	margin:6px 0 0 0;
+	padding:0px;
+	float:left;
+	background:url(../images/white_bg_top_right_corner.png) no-repeat;
+}
+#white_middle_bg {
+	width:470px;
+	height:auto;
+	margin:0px;
+	padding:0 0 6px 0;
+	float:left;
+	background:url(../images/white_middle_bg.png) repeat-y;
+}
+#white_bg_bottom_main {
+	width:470px;
+	height:25px;
+	margin: 0px;
+	padding:0px;
+	float:left;	
+}
+#white_bg_bottom_left_corner {
+	width:25px;
+	height:25px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:url(../images/white_bg_bottom_left_corner.png) no-repeat;
+}
+#white_bg_bottom_right_corner {
+	width:25px;
+	height:25px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:url(../images/white_bg_bottom_right_corner.png) no-repeat;
+}
+#white_bottombg_middle {
+	width:420px;
+	height:25px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:url(../images/white_bottombg_middle.png) repeat-x;
+}
+#header_main{
+	width:395px;
+	height:auto;
+	margin:0px;
+	padding:0 5px 0 25px;
+	float:left;
+}
+#shopbee_logo{
+	width:107px;
+	height:37px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#appstore_logo{
+	width:111px;
+	height:41px;
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+
+#container_right_main {
+	width:470px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+
+#title_header_main{
+	width:415px;
+	height:auto;
+	margin:0 0 10px 0;
+	padding:0 0 0 25px;
+	float:left;
+}
+#title_header_bg_left{
+	width:8px;
+	height:33px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:url(../images/title_bg_left.png) no-repeat;
+}
+#title_header_bg_middle{
+	width:399px;
+	height:33px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:#e4e4e4;
+}
+#title_header_bg_right{
+	width:8px;
+	height:33px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:url(../images/title_bg_right.png) no-repeat;
+}
+.blue_bold_heading_15px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	line-height:18px;
+	color:#274d58;
+	text-align:left;
+	text-decoration:none;
+	padding:0px;
+}
+.blue_bold_heading {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	line-height:18px;
+	color:#274d58;
+	text-align:center;
+	text-decoration:none;
+	padding:0px;
+}
+#thumb_peview_main{
+	margin:0 25px;
+	padding:0px;
+	float:left;
+	width:416px;
+	height:auto;
+}
+#thumb_peview{
+	margin:0px auto;
+	padding:0px;	
+	width:auto;
+	height:auto;
+	text-align:center;
+}
+.blue_bold_11px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	line-height:20px;
+	color:#274d58;
+	text-align:left;
+	text-decoration:underline;
+	padding:0px;
+}
+.blue_bold_11px a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	line-height:20px;
+	color:#274d58;
+	text-align:left;
+	text-decoration:underline;
+	padding:0px;
+}
+.blue_bold_11px a:hover {
+	color:#274d58;
+	text-decoration:underline;
+}
+.gray_normal_12px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	line-height:18px;
+	color:#3c3c3c;
+	text-align:left;
+	text-decoration:none;
+	padding:0px;
+}
+.gray_normal_11px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:25px;
+	color:#3c3c3c;
+	text-align:left;
+	text-decoration:none;
+	padding:0 0 0 5px;
+}
+.gray_normal_10px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	line-height:18px;
+	color:#3c3c3c;
+	text-align:left;
+	text-decoration:none;
+	padding:0px;
+	margin:0 0 0 5px;
+}
+.black_bold_heading_13px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	line-height:33px;
+	color:#000000;
+	text-align:center;
+	text-decoration:none;
+	padding:0 5px;
+}
+.black_normal_11px {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:15px;
+	color:#000000;
+	text-align:left;
+	text-decoration:none;
+	padding:0 0 0 5px;
+}
+.content_divider{
+	margin:10px 0 10px 0;
+	padding:0px;
+	float:left;
+	width:420px;
+	border-bottom:1px solid #d9d9d9;
+}
+#bottom_content_main{
+	width:445px;
+	height:auto;
+	margin:0px;
+	padding:0 0 0 25px;
+	float:left;
+}
+.iPhone_bg{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:420px;
+	height:370px;
+	background:url(../images/iphone.png) top right no-repeat;
+}
+
+#user_icon{
+	width:36px;
+	height:36px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#user_icon_info_main{
+	width:400px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#icon_info_main{
+	width:354px;
+	height:auto;
+	margin:0px;
+	padding:0 0 0 10px;
+	float:left;
+}
+#user_heading{
+	width:354px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#nav {
+	width:354px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.nav {
+	height:auto;
+	float : left;
+	margin : 0;
+	padding : 0;
+}
+.nav ul {
+	display : block;
+	list-style : none;
+	margin : 0;
+	padding : 0;
+}
+.nav ul li {
+	float : left;
+	display : inline;
+	margin:0 5px 0 0;
+}
+.nav ul li a {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #666666;
+	font-weight : normal;
+	display : block;
+	float : left;	
+	line-height : 15px;	
+	padding : 0 5px 0 0 ;
+	text-decoration : none;
+}
+.nav ul li a:hover {
+	color : #666666;
+	text-decoration:underline;	
+}
+.nav-ul {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #666666;
+	font-weight : normal;
+	line-height : 15px;
+}
+#profile_content{
+	width:420px;
+	height:370px;
+	margin:0 0 5px 0;
+	padding:0px;
+	float:left;
+	/*background:url(../images/iphone.png) top right no-repeat;*/
+}
+#content1{
+	width:195px;
+	height:auto;
+	margin:0 0 10px 0;
+	padding:0px;
+	float:left;
+}
+#content2{
+	width:230px;
+	height:auto;
+	margin:0 0 5px 0;
+	padding:0px;
+	float:left;
+}
+#content3{
+	width:230px;
+	height:auto;
+	margin:50px 0 5px 0;
+	padding:0px;
+	float:left;
+}
+#getfree_icon{
+	width:100px;
+	height:100px;
+	margin:0 0 0 15px;
+	padding:0px;
+	float:left;
+}
+#store_location_info_main{
+	width:420px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#store_location_heading{
+	width:395px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+#store_info{
+	width:395px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.icon{
+	margin:3px 5px 0 0;
+	padding:0px;
+	float:left;
+	width:auto;
+	height:auto;
+}
+

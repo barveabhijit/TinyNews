@@ -1,0 +1,70 @@
+8
+
+dir
+2312
+https://tinynews1.atlassian.net/svn/TNWDES/trunk/fw/javascripts/FlowSlider-v1.6.0/js
+https://tinynews1.atlassian.net/svn
+
+
+
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7fe37993-6348-4255-a583-c7adc79f070b
+
+jquery-1.7.1.min.js
+file
+
+
+
+
+2013-04-05T14:15:00.000000Z
+b1bc27303e180db2e53e1850babf5dee
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+has-props
+
+jquery-mousewheel-3.0.6
+dir
+
+jquery.easing.1.3.js
+file
+
+
+
+
+2013-04-05T14:15:00.000000Z
+ad68115d813b68107c0546528d397b46
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+has-props
+
+jquery.mobile-1.0.1.js
+file
+
+
+
+
+2013-04-05T14:15:00.000000Z
+2265f2678b012a766d771a21a8fa6fa2
+2013-03-01T19:58:21.677209Z
+1932
+gstarcev
+has-props
+

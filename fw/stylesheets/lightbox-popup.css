@@ -1,0 +1,20 @@
+/* Lightbox Popup
+----------------------------------------------------------------------------------------------------------------------- */
+#lightbox_Popup_Cont{margin:20px auto;width:267px}
+.LB_Popup_head{background:url(../images/lightbox-popup/container-bg_head.png) no-repeat;width:267px;height:16px}
+.LB_Popup_mid{background:url(../images/lightbox-popup/container-bg_mid.png) repeat-y;width:222px;padding:10px 25px 15px 20px}
+#lightbox_Popup_Cont #LB_PuForm{padding:0 2px}
+.LB_Popup_mid h1{font-family:'OpenSansCondensedBold';font-size:16px;text-transform:capitalize;margin-bottom:20px}
+.LB_PuLabel{display:block;margin:10px 0}
+.LB_PuLabel h5{color:#000;text-transform:capitalize;font-size:16px}
+.LB_PuTextbox{width:95%;font-size:14px;padding:5px;border:1px solid #ccc}
+.LB_PuTextarea{width:95%;font-size:14px;padding:5px;min-height:200px;margin-bottom:10px;border:1px solid #ccc}
+.LB_PuShareBtn{display:inline-block;float:right;border:none;font-family: 'OpenSansCondensedBold';font-size:16px;color:#fff;height:32px;width:68px;background:#0b68a8;background: -moz-linear-gradient(top,  #0b68a8 0%, #13345c 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0b68a8), color-stop(100%,#13345c)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top,  #0b68a8 0%,#13345c 100%); /*Chrome10+,Safari5.1+ */background: -o-linear-gradient(top,  #0b68a8 0%,#13345c 100%); /* Opera 11.10+ */background: -ms-linear-gradient(top,  #0b68a8 0%,#13345c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0b68a8 0%,#13345c 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b68a8', endColorstr='#13345c',GradientType=0 ); /* IE6-8 */}
+.LB_PuCancelBtn{display:inline-block;float:right;font-size:16px;color:#0b68a8;text-transform:capitalize;margin:10px 10px 0 0}
+.LB_PuCancelBtn h5{font-size:16px;color:#0b68a8;text-transform:capitalize;font-weight:normal}
+.LB_Popup_bot{background:url(../images/lightbox-popup/container-bg_bot.png) no-repeat;width:267px;height:11px}
+
+/* Lightbox Popup, rule(s) added to make it appear on same level as opened lightbox
+----------------------------------------------------------------------------------------------------------------------- */
+#lightbox_Popup_Cont{position:absolute;z-index:1001;left:1029px;}

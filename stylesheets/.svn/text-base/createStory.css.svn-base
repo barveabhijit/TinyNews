@@ -1,0 +1,519 @@
+#createStoryCanvas {
+	width:95%;
+    background-color:white;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    filter:alpha(opacity=60);
+    opacity:0.60;
+    -moz-opacity: 0.60;
+	z-index:1000;
+  	overflow:auto;
+}
+
+#createStory {
+	width:464px;
+	box-shadow:0 0 5px #848484;
+	z-index:1000;
+	position:absolute;
+	overflow-y:auto;
+	padding-bottom:20px;
+	overflow-x:hidden;
+  	background-color:white;
+	display:none;
+}
+
+#createStory #csTitle {
+	text-transform:uppercase;
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:24px;
+	font-size:30pt;
+	font-family:BebasNeueRegular
+}
+
+#createStory #csBaseOptions{
+	display:none;
+}
+
+#createStory #csBaseDetailsCont {
+	float:left;
+	width:250px;
+}
+
+#createStory #csBaseDetailsCont #csCatSelectionCont {
+	background-image:url('../images/general/combobox-bgrd.png');
+	height:36px;
+	margin-top:12px;
+	margin-bottom:12px;
+	border-radius:4px;
+	border:1px solid #989898;
+	font-size:14pt;
+	color:#000;
+	cursor:default;
+	font-family:OpenSansSemiBold;
+}
+
+#createStory #csBaseDetailsCont #csCatSelectionCont #csCatDropdown {
+	min-width:250px;
+	border-radius:0px 0px 4px 4px;
+	border:1px solid #989898;
+	margin-top:36px;
+	z-index:1001;
+	position:absolute;
+	display:none;
+	padding-left:0px;
+	height:125px;
+	overflow-y:auto;
+	background-color:white;
+}
+
+#createStory #csBaseDetailsCont #csCatSelectionCont #csCatDropdown li {
+	font-family:OpenSansSemiBold;
+	font-size:11pt;
+	list-style:none;
+	background-color:white;
+	margin-left:10px;
+}
+
+#createStory #csBaseDetailsCont #csCatSelectionCont #csCatDropdown li:hover {
+	color: white;
+  	background: #0b68a8;
+}
+
+	
+#createStory #csBaseDetailsCont #csCatSelectionCont #csComboBoxArrow {
+	float:right;
+	height:8px;
+	margin:12px;
+	width:12px;
+}
+
+#createStory #csBaseDetailsCont #csCatSelectionCont #csCatSelectionBox {
+	width:200px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+	overflow-x:hidden;
+}
+
+#createStory #csBaseDetailsCont #csPublishButton {
+	background-image:url('../images/general/publish-btn.png');
+	height:50px;
+	width:250px;
+	border-radius:4px;
+}
+
+#createStory #csBaseDetailsCont #csPublishButton:hover {
+	background-image:url('../images/general/publish-btn-hover.png');
+	height:50px;
+	width:250px;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+#createStory #csBaseDetailsCont #csSocialMediaCont {
+	color:#333;
+	font-family:OpenSansSemiBold;
+	font-size:10pt;
+	margin-top:15pt;
+	margin-bottom:15pt;
+	list-style-type:none;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+#createStory #csBaseDetailsCont #csSocialMediaCont li {
+	float:left;
+}
+
+
+#createStory #csBaseDetailsCont #csSocialMediaCont #csTwitterBox {
+	margin-left:20px;
+}
+
+#csWhereEnableCont {
+	color:#333;
+	font-family:OpenSansSemiBold;
+	font-size:10pt;
+	margin-top:1pt;
+	margin-bottom:15pt;
+	list-style-type:none;
+	padding-left:15px;
+	padding-right:0px;
+}
+
+#csWhereEnableCont li {
+	float:left;
+}
+
+#csWhereEnableBox {
+	margin-left:20px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStory {
+	background-image:url('../images/general/tellyourstory-bgrd.png');
+	background-repeat:no-repeat;
+	width:250px;
+	float:left;
+	color:#333;
+	height:31px;
+	text-align:center;
+	padding-top:5px;
+	font-family:OpenSansSemiBold;
+	margin-top:15pt;
+	font-size:11pt;
+	border-radius:4px;
+	border:1px solid #989898;
+	cursor:pointer;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails {
+	width:250px;
+	border-radius:4px;
+	border:1px solid #989898;
+	float:left;
+	display:none;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csTellYourStoryTabCont{
+	margin-top:10pt;
+	height:32px;
+	list-style-type:none;
+	border-bottom:1px solid #999999;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csTellYourStoryTabCont > *{
+	float:left;
+	height:32px;
+	font-family:OpenSansSemiBold;
+	font-size:11pt;
+	width:111px;
+	color:#13345c;
+	cursor:pointer;
+	text-align:center;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csTellYourStoryTabCont .tabSelected {
+	cursor:default;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+	color:#333;
+	background: rgb(255,255,255); /* Old browsers */
+	 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MSUiIHN0b3AtY29sb3I9IiNjYmNiY2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 16%, rgba(203,203,203,1) 91%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(255,255,255,1)), color-stop(91%,rgba(203,203,203,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 16%,rgba(203,203,203,1) 91%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 16%,rgba(203,203,203,1) 91%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 16%,rgba(203,203,203,1) 91%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 16%,rgba(203,203,203,1) 91%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cbcbcb',GradientType=0 ); /* IE6-8 */
+}
+
+
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails input {
+	font-family:OpenSansSemiBold;
+	font-size:11pt;
+	margin:12px;
+	width:224px;
+	border-radius:4px;
+	border:1px solid #989898;
+	padding:2px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails textarea {
+	font-family:OpenSansSemiBold;
+	font-size:11pt;
+	margin:12px;
+	width:224px;
+	border-radius:4px;
+	border:1px solid #989898;
+	padding:2px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csHowInput  {
+	height:36px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csOpEdInput {
+	height:250px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csOr {
+	font-family:OpenSansSemiBold;
+	font-size:11pt;
+	text-align:center;
+	margin:12px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csWhatInput  {
+	height:26px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csWhenInput  {
+	height:36px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csWhereInput  {
+	height:36px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csWhoInput  {
+	height:26px;
+}
+
+#createStory #csBaseDetailsCont #csTellYourStoryDetails #csWhyInput  {
+	height:36px;
+}
+
+#createStory #csBrowseFileCont {
+	position:relative;
+	margin-right:24px;
+	margin-left:24px;
+	width:410px;
+}
+
+#createStory #csBrowseFileCont #csBrowseButton {
+	background-image:url('../images/general/browse-bgrd.png');
+	background-repeat:no-repeat;
+	text-align:center;
+	padding:5px;
+	height:26px;
+	width:60px;
+	font-family:OpenSansSemiBold;
+	font-size:9pt;
+	margin-left:342px;
+	z-index:1001;
+	margin-top:-28px;
+	cursor:pointer;
+	position:absolute;
+}
+
+#createStory #csBrowseFileCont #csBrowseText {
+	height:26px;
+	font-family:OpenSansLight;
+	font-size:10pt;
+	border-radius:4px;
+	border:1px solid #989898;
+	width:340px;
+}
+
+#createStory #csBrowseFileCont #csChoosePhotoInput {
+	display:none;
+}
+
+.csCloseButton {
+	background-image:url('../images/icons/close-button.png');
+	min-height:21px;
+	min-width:21px;
+	float:right;
+	margin:10px;
+	cursor:pointer;
+}
+
+#createStory .csDivider {
+	border:1px solid #cccccc;
+}
+
+#createStory #csHeadlineInput {
+	font-family:OpenSansSemiBold;
+	font-size:18pt;
+	width:412px;
+	border:none;
+	margin-top:20px;
+	margin-right:24px;
+	margin-bottom:20px;
+	margin-left:24px;
+}
+
+#createStory #csImageCont {
+	margin-top:15px;
+	margin-right:12px;
+	position:relative;
+	float:left;
+}
+
+#createStory #csImageCont #csEditPhoto {
+	width:60px;
+	height:20px;
+	background-color:#0868a8;
+	color:#fff;
+	font-family:OpenSansSemiBold;
+	font-size:8pt;
+	margin-left:112px;
+	margin-top:-28px;
+	z-index:1001;
+	cursor:pointer;
+	position:absolute;
+	text-align:center;
+}
+
+#createStory #csImageCont #csEditPhotoInput {
+	display:none;
+}
+
+#createStory #csImageCont #csImage {
+	width:150px;
+	margin-left:24px;
+}
+
+#createStory #csImageCont #csImageAccent {
+	display:block;
+	margin-left:12px;
+}
+
+.csCheckBoxSelected {
+	background-image:url('../images/general/selected-checkbox.png');
+	min-height:21px;
+	min-width:21px;
+	cursor:pointer;
+}
+
+.csCheckBoxUnSelected {
+	background-image:url('../images/general/unselected-checkbox.png');
+	min-height:21px;
+	min-width:21px;
+	cursor:pointer;
+}
+
+.csCheckBoxSelected + li, .csCheckBoxUnSelected + li {
+	cursor:pointer;
+}
+
+.displayNone {
+	display:none;
+}
+
+#loginCanvas {
+	width:95%;
+    background-color:white;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    filter:alpha(opacity=60);
+    opacity:0.60;
+    -moz-opacity: 0.60;
+	z-index:2000;
+  	overflow:auto;
+}
+
+#loginCont {
+	width:100%;
+	z-index:2000;
+	position:absolute;
+  	background-color:white;
+}
+
+#loginCont #cancelLink{
+	font-family:OpenSansRegular;
+	font-size:12pt;
+	color:#13345c;
+	float:right;
+	margin-right:24px;
+	margin-top:15px;
+	cursor:pointer;
+}
+
+#loginCont #cancelLink:hover {
+	font-family:OpenSansRegular;
+	font-size:12pt;
+	color:#50b5e5;
+	float:right;
+	margin-right:24px;
+	margin-top:15px;
+	cursor:pointer;
+}
+
+#loginCont #loginButton {
+	background-image:url('../images/general/login.png');
+	background-repeat:no-repeat;
+	min-height:32px;
+	min-width:78px;
+	margin:10px 2px 10px 2px;
+	float:right;
+	cursor:pointer;
+}
+
+#loginCont #loginButton:hover {
+	background-image:url('../images/general/login-hover.png');
+	background-repeat:no-repeat;
+	min-height:32px;
+	min-width:78px;
+	margin:10px 2px 10px 2px;
+	float:right;
+	cursor:pointer;
+}
+
+#loginCont input {
+	font-family:OpenSansCondensedBold;
+	font-size:12pt;
+	width:190px;
+	margin:2px;
+	float:right;
+}
+
+#loginCont #inputCont {
+	float:right;
+	margin-right:24px;
+}
+
+
+#loginCont #loginTitle {
+	font-family:OpenSansCondensedBold;
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:24px;
+	font-size:12pt;
+}
+
+#loginCont label {
+	font-family:OpenSansCondensedBold;
+	margin-top:5px;
+	font-size:12pt;
+	float:left;
+}
+
+.autoGeoposition {
+	position:relative; 
+	right:-15px; 
+	display:block;
+	font-size:10pt;
+}
+
+.selectedGeoPosition:before {
+	content: "[";
+}
+
+.selectedGeoPosition:after {
+	content: "]";
+}
+
+.autoGeoposition:hover:after {
+	content: "<";
+}
+
+#csWherePinIcon, #csOpEdWherePinIcon {
+    background-image: url("../images/createStory/csWherePinIcon.png");
+    background-repeat: no-repeat;
+    height: 35px;
+    margin-top: 9px;
+    position: absolute;
+    right: 23px;
+    width: 39px;
+    cursor: pointer;
+}

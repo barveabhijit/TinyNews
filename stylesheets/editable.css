@@ -1,0 +1,20 @@
+.editable {}
+
+.editable-txt {
+	display: none;
+}
+
+.editable-txt-active {
+	display: inline;
+}
+
+.inactive {}
+
+.inactive-over {
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.active {
+	display: none;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>Tiny News | Newspaper</title>
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <!-- Included CSS Files (Compressed) -->
+  <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+  <link media="screen" type="text/css" href="http://code.jquery.com/ui/1.8.23/themes/base/jquery-ui.css" rel="stylesheet"/>
+  
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|Marcellus+SC|Dosis:400,500,600,700,800|Seymour+One|Domine:400,700|Droid+Sans:400,700|Permanent+Marker|Signika+Negative:400,600,700|Headland+One|Lato:400,900|Arvo:400,700|Playfair+Display:400,900|BenchNine:400,700|Neuton:400,700,800|Rufina:400,700|Belgrano|Rum+Raisin|Magra:400,700|Bitter:400,700|Allura|Coda+Caption:800|Anton|Crete+Round|Shadows+Into+Light|Russo+One|Convergence|Exo:400,500,600,700,800,900|Grand+Hotel|Days+One|Great+Vibes|Clicker+Script|Fjalla+One|Mouse+Memoirs|Englebert|Merienda:400,700|Cinzel:400,700,900|Playfair+Display+SC:400,700,900,900italic,700italic|Noticia+Text|Handlee|Berkshire+Swash|Orbitron:400,900,700,500|Six+Caps|Architects+Daughter|Bree+Serif|Kaushan+Script|Julius+Sans+One|Quando|Scada:400,700|Montserrat:400,700|Archivo+Narrow:400,700|Signika:400,700,600|Amaranth:400,700,700italic|Almendra:400,700,700italic,400italic|Nobile:400,700|Open+Sans:400,700|Ruda:400,900|Nunito:400,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link media="screen" type="text/css" href="stylesheets/clip.css" rel="stylesheet">
+  <link media="screen" type="text/css" href="stylesheets/createStory.css" rel="stylesheet">
+  <link media="screen" type="text/css" href="stylesheets/lightbox2.css" rel="stylesheet">
+  <link media="screen" type="text/css" href="stylesheets/lightbox-popup.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/newspaper.css">
+  <link href="stylesheets/addFriends.css" type="text/css" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="javascripts/foundation/modernizr.foundation.js"></script>
+  <script src="javascripts/foundation/foundation.min.js"></script>
+</head>
+<body>
+<!--Header-->
+<header>
+</header>
+
+<!--Main Content: NewsPaper-->
+<div class="row" style="margin-top:30px">
+	<div class="twelve column">
+    	<div class="row">
+        	<div class="five column">
+        	<h4 class="instructions"> Double Click on Anything on the newspaper to edit its content</h4>
+            	<!--Gadget-->
+            	<div class="TNnewspaperGadget">
+                	<div class="row">
+                    <div class="twelve column">
+                	<h2>Gadgets</h2>
+                    <ul class="no-bullet gadgetList">
+                    	<li><img src="images/newspaper/weather-img.jpg" width="83" height="83" alt="weather image"><p class="text-center">Weather</p></li>
+                        <li><img src="images/newspaper/stock-img.jpg" width="83" height="83" alt="stock image"><p class="text-center">Stocks</p></li>
+                        <li><img src="images/newspaper/archive-img.jpg" width="83" height="83" alt="archive image"><p class="text-center">Archives</p></li>
+                    </ul>
+                    </div><!--/twelve-->
+                    </div><!--/row-->
+                </div><!--/TN-Gadget-->
+                <!--Stories-->
+                <div class="TNnewspaperStories">
+                	<div class="TNnewspaperStories_List">
+                    	<div class="row">
+                        	<div class="twelve column">
+                            	<div class="row">
+                                	<div class="two column">
+                                    	<h2>Stories</h2>
+                                    </div><!--/three-->
+                                    <div class="ten column">
+                                    	<dl class="tabs pill left">
+                                        	<dd id="popularStories"><a href="#pillTab1">Popular</a></dd>
+                                            <dd class="active" id="mineStories"><a href="#pillTab2">Mine</a></dd>
+                                        </dl>
+                                    </div><!--/nine-->
+                                </div><!--/row-->                            	
+                            </div>
+                    	</div><!--/row-->
+                    </div><!--TNStories_List-->
+                    <div class="TNnewspaper_Search">
+                    	<div class="row">
+                        	<div class="twelve column">
+                            <div class="row">
+                            	<div class="eleven column centered">
+                                		<div class="left" style="width:45%">
+                             			<input id="storiesSearch" type="text" name="searchStories" value=""/></div>
+                             
+                                	<form class="custom">
+                               			<div class="left">
+                              				<div class="custom dropdown" id="storyCatsDropDown">
+                              					<a href="#" class="current"></a>
+                              					<a href="#" class="selector"></a>
+                              					<ul>
+                              					</ul>
+                              				</div>
+                              			</div>
+                                	</form>
+                              			<div class="left"> 
+                              				<a id="storiesSearchIcon" class="TNsearchBtn">
+                              					<figure class="search-icon"></figure>
+                              				</a>
+                              			</div>
+                                </div><!--/ten-->
+                                <div class="one column">
+                                	
+                                </div><!--/two-->
+                            </div><!--/row-->
+                            </div><!--/twelve-->
+                        </div><!--/row-->
+                    </div><!--/TNStories_Search-->
+                    <div class="TNStories_Content">
+                    	<div class="row">
+                    		<div id="masonryWrapper">
+	                        	<div id="masonryEffect" class="twelve column">
+	                            </div>
+	                    	</div>
+                        </div><!--/row-->
+                    </div><!--/TNStories_Content-->
+                	
+                </div><!--/TN-Stories-->
+            </div><!--/six-->
+            <div class="seven column">
+             	<!--Font Box-->
+            	<div class="TNStories_FontBox shadow rounded">
+            	<div class="row">
+                	<div class="twelve column">
+                    <div class="four column">
+                    	
+                    </div><!--/six-->
+                    <div class="eight column">
+                    <div class="three column">
+                    
+	                    <form class="custom">
+	           				<div id="fontStyle" class="custom dropdown small">
+	           					<a href="#" class="current"></a>
+	           					<a href="#" class="selector"></a>
+	           					<ul>
+	           					</ul>
+	           				</div>
+	                    </form>
+                    </div><!--/two-->
+                    <div class="one column"></div>
+                    <div class="three column">
+                    
+	                   	<form class="custom">
+	           				<div id="fontSize" class="custom dropdown small">
+	           					<a href="#" class="current"></a>
+	           					<a href="#" class="selector"></a>
+	           					<ul>
+	           					</ul>
+	           				</div>
+	                    </form>
+                    </div><!--/two-->
+                    <div class="one column"></div>
+                    <div class="three column end">
+                    	<form class="custom">
+	           				<div id="fontColor" class="custom dropdown small">
+	           					<a href="#" class="current"></a>
+	           					<a href="#" class="selector"></a>
+	           					<ul>
+	           					</ul>
+	           				</div>
+                        </form>
+                    </div><!--/two-->
+                     <div class="one column"></div>
+                    </div><!--/six-->
+                    
+                    </div><!--/twelve-->
+                </div><!--/row-->
+                </div><!--/TNStories_FontBox-->
+                <!--Newspaper Content-->
+                <div class="TNnewspaperBox shadow">
+                	<div class="row">
+                    	<div id="newspaperSection" class="twelve column">
+                        	<!--NewspaperBox Header-->
+                        	<div class="row">
+                            	<div class="twelve column">
+                            		<h2 class="text-center"><span id='npHeadline' class="editable inactive">Your Brilliant Newspaper Title</span></h2>
+<!--                             		<input type="text" id="npHeadlineInput"/> -->
+                                </div><!--/twelve-->
+                            </div><!--/row-->
+                            <div class="row">
+                            	<div class="twelve column">
+                            	<p class="left"><span id='npEdition' class="editable inactive">VOL 1 ISSUE 1</span></p>
+                                <p class="right"><span id='npLocation' class="editable inactive">Philadelphia, PA</span></p>
+                                </div><!--/twelve-->
+                            </div><!--/row-->
+                            <!--NewspaperBox Content-->
+                           	<div class="TNnewspaperBox_Cont newsContWrapper">
+	                            <div class="gridster">
+					      			<ul id="gridsterList">
+		      						</ul>
+	      						</div>
+	      					</div> 
+                            
+<!-- <div class="TNnewspaperBox_Cont">  -->                            
+<!-- 	<div class="row">  -->                            
+<!-- 	<div class="twelve column">  -->                                
+<!-- </div><!--/twelve-->                                    
+<!-- </div><!--/row-->                               
+<!-- </div><!--/TNnewspaperBox_Cont-->
+<!-- <!--NewspaperBox newsbox-->
+<!-- 
+                            <div class="newsContWrapper">
+                            <div class="newsCont">
+                                <div class="row">
+                                    <div class="twelve column">
+                                        <h2>Brilliant Section Title For Your Newspaper</h2>
+                                        <img src="images/newspaper/newimg.jpg" alt="main image" class="newsMain">
+                                        <h3>Stock Market Baffles Buyers Today</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dolor in enim ultricies venenatis. In tincidunt pellentesque bibendum. Sed tempor faucibus ornare.</p>
+                                        <a href="#" class="newsClose"></a>
+                                        <div class="modulNews right five">
+                                        	<div class="row">
+                                            <div class="twelve column">
+                                            <div class="modulNewsImage left">
+                                            <img src="images/newspaper/user-image.jpg" width="37" height="37" alt="user image">
+                                            </div>
+                                            <h2>basel anfouqa</h2>
+                                            <p>3/2/2012</p>
+                                            <a href="#" class="newsExpand"></a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+ -->                       
+                        </div><!--/twelve-->
+                    </div><!--/row-->
+                </div><!--/TNnewspaperContent-->
+                <!--Option Box-->
+                <div class="TNnewspaper_OptBox">
+                	<div class="row">
+                    	<div class="twelve column">
+                            <ul class="nav-bar OptList">
+                            <li class="active support tag one roundLeft help"><a href="#"><span class="has-tip tip-top" data-width="35" title="Save"></span></a></li>
+                            <li class="one delete" onclick="TN.NewspaperHandler.deleteNewspaper();"><span class="has-tip tip-top" data-width="41" title="Delete"><a href="#"></a></span></li>
+                             <li class="has-flyout two">
+                                <a href="#">Open</a>
+                                <a href="#" class="flyout-toggle"><span> </span></a>
+                                <ul id="newspapersList" class="flyout up small">
+                                	<li><a href="#">newspaper</a></li>
+                                    <li><a href="#">settings</a></li>
+                                    <li><a href="#">mypage</a></li>
+                                    <li><a href="#">home</a></li>
+                                 </ul>    
+                              </li>
+                             <li class="has-flyout two">
+                                <a href="#">Divider</a>
+                                <a href="#" class="flyout-toggle"><span> </span></a>
+                                <ul class="flyout up small">
+                                	<li><a href="#divider1" id="divider1">1x divider</a></li>
+                                    <li><a href="#divider2" id="divider2">2x divider</a></li>
+                                    <li><a href="#divider3" id="divider3">3x divider</a></li>
+                                    <li><a href="#divider4" id="divider4">4x divider</a></li>
+                                    <li><a href="#divider5" id="divider5">5x divider</a></li>
+                                 </ul> 
+                              </li>
+                              <li class="two save" onclick="TN.NewspaperHandler.saveNewspaper();"><span class="has-tip tip-top" data-width="33" title="Save"><a href="#"></a></span></li>
+                              <li class="two search" onclick="TN.NewspaperHandler.showPreview();"><a href="#"></a></li>
+                              <li class="two roundRight publish"><a id="publishButton" href="#">publish</a></li>
+                            </ul>
+                        </div><!--/twelve-->
+                    </div><!--/row-->
+                </div><!--/TNnewspaper_OptBox-->
+            </div><!--/six-->
+        </div><!--/row-->
+    </div><!--/twelve-->
+</div><!--/row-->
+<!-- Footer -->
+<footer>
+<div class="row">
+	<div class="twelve column">
+    	<div class="row">
+        	<div class="six column">
+            	<p>&copy; 2012 Tiny News.  All rights reserved.</p>
+            </div><!--/six-->
+            <div class="six column">
+            	<ul class="link-list right">
+        <li><a href="contact.html" ><img src="images/email.png"  alt="mail" title="Contact Tiny News" class="has-tip tip-top" data-width="80"></a></li>
+        <li><a href="#"><img src="images/facebook.png" alt="facebook" title="Friend Us On Facebook" class="has-tip tip-top" data-width="90"></a></li>
+        <li><a href="#"><img src="images/google.png"  alt="gmail" title="Join Us On Google Plus" class="has-tip tip-top" data-width="90"></a></li>
+        <li><a href="#"><img src="images/linkedin.png" alt="linkedin" title="Connect With Us On LinkedIn" class="has-tip tip-top" data-width="100"></a></li>
+        <li ><a href="#"><img src="images/twitter.png" alt="twitter" title="Follow Us on Twitter" class="has-tip tip-top" data-width="70"></a></li>
+      </ul>
+            </div><!--/six-->
+        </div><!--/row-->
+    </div><!--/twelve-->
+</div><!--/row-->
+</footer><!--/footer-->
+<!-- Initialize JS Plugins -->
+
+<script src="javascripts/foundation/app.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+
+<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+<script src="javascripts/libs/jquery.masonry.js" type="text/javascript"></script> 
+<script src="javascripts/foundation/jquery.placeholder.js"></script>
+<script type="text/javascript" charset="utf-8" src="javascripts/libs/jquery.imagesloaded.min.js"></script> 
+
+<script type="text/javascript" src="javascripts/libs/jquery.collision.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.coords.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.draggable.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.gridster.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.gridster.extras.js"></script>
+<script type="text/javascript" src="javascripts/libs/utils.js"></script>
+<script type="text/javascript" src="javascripts/libs/editable.js"></script>
+
+<script type="text/javascript" src="javascripts/libs/jquery.form.js"></script>
+<script type="text/javascript" src="javascripts/libs/jquery.autosize-min.js"></script>
+
+<script type="text/javascript" src="javascripts/services.js"></script>
+<script type="text/javascript" src="javascripts/utils.js"></script>
+<script type="text/javascript" src="javascripts/header.js"></script>
+<script type="text/javascript" src="javascripts/commentHandler.js"></script>
+<script type="text/javascript" src="javascripts/likeHandler.js"></script>
+<script type="text/javascript" src="javascripts/lightbox.js"></script>
+<script type="text/javascript" src="javascripts/lightbox-tool.js"></script>
+<script type="text/javascript" src="javascripts/createStory.js"></script>
+<script type="text/javascript" src="javascripts/fonts.js"></script>
+<script type="text/javascript" src="javascripts/newspaper.js"></script>
+<script type="text/javascript" src="javascripts/sharingHandler.js"></script>
+
+<script type="text/javascript">
+	$('document').ready(function(){
+		TN.header.initialize();
+		TN.NewspaperHandler.init();		
+		Editable.initEditiables();
+	});
+</script>
+<script type="text/javascript" src="http://s.skimresources.com/js/39639X1025068.skimlinks.js"></script>
+</body>
+</html>

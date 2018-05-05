@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+
+<script type="text/javascript">
+    function validateForm()
+    {
+     var file=document.forms["image_upload"]["file"].value;
+     var url = document.forms["image_upload"]["url"].value;
+     var custid = document.forms["image_upload"]["custid"].value;
+     
+     if(file=='' && url=='')
+     {
+      alert("File Name/URL is Required");
+      return false;
+     }
+     if(file!='' && url!='')
+     {
+      alert("Please choose only one source of image");  
+      return false;
+     }
+     if(custid=='')
+     {
+       alert("CustId is required");
+       return false;
+     } 
+    };
+    
+    function validateForm2()
+    {
+     var file=document.forms["store_image"]["file"].value;
+     var url = document.forms["store_image"]["url"].value;
+    
+     if(file=='' && url=='')
+     {
+      alert("File Name/URL is Required");
+      return false;
+     }
+     if(file!='' && url!='')
+     {
+      alert("Please choose only one source of image");  
+      return false;
+     }
+    }
+</script>
+</head>
+
+
+<body>
+
+<form name="image_upload" action="send_buzz.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <label for="file">File Name:</label>
+    <input type="file" name="file" id="file" /> OR &nbsp;
+    <label for="text">Image URL:</label>
+    <input type="text" width="200" name="url"/> </br>
+    <label for="text">Headline:</label>
+    <input type="text" width="200" name="headline"/> &nbsp;
+    <label for="text">Comments:</label>
+    <input type="text" width="200" name="comments"/></br>
+    <label for="text">Type:</label>
+    <input type="text" width="200" name="type"/> &nbsp;
+    <label for="text">CustId:</label>
+    <input type="text" width="200" name="custid"/><br>
+    <label for="text">Who:</label>
+    <input type="text" width="200" name="who"/> &nbsp;
+    <label for="text">What:</label>
+    <input type="text" width="200" name="what"/></br>
+    <label for="text">When:</label>
+    <input type="text" width="200" name="when"/> &nbsp;
+    <label for="text">Where:</label>
+    <input type="text" width="200" name="where"/></br>
+    <label for="text">How:</label>
+    <input type="text" width="200" name="how"/> &nbsp;
+    <label for="text">Why:</label>
+    <input type="text" width="200" name="why"/> </br>
+    <label for="text">Story Url:</label>
+    <input type="text" width="200" name="storyUrl"/> &nbsp;
+    <label for="text">Oped:</label>
+    <input type="text" width="200" name="oped"/> </br>
+    <br />
+    <input type="submit" name="submit" value="Submit" />
+</form>
+
+<br><br><br><br><br>OR Store image:<br><br>
+
+<form name="store_image" action="store_image.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm2()" >
+    <label for="file">File Name:</label>
+    <input type="file" name="file" id="file" name="file" /> OR &nbsp;
+    <label for="text">Image URL:</label>
+    <input type="text" width="200" id="url" name="url" /> </br>
+    <input type="submit" name="submit" value="Submit" />
+</form>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>T I N Y NEWS: home popups </title>
+<meta content="T I N Y NEWS: Tell Your Story" name="description">
+<link media="screen" type="text/css" href="stylesheets/reset2.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/global.css" rel="stylesheet">
+<link media="screen" type="text/css" href="stylesheets/fonts.css" rel="stylesheet">
+<style>
+/* Popups
+--------------------------------------------------------------------------------------- */
+.storyPopup{width:267px;}
+.storyPopupHeader{height:25px;margin:5px 0 10px}
+.storyPopupHeader h1{font-family: 'OpenSansCondensedBold';font-size:16px;color:#13345c;text-transform:capitalize;float:left;margin:3px 0 0 -5px}
+.storyPopupHeader a.storyPopupClose{display:block;background:url(images/general/close-button.png) no-repeat;width:21px;height:21px;float:right;margin-right:-5px}
+.storyPopupHeader a.storyPopupClose:hover{background:url(images/general/close-btn-hover.png) no-repeat}
+.storyPopup .storyPopupTbl{width:220px}
+.storyPopup .fomrNames{font-family: 'OpenSansCondensedLight';font-size:16px;color:#000;text-transform:capitalize}
+.storyPopup .formNameText, .storyPopup .formEmailText, .storyPopup .formTextarea{width:200px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:1px solid #ccc; line-height:1.6em;margin:8px 0; padding:0 8px; color:#ccc;font-size:14px;height:30px}
+.storyPopup .formTextarea{min-height:200px;margin-bottom:15px}
+.storyPopup a.storyPopupCancel{float:right;font-family: 'OpenSansCondensedLight';font-size:16px;color:#0b68a8;text-transform:capitalize;margin:10px 15px 0 0}
+.storyPopup .formSubmit{float:right;font-family: 'OpenSansCondensedBold';font-size:16px;color:#fff;text-transform:capitalize;display:block;background:url(images/general/test1234/btnShare_bg.png) repeat-x;height:32px;text-align:center;border:none;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:0 15px;cursor:pointer}
+.storyPopup span.storyBackgroundTop{background:url(images/general/test1234/topBackground.png) no-repeat;display:block;width:267px;height:16px}
+.storyPopup span.storyBackgroundMid{background:url(images/general/test1234/middleBackground.png) repeat-y;display:block;width:217px;padding:5px 25px}
+.storyPopup span.storyBackgroundBot{background:url(images/general/test1234/bottomBackground.png) no-repeat;display:block;width:267px;height:9px}
+</style>
+
+</head>
+
+<body>
+<div class="storyPopup">
+	<span class="storyBackgroundTop"></span>
+    <span class="storyBackgroundMid">
+    	<div class="storyPopupHeader">
+        	<h1>email this story</h1>
+            <a href="#" class="storyPopupClose"></a>
+        </div><!--/storyPopupHeader-->
+        <div class="storyPopupContent">
+        	<table class="storyPopupTbl">
+            <tr>
+            <td><label class="fomrNames">name</label></td>
+            </tr>
+            <tr>
+            <td><input type="text" name="Name" class="formNameText"></td>
+            </tr>
+            <tr>
+            <td><label class="fomrNames">email address</label></td>
+            </tr>
+            <tr>
+            <td><input type="email" name="Name" class="formEmailText"></td>
+            </tr>
+            <tr>
+            <td><label class="fomrNames">message</label></td>
+            </tr>
+            <tr>
+            <td><textarea label="text area" title="text area" class="formTextarea"></textarea></td>
+            </tr>
+            <tr>
+            <td><input type="submit" name="Submit" value="Share" class="formSubmit"><a href="#" class="storyPopupCancel">cancel</a></td>
+            </tr>
+            </table>
+        </div><!--storyPopupContent-->
+    </span>
+    <span class="storyBackgroundBot"></span>
+</div><!--/mainPopupsTest-->
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Global
+--------------------------------------------------------------------------------------- */
+.lighboxContainer{
+  	position:absolute;
+	width:625px; 
+	margin:30px auto;
+  	z-index:1000;
+  	background-color:white;
+	-webkit-box-shadow:  0px 0px 10px 0px #000;
+    box-shadow:  0px 0px 10px 0px #666666;
+	overflow-y:auto;
+}
+    
+.lightboxhRuler{background:url(../images/lightbox/lightbox-divider.png) no-repeat center;border:none;margin:0}
+.lightboxwrapper{width:570px;margin:0 auto}
+
+
+
+/* Header
+--------------------------------------------------------------------------------------- */
+.lightboxHeader{height:20px;padding:10px}
+.lightboxHeader #btnClosepage{background:url(../images/lightbox/close-button.png) no-repeat;display:block;width:21px;height:21px;float:right}
+.lightboxHeader #btnClosepage:hover{background:url(../images/lightbox/close-btn-hover.png) no-repeat;cursor:pointer}
+
+
+/* Content
+--------------------------------------------------------------------------------------- */
+#lightboxCanvas {
+	width:95%;
+    background-color:#e6e6e6;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    filter:alpha(opacity=90);
+    opacity:0.90;
+    -moz-opacity: 0.90;
+	z-index:1000;
+  	overflow:auto;
+}
+.lightboxContent{}
+
+.lightboxContentMedia{}
+.lightboxContentMedia img{float:left;margin-right:15px}
+.lightboxSocialMedia{list-style:none;float:left;margin-top:40px}
+.lightboxSocialMedia li{margin-bottom:10px}
+.lightboxSocialMedia li a{display:block;width:75px;height:37px}
+.lightboxSocialMedia li a.tweet{background:url(../images/lightbox/tweet-btn.png) no-repeat left center;display:none}
+.lightboxSocialMedia li a.tweet:hover{background:url(../images/lightbox/tweet-btn-hover.png) no-repeat left center}
+.lightboxSocialMedia li a.email{background:url(../images/lightbox/email-btn.png) no-repeat left center}
+.lightboxSocialMedia li a.email:hover{background:url(../images/lightbox/email-btn-hover.png) no-repeat left center}
+.lightboxSocialMedia #flag{width:75px;height:37px;}
+.lightboxSocialMedia .flagNormal{background:url(../images/lightbox/flagit-btn.png) no-repeat left center;cursor:pointer}
+.lightboxSocialMedia .flagNormal:hover{background:url(../images/lightbox/flagit-btn-hover.png) no-repeat left center}
+.lightboxSocialMedia .flagSelected{background:url(../images/lightbox/flagit-btn-selected.png) no-repeat left center}
+.lightboxSocialMedia #share{background:url(../images/lightbox/share-icon.png) no-repeat;width:23px;height:24px;display:none}
+.lightboxSocialMedia #share:hover{background:url(../images/lightbox/share-icon-hover.png) no-repeat;cursor:pointer}
+
+.lightboxContentText{}
+.lightboxContentText h1{font-size:24px;font-weight:normal;font-family: 'BebasNeueRegular';color:#0b68a8;margin:15px 0}
+.lightboxContentText p{font-family: 'OpenSansCondensedLight';font-size:18px; font-weight:normal;color:#333;margin-bottom:10px}
+
+/* Lightbox Attributes
+--------------------------------------------------------------------------------------- */
+.lightboxAttr{height:43px; padding:20px 10px}
+.lightboxAttrList{width:450px;margin:0 auto}
+.lightboxAttrList li{float:left}
+.lightboxAttrList .like{width:81px; height:43px}
+.lightboxAttrList .dislike{width:81px; height:43px}
+.lightboxAttrList .likeNormal{background:url(../images/lightbox/like-btn2.png) no-repeat left center}
+.lightboxAttrList .likeNormal:hover{background:url(../images/lightbox/like-btn2-hover.png) no-repeat left center;cursor:pointer}
+.lightboxAttrList .likeClicked{background:url(../images/lightbox/like-btn2-selected.png) no-repeat left center}
+.lightboxAttrList .likeSelected{background:url(../images/lightbox/like-btn2-disabled.png) no-repeat left center;cursor:pointer}
+.lightboxAttrList .dislikeNormal{background:url(../images/lightbox/dislike-btn2.png) no-repeat left center}
+.lightboxAttrList .dislikeNormal:hover{background:url(../images/lightbox/dislike-btn2-hover.png) no-repeat left center;cursor:pointer}
+.lightboxAttrList .dislikeClicked{background:url(../images/lightbox/dislike-btn2-selected.png) no-repeat left center}
+.lightboxAttrList .dislikeSelected{background:url(../images/lightbox/dislike-btn2-disabled.png) no-repeat left center;cursor:pointer}
+.lightboxAttrList #comment{background:url(../images/lightbox/comment-btn2.png) no-repeat left center; width:81px;height:43px; margin-left:50px}
+.lightboxAttrList #comment:hover{background:url(../images/lightbox/comment-btn2-hover.png) no-repeat left center;cursor:pointer}
+.lightboxAttrList #reclip{background:url(../images/lightbox/reclip-btn2.png) no-repeat left center; width:81px;height:43px}
+.lightboxAttrList #reclip:hover{background:url(../images/lightbox/reclip-btn2-hover.png) no-repeat left center;cursor:pointer}
+
+/* Story Owner 
+--------------------------------------------------------------------------------------- */
+.lightboxStoryOwner{height:35px;padding:15px 0;background:#f2f2f2;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+.lightboxStoryOwnerInfo{float:left;width:70%}
+.lightboxStoryOwnerInfo img{float:left;margin-right:10px}
+.lightboxStoryOwnerInfo h2{font-family: 'OpenSansCondensedLight';font-size:14px;color:#000;font-weight:normal;text-transform:none;margin-top: -2px;margin-left: 45px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.lightboxStoryOwnerInfo h2 a{font-size:14px}
+.lightboxStoryOwnerInfo p{font-family: 'OpenSansSemibold';font-size:10px;color:#4d4d4d;float:left;margin-top:8px;}
+.lightboxStoryOwnerFollow{float:right}
+.lightboxStoryOwnerFollow a.btnFollow{display:block;background:url(../images/lightbox/follow-btn.png) no-repeat left center;width:75px;height:39px}
+.lightboxStoryOwnerFollow a.btnFollow:hover{;background:url(../images/lightbox/follow-btn-hover.png) no-repeat left center}
+
+/* Story Rattings 
+--------------------------------------------------------------------------------------- */
+.lightboxStoryRattings{padding:15px}
+.lightboxStoryRattings ul{width:400px; margin:0 auto}
+.lightboxStoryRattings ul li{float:left;margin-right:50px}
+.lightboxStoryRattings ul li .counter{font-family: 'OpenSansCondensedLight';font-size:14px;color:#333;font-weight:normal}
+.lightboxStoryRattings ul li.last{margin-right:0}
+
+
+/* Lightbox Comments 
+--------------------------------------------------------------------------------------- */
+.lightboxComments{border-top:1px solid #ccc;background:#f2f2f2}
+.lightbocCommentsBlock{padding-top:10px}
+.lightbocCommentsBlock a img{float:left;margin-right:15px;}
+.lightbocCommentsBlock p{float:left;margin:10px 0;font-family: 'OpenSansCondensedLight';font-size:18px;color:#333}
+.lightbocCommentsBlock hr{margin-top:10px}
+.lightbocCommentsBlockLast{width:150px; margin:0 auto}
+
+.linkAllComments{color:#13345c;font-family:OpenSansCondensedBold;font-size:12pt;font-weight:normal;cursor:pointer}
+.linkAllComments:hover{color:#50b5e5}
+
+/* Lightbox Add a Comment 
+--------------------------------------------------------------------------------------- */
+.lightboxAddCommentBlock{padding:10px 10px 20px 10px;background:#f2f2f2}
+.lightboxAddCommentBlock input[type="text"]{width:95%;border:1px solid #ccc;float:left;margin-bottom:5px;padding:3px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;font-family: 'OpenSansCondensedLight';font-size:18px;color:#999}
+.lightboxAddCommentBlock img{float:left;margin-right:15px}
